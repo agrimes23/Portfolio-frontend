@@ -1,0 +1,54 @@
+body {
+  background-color:ivory;
+}
+
+nav {
+  border-bottom: 1px rgb(4, 69, 70) solid;
+}
+.nav-item {
+  font-family: Poppins 700;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: rgb(4, 69, 70);
+  
+}
+
+.nav-home {
+  font-family: Poppins 700;
+  font-weight: bold;
+  font-size: 3rem;
+  color: rgb(4, 69, 70);
+}
+
+.nav-item-area {
+  transition: ease-out 0.3s;
+  position: relative;
+  z-index: 1;
+  
+}
+
+
+.nav-item-area:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: -70%;
+  left: 50%;
+  right: 50%;
+  bottom: -70%;
+  opacity: 0;
+  content: "";
+  border-radius: 3%;
+  background-color: rgb(4, 69, 70);
+}
+.nav-item-area:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.nav-item:hover {
+  color: white;
+}
+
