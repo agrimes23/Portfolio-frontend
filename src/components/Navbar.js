@@ -10,9 +10,9 @@ const Navbar = () => {
             </div>
             <div className=" justify-content-end">
                 <ul className="d-flex flex-row navbar-nav navbar-right text-white mx-3">
-                    <label htmlFor="about me" className="nav-item-area"><Link className="text-decoration-none nav-item p-4" to='/dashboard'>About Me</Link></label>
-                    <label htmlFor="projects" className="nav-item-area"><Link className="text-decoration-none nav-item p-4" to='/dashboard'>Projects</Link></label>
-                    <label htmlFor="experience" className="nav-item-area"><Link className="text-decoration-none nav-item p-4" to='/dashboard'>Experience</Link></label>
+                    <label htmlFor="about me" className="nav-item-area"><Link className="text-decoration-none nav-item p-4" to='/aboutme'>About Me</Link></label>
+                    <label htmlFor="projects" className="nav-item-area"><Link className="text-decoration-none nav-item p-4" to='/projects'>Projects</Link></label>
+                    <label htmlFor="experience" className="nav-item-area"><Link className="text-decoration-none nav-item p-4" to='/experience'>Experience</Link></label>
 
                 </ul>
             </div>
