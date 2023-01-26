@@ -28,7 +28,7 @@ const ExperienceContent = (props) => {
     return (
         <>
                         <div className="py-2 col">
-                        <div className={ props.active === "Experience" ? "show-tab row" : "hide-tab"}>
+                        <div className={ props.active === "Experience" ? "show-tab row fadeInTop" : "hide-tab"}>
                           <div className="d-flex row  pb-5">
                             <div className="tab-row  d-flex col">
                                 {tabHeaders.map((tab, key) => (
@@ -45,7 +45,7 @@ const ExperienceContent = (props) => {
                             </div>
                             
                             </div>
-                            <div className={ clicked === "10-2022 - Current" ? "show-tab row" : "hide-tab"}>
+                            <div className={ clicked === "10-2022 - Current" ? "show-tab row fadeInTop" : "hide-tab"}>
                                 <div className="p-3">
                                     <h4>Software Engineer Fellow</h4>
                                     <h5><em>General Assembly</em></h5>
@@ -57,7 +57,7 @@ const ExperienceContent = (props) => {
                                 </div>
                             </div>
                           
-                        <div className={ clicked === "10-2019 – 06-2022" ? "show-tab row" : "hide-tab"}>                              
+                        <div className={ clicked === "10-2019 – 06-2022" ? "show-tab row fadeInTop" : "hide-tab"}>                              
                             <div className="p-3">
                               <h4>Accounting Specialist</h4>
                               <h5><em>UACJ North America, Inc.</em></h5>
@@ -70,7 +70,7 @@ const ExperienceContent = (props) => {
                             </div>
                         </div>
                         
-                        <div className={ clicked === "07-2017 – 07-2019" ? "show-tab row" : "hide-tab"}>
+                        <div className={ clicked === "07-2017 – 07-2019" ? "show-tab row fadeInTop" : "hide-tab"}>
                               
                             <div className="p-3">
                               <h4>Japan Exchange & Teaching Program (JET) Assistant Language Teacher</h4>
@@ -86,7 +86,7 @@ const ExperienceContent = (props) => {
                     </div>
 
 
-                        <div className={ props.active === "School" ? "show-tab row" : "hide-tab"}>
+                        <div className={ props.active === "School" ? "show-tab row fadeInTop" : "hide-tab"}>
                           <div className="py-5">
                             <div className="p-3">
                               <h5>General Assembly</h5>
@@ -102,7 +102,7 @@ const ExperienceContent = (props) => {
                           </div>
                         </div>
 
-                        <div className={ props.active === "Skills" ? "show-tab row" : "hide-tab"}>
+                        <div className={ props.active === "Skills" ? "show-tab row fadeInTop" : "hide-tab"}>
                           <div className="d-flex row text-center pt-4">
                             <div className="p-3 m-3">
                               <img className="w-25 p-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" />

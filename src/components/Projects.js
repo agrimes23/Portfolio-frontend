@@ -8,7 +8,7 @@ const Projects = () => {
 
     return (
         <>
-            <div id="projects_section" className="project-page mb-5 pb-4 d-flex align-items-center row m-auto w-75">
+            <div id="projects_section" className="project-page fadeInTop mb-5 pb-4 d-flex align-items-center row m-auto w-75">
                     <div>
                         <h2 className="mt-5">Projects</h2>
                     </div>
