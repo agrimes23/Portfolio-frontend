@@ -2,8 +2,11 @@ body {
   background-color:ivory;
 }
 
+/* --------------------- NavBar --------------------- */
+
 nav {
   border-bottom: 1px rgb(4, 69, 70) solid;
+  background-color: ivory;
 }
 .nav-item {
   font-family: Poppins 700;
@@ -26,7 +29,6 @@ nav {
   z-index: 1;
   
 }
-
 
 .nav-item-area:before {
   transition: 0.5s all ease;
@@ -52,3 +54,111 @@ nav {
   color: white;
 }
 
+/* --------------------- HomePage --------------------- */
+.style-border {
+  position: relative;
+  top: 5vh;
+  left: 5vw;
+  width: 90vw;
+  height: 30vh;
+  border: 3px rgb(20, 20, 20) solid;
+  background-color: rgb(4, 69, 70);
+}
+
+.main-intro {
+  margin: 10vh 0;
+  width: 100%;
+  color: white;
+}
+
+/* --------------------- Experience --------------------- */
+
+.show-tab {
+  display: flex;
+}
+
+.hide-tab {
+  display: none;
+}
+
+.btn-toggle:hover {
+  color: white;
+}
+
+.tab-box {
+  margin-right: 10vw;
+  margin-left: 5vw;
+  height: 40vh;
+}
+
+.exp-box {
+  width: 10vw !important;
+}
+
+/* --------------------- AboutMe --------------------- */
+.aboutme-section {
+  margin-top: 10vh !important;
+  color: white;
+  background-color: rgb(4, 69, 70);
+  padding: 10%;
+  border-radius: 1%;
+}
+
+/* --------------------- Projects --------------------- */
+
+.card {
+  width: 30vw;
+  color: white;
+  background-color: rgb(4, 69, 70);
+}
+
+.card img {
+  height: 20vh;
+}
+
+.fadeInTop {
+  -webkit-animation: fadeInTop 2s both;
+  -moz-animation: fadeInTop 20s both;
+  -o-animation: fadeInTop 20s both;
+  animation: fadeInTop 2s both;
+}
+@-webkit-keyframes fadeInTop {
+  0%{
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInTop {
+  0%{
+    opacity: 0;
+    -moz-transform: translateY(-50px);
+  }
+  100%{
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+@-o-keyframes fadeInTop {
+  0%{
+    opacity: 0;
+    -o-transform: translateY(-50px);
+  }
+  100%{
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+@keyframes fadeInTop {
+  0%{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
