@@ -60,16 +60,17 @@ nav {
   top: 5vh;
   left: 5vw;
   width: 90vw;
-  height: 30vh;
+  height: 75vh;
   border: 3px rgb(20, 20, 20) solid;
-  background-color: rgb(4, 69, 70);
+  background-image: url("./images/Nature-bg2.jpg");
 }
 
 .main-intro {
   margin: 10vh 0;
   width: 100%;
-  color: white;
 }
+
+
 
 /* --------------------- Experience --------------------- */
 
