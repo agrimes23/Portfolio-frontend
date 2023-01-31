@@ -6,6 +6,10 @@ import WeatherApp from '../images/WeatherApp.PNG'
 
 const Projects = () => {
 
+    // TODO: make an overlay for website title and short about me over the img. It can act as a table of contents
+    // TODO: make the cards appear in bigger rows..?
+
+
     return (
         <>
             <div id="projects_section" className="project-page fadeInTop mb-5 pb-4 d-flex align-items-center row m-auto w-75">
@@ -13,9 +17,11 @@ const Projects = () => {
                         <h2 className="mt-5">Projects</h2>
                     </div>
                     <div className="card-container my-5">
-                        <div className="d-flex col">
-                            <div className="card project-card m-3">
-                                <img className="card-img-top" src={travelPlanImg} alt="card project img"/>
+                        <div className="d-flex col border-bottom">
+                            <div className="cards border-right project-card m-3">
+                                <div className="d-flex justify-content-center m-3">
+                                    <img className="card-img-top" src={travelPlanImg} alt="card project img"/>
+                                </div>
                                 <div className="card-body">
                                     <h5 className="card-title">Travel Plans Web App</h5>
                                     <p className="card-text">About</p>
@@ -23,8 +29,10 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            <div className="card project-card m-3">
-                                <img className="card-img-top" src={StyleFinderImg} alt="card project img"/>
+                            <div className="cards project-card m-3">
+                                <div className="d-flex justify-content-center m-3">
+                                    <img className="card-img-top" src={StyleFinderImg} alt="card project img"/>
+                                </div>
                                 <div className="card-body">
                                     <h5 className="card-title">Weather Notes Web App</h5>
                                     <p className="card-text">About</p>
@@ -32,8 +40,10 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            <div className="card project-card m-3">
-                                <img className="card-img-top" src={WeatherApp} alt="card project img"/>
+                            <div className="cards project-card m-3">
+                                <div className="d-flex justify-content-center m-3">
+                                    <img className="card-img-top" src={WeatherApp} alt="card project img"/>
+                                </div>
                                 <div className="card-body">
                                     <h5 className="card-title">Shopping Web App</h5>
                                     <p className="card-text">About</p>
@@ -41,19 +51,23 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            {/* <div className="card project-card m-3">
-                                <img className="card-img-top" src="https://www.rd.com/wp-content/uploads/2021/01/GettyImages-1025449630.jpg" alt="card project img"/>
+                        <div className="d-flex col border-bottom">
+                            <div className="cards project-card m-3">
+                                <div className="d-flex justify-content-center m-3">
+                                    <img className="card-img-top" src="https://www.rd.com/wp-content/uploads/2021/01/GettyImages-1025449630.jpg" alt="card project img"/>
+                                </div>
                                 <div className="card-body">
                                     <h5 className="card-title">Project Title</h5>
                                     <p className="card-text">About</p>
                                     <a href="#">Github Repo</a>
                                 </div>
-                            </div> */}
-
+                            </div>
+                   
+                            
+                        </div>
                         </div>
                     </div>
-                </div>
+                
         </>
     )
 

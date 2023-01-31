@@ -108,13 +108,14 @@ nav {
 
 /* --------------------- Projects --------------------- */
 
-.card {
-  width: 30vw;
-  color: white;
-  background-color: rgb(4, 69, 70);
+.cards {
+  width: 330px;
+  background-color: ivory;
+  border: 0px;
 }
 
 .card img {
+  width: 300px;
   height: 20vh;
 }
 
