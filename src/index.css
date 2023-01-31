@@ -60,16 +60,17 @@ nav {
   top: 5vh;
   left: 5vw;
   width: 90vw;
-  height: 30vh;
+  height: 75vh;
   border: 3px rgb(20, 20, 20) solid;
-  background-color: rgb(4, 69, 70);
+  background-image: url("./images/Nature-bg2.jpg");
 }
 
 .main-intro {
   margin: 10vh 0;
   width: 100%;
-  color: white;
 }
+
+
 
 /* --------------------- Experience --------------------- */
 
@@ -98,21 +99,23 @@ nav {
 /* --------------------- AboutMe --------------------- */
 .aboutme-section {
   margin-top: 10vh !important;
-  color: white;
-  background-color: rgb(4, 69, 70);
+  color: rgb(3, 42, 43);
   padding: 10%;
   border-radius: 1%;
 }
 
+
+
 /* --------------------- Projects --------------------- */
 
-.card {
-  width: 30vw;
-  color: white;
-  background-color: rgb(4, 69, 70);
+.cards {
+  width: 330px;
+  background-color: ivory;
+  border: 0px;
 }
 
 .card img {
+  width: 300px;
   height: 20vh;
 }
 
