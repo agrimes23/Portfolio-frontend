@@ -99,11 +99,12 @@ nav {
 /* --------------------- AboutMe --------------------- */
 .aboutme-section {
   margin-top: 10vh !important;
-  color: white;
-  background-color: rgb(4, 69, 70);
+  color: rgb(3, 42, 43);
   padding: 10%;
   border-radius: 1%;
 }
+
+
 
 /* --------------------- Projects --------------------- */
 
