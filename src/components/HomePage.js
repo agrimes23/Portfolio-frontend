@@ -7,10 +7,9 @@ const HomePage = () => {
     return (
         <>
             <div className="style-border">
-                <div className="intro-styling"></div>
-                <div id="intro_section" className="main-intro text-center">
-                    <h1 className="main-title">Alex Grimes</h1>
-                    <h2 className="description-title">Frontend Developer | Web Developer</h2>
+                <div id="intro_section" className="main-intro text-center m-auto">
+                        <h1 className="main-title">Alex Grimes</h1>
+                        <h2 className="description-title">Frontend Developer | Web Developer</h2>
                 </div>
             </div>
 
@@ -19,10 +18,10 @@ const HomePage = () => {
             </div>
             
             <div className="experience-hp d-flex justify-content-center align-items-center">
-                <Link className="text-decoration-none text-white"><h2>Read about how Alex became a Programmer and Other Experiences</h2></Link>
+                <Link className="text-decoration-none text-white"><h2 className="experience-title-hp">Read about how Alex became a Programmer and Other Experiences</h2></Link>
             </div> 
             <div className="about-me-hp d-flex justify-content-center align-items-center">
-                <Link className="text-decoration-none  text-white"><h2>Still Curious? Read the About Me Page!</h2></Link>
+                <Link className="text-decoration-none text-black"><h2 className="about-me-title-hp">Still Curious? Read the About Me Page!</h2></Link>
             </div> 
 
         </>

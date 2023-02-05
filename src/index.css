@@ -75,19 +75,14 @@ i:hover {
 }
 
 /* --------------------- HomePage --------------------- */
-/* .style-border {
-  position: relative;
-  top: 5vh;
-  left: 5vw;
-  width: 90vw;
-  height: 75vh;
-  border: 3px rgb(20, 20, 20) solid;
-  background-image: url("./images/Nature-bg2.jpg");
-} */
-
 .main-intro {
-  margin: 10vh 0;
-  width: 100%;
+  width: 80%;
+  /* background-image: url("./images/Nature-bg3.jpg"); */
+  height: 30vh;
+}
+
+.main-title {
+  margin-top: 15vh;
 }
 
 .projects-hp {
@@ -103,7 +98,7 @@ h2.projects-title-hp {
   text-align: center;
 }
 
-h2.projects-title-hp:hover {
+h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:hover {
   color: rgb(67, 189, 128);
   text-align: center;
 }
@@ -210,4 +205,9 @@ h2.projects-title-hp:hover {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* turn nav bar in hamburger menu */
+@media (max-width: 590px) {
+
 }
