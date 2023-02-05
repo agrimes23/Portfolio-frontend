@@ -12,14 +12,15 @@ const Projects = () => {
 
     return (
         <>
-            <div id="projects_section" className="project-page fadeInTop mb-5 pb-4 d-flex align-items-center row m-auto w-75">
+            <div id="projects_section" className="project-page fadeInTop mb-5 pb-4 d-flex row m-auto w-75">
                     <div>
                         <h2 className="mt-5">Projects</h2>
                     </div>
-                    <div className="card-container my-5">
-                        <div className="d-flex col border-bottom">
-                            <div className="cards border-right project-card m-3">
-                                <div className="d-flex justify-content-center m-3">
+                    <div className="card-container row d-flex justify-content-center m-auto py-5">
+                        <div className="d-flex justify-content-center border-bottom">
+                            
+                            <div className="cards border-right project-card p-3">
+                                <div className="d-flex justify-content-center p-3">
                                     <img className="card-img-top" src={travelPlanImg} alt="card project img"/>
                                 </div>
                                 <div className="card-body">
@@ -29,8 +30,8 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            <div className="cards project-card m-3">
-                                <div className="d-flex justify-content-center m-3">
+                            <div className="cards project-card p-3">
+                                <div className="d-flex justify-content-center p-3">
                                     <img className="card-img-top" src={StyleFinderImg} alt="card project img"/>
                                 </div>
                                 <div className="card-body">
@@ -40,8 +41,8 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            <div className="cards project-card m-3">
-                                <div className="d-flex justify-content-center m-3">
+                            <div className="cards project-card p-3">
+                                <div className="d-flex justify-content-center p-3">
                                     <img className="card-img-top" src={WeatherApp} alt="card project img"/>
                                 </div>
                                 <div className="card-body">
@@ -51,9 +52,9 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex col border-bottom">
-                            <div className="cards project-card m-3">
-                                <div className="d-flex justify-content-center m-3">
+                        <div className="d-flex row d-flex justify-content-center border-bottom">
+                            <div className="cards project-card p-3">
+                                <div className="d-flex justify-content-center p-3">
                                     <img className="card-img-top" src="https://www.rd.com/wp-content/uploads/2021/01/GettyImages-1025449630.jpg" alt="card project img"/>
                                 </div>
                                 <div className="card-body">

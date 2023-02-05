@@ -1,6 +1,11 @@
-body {
+body, html {
   background-color:ivory;
+  height: 100%;
 }
+
+/* #root {
+  height: 100%;
+} */
 
 /* --------------------- NavBar --------------------- */
 
@@ -54,8 +59,23 @@ nav {
   color: white;
 }
 
+/* --------------------- footer --------------------- */
+.footer {
+  background-color: rgb(4, 69, 70);
+  position: relative;
+  bottom: 0;
+}
+
+i {
+  font-size: 1.8em;
+}
+
+i:hover {
+  color:rgb(43, 139, 103) !important;
+}
+
 /* --------------------- HomePage --------------------- */
-.style-border {
+/* .style-border {
   position: relative;
   top: 5vh;
   left: 5vw;
@@ -63,13 +83,39 @@ nav {
   height: 75vh;
   border: 3px rgb(20, 20, 20) solid;
   background-image: url("./images/Nature-bg2.jpg");
-}
+} */
 
 .main-intro {
   margin: 10vh 0;
   width: 100%;
 }
 
+.projects-hp {
+  height: 40vh;
+  color: white;
+  background-image: url("./images/coding_bg.PNG") ;
+  /* filter: blur(4px);
+  -webkit-filter: blur(4px); */
+}
+
+h2.projects-title-hp {
+  background-color: rgb(51, 51, 51, 0.8);
+  text-align: center;
+}
+
+h2.projects-title-hp:hover {
+  color: rgb(67, 189, 128);
+  text-align: center;
+}
+
+.experience-hp {
+  height: 40vh;
+  background-color: rgb(3, 42, 43);
+}
+
+.about-me-hp {
+  height: 40vh;
+}
 
 
 /* --------------------- Experience --------------------- */

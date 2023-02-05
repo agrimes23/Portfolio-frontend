@@ -29,8 +29,8 @@ const ExperienceContent = (props) => {
         <>
                         <div className="py-2 col">
                         <div className={ props.active === "Experience" ? "show-tab row fadeInTop" : "hide-tab"}>
-                          <div className="d-flex row  pb-5">
-                            <div className="tab-row  d-flex col">
+                          <div className="d-flex row pb-5">
+                            <div className="tab-row d-flex col">
                                 {tabHeaders.map((tab, key) => (
                                     <ButtonToggle 
                                     className="btn rounded-0 flex-fill"

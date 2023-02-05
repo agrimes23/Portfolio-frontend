@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
         <nav className="navbar sticky-top p-4 d-flex columnnavbar">
             <div className="d-flex flex-row">
-                <Link className="text-decoration-none" to='/'><h1 className="nav-home" alt="logo-map-planner-img">AG</h1></Link>
+                <Link className="text-decoration-none" to='/'><h1 className="nav-home" title="Home Page" alt="logo-map-planner-img">AG</h1></Link>
             </div>
             <div className=" justify-content-end">
                 <ul className="d-flex flex-row navbar-nav navbar-right text-white mx-3">
