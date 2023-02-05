@@ -95,12 +95,14 @@ i:hover {
 
 h2.projects-title-hp {
   background-color: rgb(51, 51, 51, 0.8);
+}
+
+h2.experience-title-hp, h2.about-me-title-hp {
   text-align: center;
 }
 
 h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:hover {
   color: rgb(67, 189, 128);
-  text-align: center;
 }
 
 .experience-hp {
@@ -149,6 +151,10 @@ h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:h
 
 /* --------------------- Projects --------------------- */
 
+.project-page {
+  width: 90%;
+}
+
 .cards {
   width: 330px;
   background-color: ivory;
@@ -160,12 +166,47 @@ h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:h
   height: 20vh;
 }
 
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.container:hover .overlay {
+  opacity: 0.9;
+}
+
 .fadeInTop {
   -webkit-animation: fadeInTop 2s both;
   -moz-animation: fadeInTop 20s both;
   -o-animation: fadeInTop 20s both;
   animation: fadeInTop 2s both;
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #0e3529;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 @-webkit-keyframes fadeInTop {
   0%{
     opacity: 0;
@@ -207,7 +248,23 @@ h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:h
   }
 }
 
+@media (max-width: 1000px) {
+  .rows-container {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-container {
+    width: 100%;
+  }
+  .cards {
+    width: 100%;
+  }
+}
+
 /* turn nav bar in hamburger menu */
 @media (max-width: 590px) {
 
 }
+

@@ -5,7 +5,7 @@ const AboutMe = () => {
 
     return (
         <>
-            <div id="aboutme_section" className="aboutme-page d-flex align-items-center row m-auto w-50">
+            <div id="aboutme_section" className="aboutme-page d-flex align-items-center row m-auto w-75">
                     <div id="about-me" className="aboutme-section fadeInTop rounded">
                         <div>
                             <h2 className="mb-4">About Me</h2>
