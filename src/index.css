@@ -1,6 +1,11 @@
-body {
+body, html {
   background-color:ivory;
+  height: 100%;
 }
+
+/* #root {
+  height: 100%;
+} */
 
 /* --------------------- NavBar --------------------- */
 
@@ -54,22 +59,65 @@ nav {
   color: white;
 }
 
-/* --------------------- HomePage --------------------- */
-.style-border {
+.ham-tab {
+  background-color: #0e3529;
+  font-size: 1.2em;
+}
+
+/* --------------------- footer --------------------- */
+.footer {
+  background-color: rgb(4, 69, 70);
   position: relative;
-  top: 5vh;
-  left: 5vw;
-  width: 90vw;
-  height: 75vh;
-  border: 3px rgb(20, 20, 20) solid;
-  background-image: url("./images/Nature-bg2.jpg");
+  bottom: 0;
 }
 
+i {
+  font-size: 1.8em;
+}
+
+i:hover {
+  color:rgb(43, 139, 103) !important;
+}
+
+/* --------------------- HomePage --------------------- */
 .main-intro {
-  margin: 10vh 0;
-  width: 100%;
+  width: 80%;
+  /* background-image: url("./images/Nature-bg3.jpg"); */
+  height: 30vh;
 }
 
+.main-title {
+  margin-top: 15vh;
+}
+
+.projects-hp {
+  height: 40vh;
+  color: white;
+  background-image: url("./images/coding_bg.PNG") ;
+  /* filter: blur(4px);
+  -webkit-filter: blur(4px); */
+}
+
+h2.projects-title-hp {
+  background-color: rgb(51, 51, 51, 0.8);
+}
+
+h2.experience-title-hp, h2.about-me-title-hp {
+  text-align: center;
+}
+
+h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:hover {
+  color: rgb(67, 189, 128);
+}
+
+.experience-hp {
+  height: 40vh;
+  background-color: rgb(3, 42, 43);
+}
+
+.about-me-hp {
+  height: 40vh;
+}
 
 
 /* --------------------- Experience --------------------- */
@@ -108,6 +156,10 @@ nav {
 
 /* --------------------- Projects --------------------- */
 
+.project-page {
+  width: 90%;
+}
+
 .cards {
   width: 330px;
   background-color: ivory;
@@ -119,12 +171,47 @@ nav {
   height: 20vh;
 }
 
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.container:hover .overlay {
+  opacity: 0.9;
+}
+
 .fadeInTop {
   -webkit-animation: fadeInTop 2s both;
   -moz-animation: fadeInTop 20s both;
   -o-animation: fadeInTop 20s both;
   animation: fadeInTop 2s both;
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #0e3529;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 @-webkit-keyframes fadeInTop {
   0%{
     opacity: 0;
@@ -165,3 +252,49 @@ nav {
     transform: translateY(0);
   }
 }
+
+
+@media (max-width: 1000px) {
+  .rows-container {
+    flex-direction: column !important;
+  }
+}
+
+@media (min-width: 700px){
+  .sm-screen-nav {
+    display: none;
+  }
+  
+  .ham-tab {
+    display: none !important;
+  }
+
+  .lg-screen-nav {
+    display: flex;
+  }
+}
+
+@media (max-width: 700px) {
+  .sm-screen-nav {
+    display: flex;
+  }
+
+  .lg-screen-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-container {
+    width: 100%;
+  }
+  .cards {
+    width: 100%;
+  }
+}
+
+/* turn nav bar in hamburger menu */
+@media (max-width: 590px) {
+
+}
+
