@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const ExperienceContent = (props) => {
 
-    const tabHeaders = ["10-2022 - Current", "10-2019 – 06-2022", "07-2017 – 07-2019"]
+    const tabHeaders = ["Oct 2022 - Jan 2023", "Oct 2019 – Jun 2022", "Jul 2017 – Jul 2019"]
     const [clicked, setClicked] = useState(tabHeaders[0])
     const Button = styled.button`
     /* Same as above */
@@ -45,7 +45,7 @@ const ExperienceContent = (props) => {
                             </div>
                             
                             </div>
-                            <div className={ clicked === "10-2022 - Current" ? "show-tab row fadeInTop" : "hide-tab"}>
+                            <div className={ clicked === "Oct 2022 - Jan 2023" ? "show-tab row fadeInTop" : "hide-tab"}>
                                 <div className="p-3">
                                     <h4>Software Engineer Fellow</h4>
                                     <h5><em>General Assembly</em></h5>
@@ -57,7 +57,7 @@ const ExperienceContent = (props) => {
                                 </div>
                             </div>
                           
-                        <div className={ clicked === "10-2019 – 06-2022" ? "show-tab row fadeInTop" : "hide-tab"}>                              
+                        <div className={ clicked === "Oct 2019 – Jun 2022" ? "show-tab row fadeInTop" : "hide-tab"}>                              
                             <div className="p-3">
                               <h4>Accounting Specialist</h4>
                               <h5><em>UACJ North America, Inc.</em></h5>
@@ -70,7 +70,7 @@ const ExperienceContent = (props) => {
                             </div>
                         </div>
                         
-                        <div className={ clicked === "07-2017 – 07-2019" ? "show-tab row fadeInTop" : "hide-tab"}>
+                        <div className={ clicked === "Jul 2017 – Jul 2019" ? "show-tab row fadeInTop" : "hide-tab"}>
                               
                             <div className="p-3">
                               <h4>Japan Exchange & Teaching Program (JET) Assistant Language Teacher</h4>
@@ -91,13 +91,13 @@ const ExperienceContent = (props) => {
                             <div className="p-3">
                               <h5>General Assembly</h5>
                               <h6><em>Software Engineering Immersive</em></h6>
-                              <h6>10-2022 - 01-2023</h6>
+                              <h6>Oct 2022 - Jan 2023</h6>
                             </div>
                             <hr/>
                             <div className="p-3">
                               <h5>Purdue University - West Lafayette</h5>
                               <h6><em>Bachelor of Arts: Linguistics & Spanish</em></h6>
-                              <h6>08-2011 - 05-2015</h6>
+                              <h6>Aug 2011 - May 2015</h6>
                             </div>
                           </div>
                         </div>
@@ -105,18 +105,18 @@ const ExperienceContent = (props) => {
                         <div className={ props.active === "Skills" ? "show-tab row fadeInTop" : "hide-tab"}>
                           <div className="d-flex row text-center pt-4">
                             <div className="p-3 m-3">
-                              <img className="w-25 p-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" />
-                              <img className="w-25 p-3" src="https://www.djangoproject.com/m/img/logos/django-logo-negative.png" />
-                              <img className="w-25 p-3" src="https://repository-images.githubusercontent.com/410214337/070f2aba-d9d6-4699-b887-9a0f29015b1b" />
+                              <img className="img-style p-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" />
+                              <img className="img-style p-3" src="https://www.djangoproject.com/m/img/logos/django-logo-negative.png" />
+                              <img className="img-style p-3" src="https://repository-images.githubusercontent.com/410214337/070f2aba-d9d6-4699-b887-9a0f29015b1b" />
                             </div>
                             <div className="p-3 m-3">
-                                <img className="w-25 p-3" src="https://cdn-icons-png.flaticon.com/512/888/888859.png"/>
-                                <img className="w-25 p-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"/>
-                                <img className="w-25 p-3" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.png"/>
+                                <img className="img-style p-3" src="https://cdn-icons-png.flaticon.com/512/888/888859.png"/>
+                                <img className="img-style p-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"/>
+                                <img className="img-style p-3" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.png"/>
                             </div>
                        
                             <div className="p-3 m-3">
-                                <img className="w-50 p-3" src="https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png"/>
+                                <img className="img-style p-3" src="https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png"/>
                             </div>
                             
                             <div className="p-3 m-3">

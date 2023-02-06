@@ -18,7 +18,6 @@ nav {
   font-weight: bold;
   font-size: 1.3rem;
   color: rgb(4, 69, 70);
-  
 }
 
 .nav-home {
@@ -32,7 +31,6 @@ nav {
   transition: ease-out 0.3s;
   position: relative;
   z-index: 1;
-  
 }
 
 .nav-item-area:before {
@@ -60,8 +58,21 @@ nav {
 }
 
 .ham-tab {
+  z-index: 1;
+  position:fixed;
+  left:0;
+  right:0;
+  width: 100vw;
   background-color: #0e3529;
   font-size: 1.2em;
+  transition: 1s ease;
+}
+
+.sm-nav-item {
+  cursor: pointer;
+}
+.sm-nav-item:hover {
+  background-color: #061813;
 }
 
 /* --------------------- footer --------------------- */
@@ -88,14 +99,19 @@ i:hover {
 
 .main-title {
   margin-top: 15vh;
+  font-size: 3rem;
+
 }
+
+.description-title {
+  font-size: 2rem;
+}
+
 
 .projects-hp {
   height: 40vh;
   color: white;
   background-image: url("./images/coding_bg.PNG") ;
-  /* filter: blur(4px);
-  -webkit-filter: blur(4px); */
 }
 
 h2.projects-title-hp {
@@ -106,13 +122,19 @@ h2.experience-title-hp, h2.about-me-title-hp {
   text-align: center;
 }
 
-h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:hover {
+h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   color: rgb(67, 189, 128);
 }
 
 .experience-hp {
   height: 40vh;
   background-color: rgb(3, 42, 43);
+  border-radius: 25px;
+  margin-top: 5vh;
+}
+.exp-conatiner-hp {
+  width: 90vw;
+  
 }
 
 .about-me-hp {
@@ -131,22 +153,31 @@ h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:h
 }
 
 .btn-toggle:hover {
-  color: white;
+  color: rgb(99, 241, 163);
 }
 
 .tab-box {
+  flex-direction: column;
   margin-right: 10vw;
   margin-left: 5vw;
   height: 40vh;
 }
 
+.exp-container {
+  flex-direction: row;
+}
+
 .exp-box {
-  width: 10vw !important;
+  max-width: 70vw !important;
+}
+
+.img-style {
+  max-width: 150px;
 }
 
 /* --------------------- AboutMe --------------------- */
 .aboutme-section {
-  margin-top: 10vh !important;
+  margin-top: 3vh !important;
   color: rgb(3, 42, 43);
   padding: 10%;
   border-radius: 1%;
@@ -179,6 +210,10 @@ h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:h
 .container:hover .overlay {
   opacity: 0.9;
 }
+
+/* .rows-container {
+  border-bottom: gray solid 1px;
+} */
 
 .fadeInTop {
   -webkit-animation: fadeInTop 2s both;
@@ -257,6 +292,21 @@ h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:h
 @media (max-width: 1000px) {
   .rows-container {
     flex-direction: column !important;
+    border: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .exp-abtme-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 900px) {
+  .exp-abtme-container {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -291,10 +341,27 @@ h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:h
   .cards {
     width: 100%;
   }
+
+  .exp-container {
+    flex-direction: column;
+  }
+  .tab-box {
+    flex-direction: row;
+    max-height: 15vh;
+  }
+  .btn-exp {
+    max-height: 100px;
+  }
 }
 
-/* turn nav bar in hamburger menu */
+@media (max-width: 755px) {
+  .tab-box {
+    flex-direction: column;
+  }
+}
+
+/* turn nav bar in hamburger menu
 @media (max-width: 590px) {
 
-}
+} */
 

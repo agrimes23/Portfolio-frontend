@@ -30,16 +30,20 @@ const Experience = () => {
     display: flex;
     `;
 
+    useEffect (() => {
+      window.scroll(0,0)
+    })
+
 
     return (
         <>
             <div id="work_exp_section" className="work-ex-page d-flex align-items-center row m-auto p-5 rounded">
                 <h1 className="py-4 mb-5">Work Experience</h1>
-                <div className="d-flex col">
-                    <div className="tab-box d-flex row">
+                <div className="exp-container my-5 d-flex col">
+                    <div className="tab-box d-flex">
                         {tabHeaders.map((tab, key) => (
                             <ButtonToggle 
-                            className="btn rounded-0 flex-fill btn-toggle"
+                            className="btn-exp btn px-5 rounded-0 flex-fill btn-toggle"
                             key={key}
                             active={active === tab}
                             onClick={() => setActive(tab)}
