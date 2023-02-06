@@ -1,4 +1,4 @@
-<h1>A Frontend App Showcasing my Projects and Experience</h1>
+<h1>A Frontend Portfolio App Showcasing my Projects and Experience</h1>
 
 <hr/>
 
