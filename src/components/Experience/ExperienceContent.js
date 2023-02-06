@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const ExperienceContent = (props) => {
 
-    const tabHeaders = ["10-2022 - Current", "10-2019 – 06-2022", "07-2017 – 07-2019"]
+    const tabHeaders = ["Oct 2022 - Jan 2023", "Oct 2019 – Jun 2022", "Jul 2017 – Jul 2019"]
     const [clicked, setClicked] = useState(tabHeaders[0])
     const Button = styled.button`
     /* Same as above */
@@ -45,7 +45,7 @@ const ExperienceContent = (props) => {
                             </div>
                             
                             </div>
-                            <div className={ clicked === "10-2022 - Current" ? "show-tab row fadeInTop" : "hide-tab"}>
+                            <div className={ clicked === "Oct 2022 - Jan 2023" ? "show-tab row fadeInTop" : "hide-tab"}>
                                 <div className="p-3">
                                     <h4>Software Engineer Fellow</h4>
                                     <h5><em>General Assembly</em></h5>
@@ -57,7 +57,7 @@ const ExperienceContent = (props) => {
                                 </div>
                             </div>
                           
-                        <div className={ clicked === "10-2019 – 06-2022" ? "show-tab row fadeInTop" : "hide-tab"}>                              
+                        <div className={ clicked === "Oct 2019 – Jun 2022" ? "show-tab row fadeInTop" : "hide-tab"}>                              
                             <div className="p-3">
                               <h4>Accounting Specialist</h4>
                               <h5><em>UACJ North America, Inc.</em></h5>
@@ -70,7 +70,7 @@ const ExperienceContent = (props) => {
                             </div>
                         </div>
                         
-                        <div className={ clicked === "07-2017 – 07-2019" ? "show-tab row fadeInTop" : "hide-tab"}>
+                        <div className={ clicked === "Jul 2017 – Jul 2019" ? "show-tab row fadeInTop" : "hide-tab"}>
                               
                             <div className="p-3">
                               <h4>Japan Exchange & Teaching Program (JET) Assistant Language Teacher</h4>

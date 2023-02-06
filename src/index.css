@@ -145,13 +145,18 @@ h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:h
 }
 
 .tab-box {
+  flex-direction: column;
   margin-right: 10vw;
   margin-left: 5vw;
   height: 40vh;
 }
 
+.exp-container {
+  flex-direction: row;
+}
+
 .exp-box {
-  width: 10vw !important;
+  max-width: 70vw !important;
 }
 
 /* --------------------- AboutMe --------------------- */
@@ -300,6 +305,23 @@ h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:h
   }
   .cards {
     width: 100%;
+  }
+
+  .exp-container {
+    flex-direction: column;
+  }
+  .tab-box {
+    flex-direction: row;
+    max-height: 15vh;
+  }
+  .btn-exp {
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 755px) {
+  .tab-box {
+    flex-direction: column;
   }
 }
 
