@@ -59,6 +59,11 @@ nav {
   color: white;
 }
 
+.ham-tab {
+  background-color: #0e3529;
+  font-size: 1.2em;
+}
+
 /* --------------------- footer --------------------- */
 .footer {
   background-color: rgb(4, 69, 70);
@@ -248,9 +253,34 @@ h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:h
   }
 }
 
+
 @media (max-width: 1000px) {
   .rows-container {
     flex-direction: column !important;
+  }
+}
+
+@media (min-width: 700px){
+  .sm-screen-nav {
+    display: none;
+  }
+  
+  .ham-tab {
+    display: none !important;
+  }
+
+  .lg-screen-nav {
+    display: flex;
+  }
+}
+
+@media (max-width: 700px) {
+  .sm-screen-nav {
+    display: flex;
+  }
+
+  .lg-screen-nav {
+    display: none;
   }
 }
 
