@@ -53,7 +53,7 @@ const Navbar = () => {
             </div>
         </nav>
             <div className={showTab}>
-                <div className="ham-tab NavTop row p-5 text-center w-100">
+                <div className="ham-tab NavTop row py-5 text-center">
                     <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectAB}>About Me</a>
                     <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectP}>Projects</a>
                     <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectE}>Experience</a>

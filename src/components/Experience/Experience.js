@@ -30,6 +30,10 @@ const Experience = () => {
     display: flex;
     `;
 
+    useEffect (() => {
+      window.scroll(0,0)
+    })
+
 
     return (
         <>

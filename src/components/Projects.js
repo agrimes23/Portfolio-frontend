@@ -6,9 +6,9 @@ import WeatherApp from '../images/WeatherApp.PNG'
 
 const Projects = () => {
 
-    // TODO: make an overlay for website title and short about me over the img. It can act as a table of contents
-    // TODO: make the cards appear in bigger rows..?
-
+    useEffect (() => {
+        window.scroll(0,0)
+    })
 
     return (
         <>
@@ -21,6 +21,7 @@ const Projects = () => {
                         <div className="rows-container my-5 py-5 d-flex justify-content-center">
                             
                             <div className="cards container project-card p-3">
+                                <a href="https://github.com/agrimes23/travel-plan-frontend">
                                 <div className="d-flex justify-content-center p-3">
                                     <img className="card-img-top" src={travelPlanImg} alt="card project img"/>
                                 </div>
@@ -28,12 +29,14 @@ const Projects = () => {
                                     <div className="text">
                                         <h5 className="card-title ">Travel Plans Web App</h5>
                                         <p className="card-text "></p>
-                                        <a href="https://github.com/agrimes23/travel-plan-frontend">Github Repo</a>
+                                        <a className="text-decoration-none text-white" href="https://github.com/agrimes23/travel-plan-frontend">See Github Repo</a>
                                     </div>
                                 </div>
+                                </a>
                             </div>
 
                             <div className="cards container project-card p-3">
+                            <a href="https://github.com/agrimes23/GAFrontend">
                                 <div className="d-flex justify-content-center p-3">
                                     <img className="card-img-top" src={StyleFinderImg} alt="card project img"/>
                                 </div>
@@ -41,12 +44,14 @@ const Projects = () => {
                                     <div className="text">
                                         <h5 className="card-title">Weather Notes Web App</h5>
                                         <p className="card-text"></p>
-                                        <a href="#">Github Repo</a>
+                                        <a className="text-decoration-none text-white" href="https://github.com/agrimes23/GAFrontend">See Github Repo</a>
                                     </div>
                                 </div>
+                                </a>
                             </div>
 
                             <div className="cards container project-card p-3">
+                                <a href="https://github.com/agrimes23/weather_frontend">
                                 <div className="d-flex justify-content-center p-3">
                                     <img className="card-img-top" src={WeatherApp} alt="card project img"/>
                                 </div>
@@ -54,10 +59,12 @@ const Projects = () => {
                                     <div className="text">
                                         <h5 className="card-title">Shopping Web App</h5>
                                         <p className="card-text"></p>
-                                        <a href="https://github.com/agrimes23/GAFrontend">Github Repo</a>
+                                        <a className="text-decoration-none text-white" href="https://github.com/agrimes23/weather_frontend">See Github Repo</a>
                                     </div>
                                 </div>
+                                </a>
                             </div>
+                            
                         </div>
 
                         </div>

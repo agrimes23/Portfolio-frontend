@@ -91,13 +91,13 @@ const ExperienceContent = (props) => {
                             <div className="p-3">
                               <h5>General Assembly</h5>
                               <h6><em>Software Engineering Immersive</em></h6>
-                              <h6>10-2022 - 01-2023</h6>
+                              <h6>Oct 2022 - Jan 2023</h6>
                             </div>
                             <hr/>
                             <div className="p-3">
                               <h5>Purdue University - West Lafayette</h5>
                               <h6><em>Bachelor of Arts: Linguistics & Spanish</em></h6>
-                              <h6>08-2011 - 05-2015</h6>
+                              <h6>Aug 2011 - May 2015</h6>
                             </div>
                           </div>
                         </div>
