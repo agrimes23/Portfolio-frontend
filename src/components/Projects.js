@@ -12,11 +12,12 @@ const Projects = () => {
 
     return (
         <>
-            <div id="projects_section" className="project-page fadeInTop mb-5 pb-4 d-flex row m-auto">
+            <div className="project-page m-auto">
+            <div className="project-content fadeInTop m-5 pb-4 d-flex justify-content-center row m-auto">
                     <div>
                         <h1 className="mt-5">Projects</h1>
                     </div>
-                    <div className="card-container row d-flex justify-content-center mx-auto">
+                    <div className="card-container row d-flex justify-content-center m-auto">
                         <div className="rows-container my-5 py-5 d-flex justify-content-center">
                             
                             <div className="cards container project-card p-3">
@@ -75,7 +76,7 @@ const Projects = () => {
                             <h3>See my github: <a href="https://github.com/agrimes23">agrimes23</a></h3>
                         </div>
                     </div>
-                
+                </div>
         </>
     )
 

@@ -9,9 +9,10 @@ const AboutMe = () => {
 
     return (
         <>
-            <div className="aboutme-page d-flex align-items-center row m-auto w-75">
+            <div className="aboutme-page">
+                <div className="d-flex align-items-center row m-auto w-75">
                     <div className="aboutme-section d-flex row fadeInTop rounded">
-                        <div>
+                        <div className="my-5">
                             <h1 className="">About Me</h1>
                         </div>
                         <div>
@@ -25,6 +26,7 @@ const AboutMe = () => {
                         </div>
                     </div>
                 </div>
+            </div>
         </>
     )
 

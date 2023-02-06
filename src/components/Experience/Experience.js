@@ -37,9 +37,10 @@ const Experience = () => {
 
     return (
         <>
-            <div id="work_exp_section" className="work-ex-page d-flex align-items-center row mx-auto px-5 rounded">
-                <h1 className="my-auto">Work Experience</h1>
-                <div className="exp-container mb-5 d-flex col">
+            <div className="work-ex-page">
+              <div className="mt-5 row mx-auto px-5">
+                <h1 className="my-5">Work Experience</h1>
+                <div className="exp-container d-flex col">
                     <div className="tab-box d-flex">
                         {tabHeaders.map((tab, key) => (
                             <ButtonToggle 
@@ -57,8 +58,9 @@ const Experience = () => {
                     <div className="d-flex col exp-box">
                         <ExperienceContent active={active}/>
                     </div>
-                  </div>
-                  </div>
+                </div>
+              </div>
+            </div>
         </>
     )
 
