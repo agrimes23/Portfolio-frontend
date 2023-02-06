@@ -159,9 +159,13 @@ h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:h
   max-width: 70vw !important;
 }
 
+.img-style {
+  max-width: 150px;
+}
+
 /* --------------------- AboutMe --------------------- */
 .aboutme-section {
-  margin-top: 10vh !important;
+  margin-top: 3vh !important;
   color: rgb(3, 42, 43);
   padding: 10%;
   border-radius: 1%;
@@ -194,6 +198,10 @@ h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:h
 .container:hover .overlay {
   opacity: 0.9;
 }
+
+/* .rows-container {
+  border-bottom: gray solid 1px;
+} */
 
 .fadeInTop {
   -webkit-animation: fadeInTop 2s both;
@@ -272,6 +280,7 @@ h2.projects-title-hp:hover, h2.experience-title-hp:hover, h2.about-me-title-hp:h
 @media (max-width: 1000px) {
   .rows-container {
     flex-direction: column !important;
+    border: 0;
   }
 }
 

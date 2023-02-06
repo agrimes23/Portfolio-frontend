@@ -105,18 +105,18 @@ const ExperienceContent = (props) => {
                         <div className={ props.active === "Skills" ? "show-tab row fadeInTop" : "hide-tab"}>
                           <div className="d-flex row text-center pt-4">
                             <div className="p-3 m-3">
-                              <img className="w-25 p-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" />
-                              <img className="w-25 p-3" src="https://www.djangoproject.com/m/img/logos/django-logo-negative.png" />
-                              <img className="w-25 p-3" src="https://repository-images.githubusercontent.com/410214337/070f2aba-d9d6-4699-b887-9a0f29015b1b" />
+                              <img className="img-style p-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" />
+                              <img className="img-style p-3" src="https://www.djangoproject.com/m/img/logos/django-logo-negative.png" />
+                              <img className="img-style p-3" src="https://repository-images.githubusercontent.com/410214337/070f2aba-d9d6-4699-b887-9a0f29015b1b" />
                             </div>
                             <div className="p-3 m-3">
-                                <img className="w-25 p-3" src="https://cdn-icons-png.flaticon.com/512/888/888859.png"/>
-                                <img className="w-25 p-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"/>
-                                <img className="w-25 p-3" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.png"/>
+                                <img className="img-style p-3" src="https://cdn-icons-png.flaticon.com/512/888/888859.png"/>
+                                <img className="img-style p-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"/>
+                                <img className="img-style p-3" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.png"/>
                             </div>
                        
                             <div className="p-3 m-3">
-                                <img className="w-50 p-3" src="https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png"/>
+                                <img className="img-style p-3" src="https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png"/>
                             </div>
                             
                             <div className="p-3 m-3">
