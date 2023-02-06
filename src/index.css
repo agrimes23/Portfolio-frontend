@@ -82,8 +82,9 @@ nav {
   bottom: 0;
 }
 
-i {
+.footer-text {
   font-size: 1.8em;
+  color: white;
 }
 
 i:hover {
