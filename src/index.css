@@ -94,24 +94,27 @@ i:hover {
 .main-intro {
   width: 80%;
   /* background-image: url("./images/Nature-bg3.jpg"); */
-  height: 30vh;
+  height: 40vh;
 }
 
 .main-title {
   margin-top: 15vh;
-  font-size: 3rem;
-
+  font-size: 5.5rem;
+  font-family: 'Black Han Sans', sans-serif;
+  color: rgb(2, 38, 39);
 }
 
 .description-title {
-  font-size: 2rem;
+  font-size: 3.5rem;
+  font-family: 'News Cycle', sans-serif;
+  color: rgb(2, 38, 39);
 }
 
 
 .projects-hp {
   height: 40vh;
   color: white;
-  background-image: url("./images/coding_bg.PNG") ;
+  background-image: url("./images/coding_bg.PNG");
 }
 
 h2.projects-title-hp {
@@ -357,6 +360,9 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 @media (max-width: 755px) {
   .tab-box {
     flex-direction: column;
+  }
+  .main-intro {
+    height: 60vh;
   }
 }
 
