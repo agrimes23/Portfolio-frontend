@@ -9,13 +9,13 @@ const AboutMe = () => {
 
     return (
         <>
-            <div id="aboutme_section" className="aboutme-page d-flex align-items-center row m-auto w-75">
-                    <div id="about-me" className="aboutme-section fadeInTop rounded">
+            <div className="aboutme-page d-flex align-items-center row m-auto w-75">
+                    <div className="aboutme-section d-flex row fadeInTop rounded">
                         <div>
-                            <h2 className="mb-4">About Me</h2>
+                            <h1 className="">About Me</h1>
                         </div>
                         <div>
-                            <h5 className="mt-4">Full-Stack Developer trained in a 400+ hour Software Engineering course through General Assembly. I am very familiar with React, Node.js, Python (Django), including many more frameworks and languages. </h5>
+                            <h5 className="">Full-Stack Developer trained in a 400+ hour Software Engineering course through General Assembly. I am very familiar with React, Node.js, Python (Django), including many more frameworks and languages. </h5>
                             <br/>
                             <h5>My previous job as an accountant was more than accounting work. One of my projects was setting up an online expense system and training employees, as well as creating a MS Work Automate program that would send employee's submitted pre-trip business applications to their specific approvers. I took the time to review all the questions on the paper-based form and narrowed it down to 10 questions on MS Forms. The outcome was very successful; it reduced the amount of time employees spent on sending pre-trip business applications, quicker time submitting to their approvers, and of course all online.</h5>
                             <br/>

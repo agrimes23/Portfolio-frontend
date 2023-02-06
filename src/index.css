@@ -183,12 +183,14 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 }
 
 /* --------------------- AboutMe --------------------- */
+
+.aboutme-page {
+  height: 100vh;
+}
+
 .aboutme-section {
-  margin-top: 3vh !important;
   color: rgb(3, 42, 43);
   padding: 10%;
-  border-radius: 1%;
-  height: 100vh;
 }
 
 
@@ -197,6 +199,7 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 
 .project-page {
   width: 90%;
+  height: 100vh;
 }
 
 .cards {

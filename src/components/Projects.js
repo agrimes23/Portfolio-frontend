@@ -14,10 +14,9 @@ const Projects = () => {
         <>
             <div id="projects_section" className="project-page fadeInTop mb-5 pb-4 d-flex row m-auto">
                     <div>
-                        <h2 className="mt-5">Projects</h2>
-                        <p>(hover to see more)</p>
+                        <h1 className="mt-5">Projects</h1>
                     </div>
-                    <div className="card-container row d-flex justify-content-center m-auto py-5">
+                    <div className="card-container row d-flex justify-content-center mx-auto">
                         <div className="rows-container my-5 py-5 d-flex justify-content-center">
                             
                             <div className="cards container project-card p-3">
