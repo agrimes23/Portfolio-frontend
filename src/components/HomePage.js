@@ -12,8 +12,8 @@ const HomePage = () => {
     return (
         <>
             <div className="style-border">
-                <div id="intro_section" className="main-intro text-center m-auto">
-                        <h1 className="main-title">Alex Grimes</h1>
+                <div id="intro_section" className="main-intro row text-center mx-auto d-flex justify-content-center align-items-center">
+                        <h1 className="main-title row justify-content-center">Alex Grimes</h1>
                         <h2 className="description-title">Full-Stack Developer | Web Developer</h2>
                 </div>
             </div>

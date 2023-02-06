@@ -95,11 +95,10 @@ i:hover {
 .main-intro {
   width: 80%;
   /* background-image: url("./images/Nature-bg3.jpg"); */
-  height: 40vh;
+  margin: 150px 0;
 }
 
 .main-title {
-  margin-top: 15vh;
   font-size: 5.5rem;
   font-family: 'Black Han Sans', sans-serif;
   color: rgb(2, 38, 39);
@@ -148,6 +147,10 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 
 /* --------------------- Experience --------------------- */
 
+.work-ex-page {
+  height: 100vh;
+}
+
 .show-tab {
   display: flex;
 }
@@ -185,6 +188,7 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   color: rgb(3, 42, 43);
   padding: 10%;
   border-radius: 1%;
+  height: 100vh;
 }
 
 
@@ -361,9 +365,6 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 @media (max-width: 755px) {
   .tab-box {
     flex-direction: column;
-  }
-  .main-intro {
-    height: 60vh;
   }
 }
 
