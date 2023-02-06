@@ -35,7 +35,7 @@ const Experience = () => {
         <>
             <div id="work_exp_section" className="work-ex-page d-flex align-items-center row m-auto p-5 rounded">
                 <h1 className="py-4 mb-5">Work Experience</h1>
-                <div className="d-flex col">
+                <div className="my-5 d-flex col">
                     <div className="tab-box d-flex row">
                         {tabHeaders.map((tab, key) => (
                             <ButtonToggle 

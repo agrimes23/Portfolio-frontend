@@ -60,8 +60,18 @@ nav {
 }
 
 .ham-tab {
+  z-index: 1;
+  position: fixed;
   background-color: #0e3529;
   font-size: 1.2em;
+  transition: 1s ease;
+}
+
+.sm-nav-item {
+  cursor: pointer;
+}
+.sm-nav-item:hover {
+  background-color: #061813;
 }
 
 /* --------------------- footer --------------------- */

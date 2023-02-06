@@ -1,9 +1,10 @@
 import {useState, useEffect} from 'react'
-import { Routes, Link, Route, useLocation } from 'react-router-dom'
+import { Routes, Link, Route, useLocation, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
 
     const [showTab, setShowTab] = useState("d-none")
+    const navigate = useNavigate();
 
     const setDisplayTab = () => {
         if (showTab === "d-none") { 
@@ -12,6 +13,24 @@ const Navbar = () => {
             setShowTab("d-none")
         }
     }
+
+    const redirectAB = () => {
+        setShowTab("d-none")
+        navigate("/aboutme")
+    }
+
+    const redirectP = () => {
+        setShowTab("d-none")
+        navigate("/projects")
+    }
+    const redirectE = () => {
+        setShowTab("d-none")
+        navigate("/experience")
+    }
+
+    useEffect (() => { 
+
+    })
 
 
   return (
@@ -29,15 +48,15 @@ const Navbar = () => {
             </div>
             <div className="sm-screen-nav">
                 <a onClick={setDisplayTab}>
-                    <i class="fa-solid fa-bars"/>
+                    <i className="fa-solid fa-bars"/>
                 </a>
             </div>
         </nav>
             <div className={showTab}>
                 <div className="ham-tab NavTop row p-5 text-center w-100">
-                    <Link className="text-decoration-none text-white p-4" to='/aboutme'>About Me</Link>
-                    <Link className="text-decoration-none text-white  p-4" to='/projects'>Projects</Link>
-                    <Link className="text-decoration-none text-white p-4" to='/experience'>Experience</Link>
+                    <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectAB}>About Me</a>
+                    <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectP}>Projects</a>
+                    <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectE}>Experience</a>
                 </div>
             </div>
 
