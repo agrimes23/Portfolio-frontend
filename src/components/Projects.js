@@ -21,9 +21,10 @@ const Projects = () => {
                         <div className="rows-container my-5 py-5 d-flex justify-content-center">
                             
                             <div className="cards container project-card p-3">
-                                <a href="https://github.com/agrimes23/travel-plan-frontend">
-                                <div className="d-flex justify-content-center p-3">
+                                <a className="text-decoration-none" href="https://github.com/agrimes23/travel-plan-frontend">
+                                <div className="d-flex row justify-content-center p-3">
                                     <img className="card-img-top" src={travelPlanImg} alt="card project img"/>
+                                    <h5 className="py-3 text-center text-black">Travel Plans Web App</h5>
                                 </div>
                                 <div className="card-body overlay">
                                     <div className="text">
@@ -36,13 +37,14 @@ const Projects = () => {
                             </div>
 
                             <div className="cards container project-card p-3">
-                            <a href="https://github.com/agrimes23/GAFrontend">
-                                <div className="d-flex justify-content-center p-3">
+                            <a className="text-decoration-none" href="https://github.com/agrimes23/GAFrontend">
+                                <div className="d-flex row justify-content-center p-3">
                                     <img className="card-img-top" src={StyleFinderImg} alt="card project img"/>
+                                    <h5 className="py-3 text-center text-black">Shopping Web App</h5>
                                 </div>
                                 <div className="card-body overlay">
                                     <div className="text">
-                                        <h5 className="card-title">Weather Notes Web App</h5>
+                                        <h5 className="card-title">Shopping Web App</h5>
                                         <p className="card-text"></p>
                                         <a className="text-decoration-none text-white" href="https://github.com/agrimes23/GAFrontend">See Github Repo</a>
                                     </div>
@@ -51,13 +53,14 @@ const Projects = () => {
                             </div>
 
                             <div className="cards container project-card p-3">
-                                <a href="https://github.com/agrimes23/weather_frontend">
-                                <div className="d-flex justify-content-center p-3">
+                                <a className="text-decoration-none" href="https://github.com/agrimes23/weather_frontend">
+                                <div className="d-flex row justify-content-center p-3">
                                     <img className="card-img-top" src={WeatherApp} alt="card project img"/>
+                                    <h5 className="py-3 text-center text-black">Weather Notes Web App</h5>
                                 </div>
                                 <div className="card-body overlay">
                                     <div className="text">
-                                        <h5 className="card-title">Shopping Web App</h5>
+                                        <h5 className="card-title">Weather Notes Web App</h5>
                                         <p className="card-text"></p>
                                         <a className="text-decoration-none text-white" href="https://github.com/agrimes23/weather_frontend">See Github Repo</a>
                                     </div>
