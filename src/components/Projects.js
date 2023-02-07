@@ -30,7 +30,8 @@ const Projects = () => {
                                     <div className="text">
                                         <h5 className="card-title ">Travel Plans Web App</h5>
                                         <p className="card-text "></p>
-                                        <a className="text-decoration-none text-white" href="https://github.com/agrimes23/travel-plan-frontend">See Github Repo</a>
+                                        <a className="row text-center d-flex justify-content-center text-decoration-none text-white" href="https://travel-planning.herokuapp.com/">Live Site</a>
+                                        <a className="row text-center d-flex justify-content-center text-decoration-none text-white" href="https://github.com/agrimes23/travel-plan-frontend">See Github Repo</a>
                                     </div>
                                 </div>
                                 </a>
@@ -46,7 +47,8 @@ const Projects = () => {
                                     <div className="text">
                                         <h5 className="card-title">Shopping Web App</h5>
                                         <p className="card-text"></p>
-                                        <a className="text-decoration-none text-white" href="https://github.com/agrimes23/GAFrontend">See Github Repo</a>
+                                        <a className="row text-center d-flex justify-content-center text-decoration-none text-white" href="https://arcane-refuge-91163.herokuapp.com/">Live Site</a>
+                                        <a className="row text-center d-flex justify-content-center text-decoration-none text-white" href="https://github.com/agrimes23/GAFrontend">See Github Repo</a>
                                     </div>
                                 </div>
                                 </a>
@@ -62,7 +64,8 @@ const Projects = () => {
                                     <div className="text">
                                         <h5 className="card-title">Weather Notes Web App</h5>
                                         <p className="card-text"></p>
-                                        <a className="text-decoration-none text-white" href="https://github.com/agrimes23/weather_frontend">See Github Repo</a>
+                                        <a className="row text-center d-flex justify-content-center text-decoration-none text-white" href="https://evening-reef-65787.herokuapp.com/">Live Site</a>
+                                        <a className="row text-center d-flex justify-content-center text-decoration-none text-white" href="https://github.com/agrimes23/weather_frontend">See Github Repo</a>
                                     </div>
                                 </div>
                                 </a>
