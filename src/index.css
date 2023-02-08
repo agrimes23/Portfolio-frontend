@@ -1,6 +1,11 @@
-body, html {
+html {
   background-color:ivory;
   height: 100%;
+}
+
+body {
+  background-color:ivory;
+  min-height: 100%;
 }
 
 /* #root {
@@ -80,6 +85,23 @@ nav {
   background-color: rgb(4, 69, 70);
   position: relative;
   bottom: 0;
+
+}
+
+.footer-ab-me {
+  background-color: rgb(4, 69, 70);
+  position: relative;
+  bottom: -900px;
+}
+.footer-projects {
+  background-color: rgb(4, 69, 70);
+  position: relative;
+  bottom: -500px;
+}
+.footer-exp {
+  background-color: rgb(4, 69, 70);
+  position: relative;
+  bottom: -800px;
 }
 
 .footer-text {

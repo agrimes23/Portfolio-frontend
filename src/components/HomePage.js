@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import { Routes, Link, Route, useLocation } from 'react-router-dom'
+import Footer from './Footer.js'
 
 
 const HomePage = () => {
@@ -38,7 +39,7 @@ const HomePage = () => {
                     </Link>
                 </div>
             </div>
-
+            <Footer/>
         </>
     )
 
