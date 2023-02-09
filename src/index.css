@@ -85,23 +85,6 @@ nav {
   background-color: rgb(4, 69, 70);
   position: relative;
   bottom: 0;
-
-}
-
-.footer-ab-me {
-  background-color: rgb(4, 69, 70);
-  position: relative;
-  bottom: -900px;
-}
-.footer-projects {
-  background-color: rgb(4, 69, 70);
-  position: relative;
-  bottom: -500px;
-}
-.footer-exp {
-  background-color: rgb(4, 69, 70);
-  position: relative;
-  bottom: -800px;
 }
 
 .footer-text {
@@ -203,6 +186,10 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 
 .img-style {
   max-width: 150px;
+}
+
+.textLayer {
+  display: none;
 }
 
 /* --------------------- AboutMe --------------------- */
@@ -402,3 +389,20 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 
 } */
 
+@media screen and (max-width: 500px) {
+  .footer-ab-me {
+    background-color: rgb(4, 69, 70);
+    position: relative;
+    bottom: -900px;
+  }
+  .footer-projects {
+    background-color: rgb(4, 69, 70);
+    position: relative;
+    bottom: -500px;
+  }
+  .footer-exp {
+    background-color: rgb(4, 69, 70);
+    position: relative;
+    bottom: -1100px;
+  }
+}
