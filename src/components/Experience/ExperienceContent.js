@@ -27,63 +27,63 @@ const ExperienceContent = (props) => {
 
     return (
         <>
-                        <div className="py-2 col">
-                        <div className={ props.active === "Experience" ? "show-tab row fadeInTop" : "hide-tab"}>
-                          <div className="d-flex row pb-5">
-                            <div className="tab-row d-flex col">
-                                {tabHeaders.map((tab, key) => (
-                                    <ButtonToggle 
-                                    className="btn rounded-0 flex-fill"
-                                    key={key}
-                                    active={clicked === tab}
-                                    onClick={() => setClicked(tab)}
-                                    ><h5><strong>
-                                    {/* will need to make onClick an actual function with an if statement */}
-                                    {tab}</strong></h5>
-                                    </ButtonToggle>
-                                ))}
-                            </div>
-                            
-                            </div>
-                            <div className={ clicked === "Oct 2022 - Jan 2023" ? "show-tab row fadeInTop" : "hide-tab"}>
-                                <div className="p-3">
-                                    <h4>Software Engineer Fellow</h4>
-                                    <h5><em>General Assembly</em></h5>
-                                    <h6><em>Remote</em></h6>
-                                    <ul>
-                                        <li>Attended a 12-week, 400+ hour training program focused on Git/GitHub, HTML, CSS, JavaScript, Node, MongoDB, SQL, Python, Java, jQuery, etc.</li>
-                                        <li>Included learning best practices for using Third-Party APIs, as well as incorporating REST APIs and MVC frameworks.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                          
-                        <div className={ clicked === "Oct 2019 – Jun 2022" ? "show-tab row fadeInTop" : "hide-tab"}>                              
-                            <div className="p-3">
-                              <h4>Accounting Specialist</h4>
-                              <h5><em>UACJ North America, Inc.</em></h5>
-                              <h6><em>Hybrid-Remote, Chicago, IL</em></h6>
-                              <ul>
-                                <li>Communicated with Japanese banks to set up new loans and disburse funds to group companies across North America. Daily accounting tasks such as entering bills, invoices, and initiating payments.</li>
-                                <li>Created a business trip request system through MS Work Automate, where the form submitted by employees would be submitted for approval to their specific approver.</li>
-                                <li>Set up an online paperless expense reporting software for employees and trained them on how to use it.</li>
-                              </ul>
-                            </div>
-                        </div>
-                        
-                        <div className={ clicked === "Jul 2017 – Jul 2019" ? "show-tab row fadeInTop" : "hide-tab"}>
+                        <div className="py-2 col exp-content">
+                          <div className={ props.active === "Experience" ? "show-tab row fadeInTop" : "hide-tab"}>
+                            <div className="d-flex row pb-5">
+                              <div className="tab-row d-flex col">
+                                  {tabHeaders.map((tab, key) => (
+                                      <ButtonToggle 
+                                      className="btn rounded-0 flex-fill"
+                                      key={key}
+                                      active={clicked === tab}
+                                      onClick={() => setClicked(tab)}
+                                      ><h5><strong>
+                                      {/* will need to make onClick an actual function with an if statement */}
+                                      {tab}</strong></h5>
+                                      </ButtonToggle>
+                                  ))}
+                              </div>
                               
-                            <div className="p-3">
-                              <h4>Japan Exchange & Teaching Program (JET) Assistant Language Teacher</h4>
-                              <h5><em>Fukui Prefectural Board of Education, Japan</em></h5>
-                              <ul>
-                                <li>Improved English proficiency of junior high school students by providing instruction as a native speaker and developed activities for language lessons.</li>
-                                <li>Overcame language and cultural barriers to quickly become an effective and productive member of the teaching staff.</li>
-                                <li>Exhibited flexibility and adaptability when coordinating plans with other English teachers.</li>
-                              </ul>
-                            </div>
-                        </div>
+                              </div>
+                              <div className={ clicked === "Oct 2022 - Jan 2023" ? "show-tab row fadeInTop" : "hide-tab"}>
+                                  <div className="p-3">
+                                      <h4>Software Engineer Fellow</h4>
+                                      <h5><em>General Assembly</em></h5>
+                                      <h6><em>Remote</em></h6>
+                                      <ul>
+                                          <li>Attended a 12-week, 400+ hour training program focused on Git/GitHub, HTML, CSS, JavaScript, Node, MongoDB, SQL, Python, Java, jQuery, etc.</li>
+                                          <li>Included learning best practices for using Third-Party APIs, as well as incorporating REST APIs and MVC frameworks.</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                            
+                          <div className={ clicked === "Oct 2019 – Jun 2022" ? "show-tab row fadeInTop" : "hide-tab"}>                              
+                              <div className="p-3">
+                                <h4>Accounting Specialist</h4>
+                                <h5><em>UACJ North America, Inc.</em></h5>
+                                <h6><em>Hybrid-Remote, Chicago, IL</em></h6>
+                                <ul>
+                                  <li>Communicated with Japanese banks to set up new loans and disburse funds to group companies across North America. Daily accounting tasks such as entering bills, invoices, and initiating payments.</li>
+                                  <li>Created a business trip request system through MS Work Automate, where the form submitted by employees would be submitted for approval to their specific approver.</li>
+                                  <li>Set up an online paperless expense reporting software for employees and trained them on how to use it.</li>
+                                </ul>
+                              </div>
+                          </div>
+                          
+                          <div className={ clicked === "Jul 2017 – Jul 2019" ? "show-tab row fadeInTop" : "hide-tab"}>
+                                
+                              <div className="p-3">
+                                <h4>Japan Exchange & Teaching Program (JET) Assistant Language Teacher</h4>
+                                <h5><em>Fukui Prefectural Board of Education, Japan</em></h5>
+                                <ul>
+                                  <li>Improved English proficiency of junior high school students by providing instruction as a native speaker and developed activities for language lessons.</li>
+                                  <li>Overcame language and cultural barriers to quickly become an effective and productive member of the teaching staff.</li>
+                                  <li>Exhibited flexibility and adaptability when coordinating plans with other English teachers.</li>
+                                </ul>
+                              </div>
+                          </div>
 
-                    </div>
+                      </div>
 
 
                         <div className={ props.active === "School" ? "show-tab row fadeInTop" : "hide-tab"}>

@@ -1,6 +1,6 @@
 html {
   background-color:ivory;
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -168,6 +168,16 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   color: rgb(99, 241, 163);
 }
 
+.btn-dwnld {
+  background-color: #0e3529;
+  color: white;
+}
+
+.btn-dwnld:hover {
+  background-color:rgb(43, 139, 103);
+  box-shadow: 0 12px 16px 0px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .tab-box {
   flex-direction: column;
   margin-right: 10vw;
@@ -188,8 +198,17 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   max-width: 150px;
 }
 
+/* .resume-div {
+  height: 50%;
+} */
+
 .textLayer {
   display: none;
+}
+
+.annotationLayer {
+  width: 0px !important;
+  height: 0px !important;
 }
 
 /* --------------------- AboutMe --------------------- */
@@ -208,7 +227,7 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 /* --------------------- Projects --------------------- */
 
 .project-page {
-  height: 100vh;
+  height: 80vh;
 }
 
 .project-content {
@@ -398,11 +417,15 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   .footer-projects {
     background-color: rgb(4, 69, 70);
     position: relative;
-    bottom: -500px;
+    bottom: -600px;
   }
   .footer-exp {
     background-color: rgb(4, 69, 70);
     position: relative;
-    bottom: -1100px;
+    bottom: -100px;
+  }
+  .react-pdf__Page__canvas {
+      width: 95vw !important;
+      height: 65vh !important;
   }
 }

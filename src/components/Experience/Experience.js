@@ -43,7 +43,7 @@ const Experience = () => {
               <div className="mt-5 row mx-auto px-5">
                 <h1 className="my-5">Work Experience</h1>
                 <div className="exp-container d-flex col">
-                    <div className="tab-box d-flex">
+                    <div className="tab-box d-flex mb-5">
                         {tabHeaders.map((tab, key) => (
                             <ButtonToggle 
                             className="btn-exp btn px-5 rounded-0 flex-fill btn-toggle"
@@ -62,15 +62,16 @@ const Experience = () => {
                     </div>
                 </div>
               </div>
-              <div className="d-flex align-items-center justify-content-center">
+              <div className="m-5 resume-div d-flex row align-items-center justify-content-center">
                 <Resume />
               </div>
-            </div>
-            <footer className="footer footer-exp p-5 mb-5 text-center">
+              <footer className="footer footer-exp p-5 mb-5 text-center">
                   <a className="py-5" href="https://github.com/agrimes23"><i className="footer-text fa-brands fa-github text-white px-5" title="Github"></i></a>
                   <a className="py-5" href="https://www.linkedin.com/in/alex-grimes-dev/"><i className="footer-text fa-brands fa-linkedin text-white px-5" title="LinkedIn"></i></a>
                   <a className="py-5" href="mailto: alexgrimes23@gmail.com"><i className="footer-text fa-regular fa-envelope text-white px-5" title="Email"></i></a>
             </footer>
+            </div>
+
         </>
     )
 
