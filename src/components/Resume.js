@@ -9,17 +9,17 @@ const Resume = () => {
 
     return (
       <>
-        <div className="d-flex row">
-          <div className="d-flex justify-content-center my-5"> 
+        {/* <div className="d-flex row">
+          <div className="d-flex justify-content-center my-5">  */}
             {/* Need to change to downloadable PDF. Need to figure out how to get the file on Heroku */}
-            <a className ="btn btn-dwnld" href={resumePDF} download={resumePDF}>Download PDF</a>      
+            {/* <a className ="btn btn-dwnld" href={resumePDF} download={resumePDF}>Download PDF</a>      
           </div>
           <div className="d-flex justify-content-center">
             <Document file={resumePDF}>
                 <Page pageNumber={1} />
             </Document>
           </div>
-        </div>
+        </div> */}
       </>
     )
   }
