@@ -10,9 +10,9 @@ const Resume = () => {
     return (
       <>
         <div className="d-flex row">
-          <div className="d-flex justify-content-center my-5">
+          <div className="d-flex justify-content-center my-5"> 
             {/* Need to change to downloadable PDF. Need to figure out how to get the file on Heroku */}
-            <a className ="btn btn-dwnld" href={"https://docs.google.com/document/d/1h752NdS5tEtRAi8J9yT1GeqaZDY4YQPa/edit?usp=sharing&ouid=109090623790882255992&rtpof=true&sd=true"}>Redirct to Google Docs to Download PDF</a>      
+            <a className ="btn btn-dwnld" href={resumePDF} download={resumePDF}>Download PDF</a>      
           </div>
           <div className="d-flex justify-content-center">
             <Document file={resumePDF}>
