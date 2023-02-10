@@ -63,7 +63,7 @@ const Experience = () => {
                 </div>
               </div>
               <div className="m-5 resume-div d-flex row align-items-center justify-content-center">
-                <Resume />
+                {/* <Resume /> */}
               </div>
               <footer className="footer footer-exp p-5 mb-5 text-center">
                   <a className="py-5" href="https://github.com/agrimes23"><i className="footer-text fa-brands fa-github text-white px-5" title="Github"></i></a>
