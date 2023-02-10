@@ -9,7 +9,7 @@ const Resume = () => {
 
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch(resumePDF).then(response => {
+    fetch('https://cors-anywhere/herokuapp.com/' + resumePDF).then(response => {
         response.blob().then(blob => {
             // Creating new object of PDF file
             const fileURL = window.URL.createObjectURL(blob);
