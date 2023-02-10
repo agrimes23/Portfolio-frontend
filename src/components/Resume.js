@@ -7,25 +7,26 @@ import resumePDF from '../images/alex_grimes_pdf.pdf'
 
 const Resume = () => {
 
-  const onButtonClick = () => {
-    // using Java Script method to get PDF file
-    fetch('https://cors-anywhere/herokuapp.com/' + resumePDF).then(response => {
-        response.blob().then(blob => {
-            // Creating new object of PDF file
-            const fileURL = window.URL.createObjectURL(blob);
-            // Setting various property values
-            let alink = document.createElement('a');
-            alink.href = fileURL;
-            alink.download = resumePDF;
-            alink.click();
-        })
-    })
-}
+//   const onButtonClick = () => {
+//     // using Java Script method to get PDF file
+//     fetch(resumePDF).then(response => {
+//         response.blob().then(blob => {
+//             // Creating new object of PDF file
+//             const fileURL = window.URL.createObjectURL(blob);
+//             // Setting various property values
+//             let alink = document.createElement('a');
+//             alink.href = fileURL;
+//             alink.download = resumePDF;
+//             alink.click();
+//         })
+//     })
+// }
     return (
       <>
         <div className="d-flex row">
           <div className="d-flex justify-content-center my-5">
-            <button className ="btn btn-dwnld" onClick={onButtonClick}>Download Resume</button>      
+            {/* Need to change to downloadable PDF. Need to figure out how to get the file on Heroku */}
+            <a className ="btn btn-dwnld" href={"https://docs.google.com/document/d/1h752NdS5tEtRAi8J9yT1GeqaZDY4YQPa/edit?usp=sharing&ouid=109090623790882255992&rtpof=true&sd=true"}>Redirct to Google Docs to Download PDF</a>      
           </div>
           <div className="d-flex justify-content-center">
             <Document file={resumePDF}>
