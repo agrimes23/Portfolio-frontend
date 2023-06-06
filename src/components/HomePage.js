@@ -25,14 +25,14 @@ const HomePage = () => {
 
             <div className="exp-abtme-container mb-5">
                 <div className="exp-conatiner-hp m-auto mx-3">
-                    <Link className="text-decoration-none text-white">
+                    <Link className="text-decoration-none text-white" to="/experience">
                         <div className="experience-hp d-flex justify-content-center align-items-center p-3">
                             <h2 className="experience-title-hp">Read about how Alex became a Programmer and Other Experiences</h2>
                         </div> 
                     </Link>
                 </div>
                 <div className="exp-conatiner-hp m-auto mx-3">
-                    <Link className="text-decoration-none text-black">
+                    <Link className="text-decoration-none text-black" to="/aboutme">
                         <div className="about-me-hp d-flex justify-content-center align-items-center p-3">
                             <h2 className="about-me-title-hp">Still Curious? Read the About Me Page!</h2>
                         </div> 
