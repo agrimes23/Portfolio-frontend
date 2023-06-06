@@ -1,9 +1,17 @@
 import {useState, useEffect} from 'react'
 import { Routes, Link, Route, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
+import { Document, Page } from 'react-pdf';
+import {pdfjs} from 'react-pdf';
+import myResume from '../../images/Alex_Grimes_Resume.PNG'
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
 
 const ExperienceContent = (props) => {
 
+    const [numPages, setNumPages] = useState(null);
+    const [pageNumber, setPageNumber] = useState(1);
     const tabHeaders = ["Oct 2022 - Jan 2023", "Oct 2019 – Jun 2022", "Jul 2017 – Jul 2019"]
     const [clicked, setClicked] = useState(tabHeaders[0])
     const Button = styled.button`
@@ -24,6 +32,10 @@ const ExperienceContent = (props) => {
     const ButtonGroup = styled.div`
     display: flex;
     `;
+
+    function onDocumentLoadSuccess({ numPages }) {
+      setNumPages(numPages);
+    }
 
     return (
         <>
@@ -123,6 +135,14 @@ const ExperienceContent = (props) => {
                                 <img />
                             </div>
                           </div>
+                      </div>
+                      <div>
+
+
+                      </div>
+
+                      <div>
+                        <img class="mt-5 border" src={myResume} />
                       </div>
                       </div>
         </>
