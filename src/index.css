@@ -1,10 +1,10 @@
 html {
-  background-color:ivory;
+  background-color:rgb(249, 253, 253);
   min-height: 100%;
 }
 
 body {
-  background-color:ivory;
+  background-color:rgb(249, 253, 253);
   min-height: 100%;
 }
 
@@ -21,7 +21,7 @@ body {
 
 nav {
   border-bottom: 1px rgb(4, 69, 70) solid;
-  background-color: ivory;
+  background-color:rgb(249, 253, 253);
 }
 .nav-item {
   font-family: Poppins 700;
@@ -227,8 +227,6 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   padding: 10%;
 }
 
-
-
 /* --------------------- Projects --------------------- */
 
 .project-page {
@@ -241,7 +239,6 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 
 .cards {
   width: 330px;
-  background-color: ivory;
   border: 0px;
 }
 
