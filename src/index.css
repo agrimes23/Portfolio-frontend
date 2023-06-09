@@ -12,6 +12,11 @@ body {
   height: 100%;
 } */
 
+*::selection {
+  background-color: #0e3529;
+  color: white;
+}
+
 /* --------------------- NavBar --------------------- */
 
 nav {
