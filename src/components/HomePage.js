@@ -1,6 +1,7 @@
-import {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Routes, Link, Route, useLocation } from 'react-router-dom'
 import Footer from './Footer.js'
+import codingVidBG from '../assets/CodingClear.mp4'
 
 
 const HomePage = () => {
@@ -19,8 +20,18 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <div className="projects-hp d-flex justify-content-center align-items-center m-auto">
-                <Link className="text-decoration-none text-white" to="/projects"><h2 className="projects-title-hp d-flex align-items-center p-5">View Alex's Coding Projects</h2></Link>
+                    
+
+
+            <div className="projects-hp h-100">
+                <div className="position-absolute pos-forward w-100 d-flex justify-content-center ">
+                    <Link className="col d-flex m-auto text-decoration-none text-white" to="/projects"><h2 className="projects-title-hp d-flex align-items-center p-5">View Alex's Coding Projects</h2></Link>
+                </div>
+ 
+                <video className="row hp-video" autoPlay loop muted>
+                        <source src={codingVidBG} type="video/mp4" />
+                </video>
+                
             </div>
 
             <div className="exp-abtme-container mb-5">
