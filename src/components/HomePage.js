@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Routes, Link, Route, useLocation } from 'react-router-dom'
 import Footer from './Footer.js'
-import codingVidBG from '../assets/CodingClear.mp4'
+import codingVidBG from '../assets/CodingClearShort.mp4'
 
 
 const HomePage = () => {
