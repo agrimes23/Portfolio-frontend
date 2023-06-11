@@ -120,23 +120,8 @@ i:hover {
   color: rgb(2, 38, 39);
 }
 
-.hp-video { 
-  background-repeat: repeat-x;
-  height: 30rem;
-  width: 50rem;
-}
-
-.projects-hp {
-  height: 40vh;
-  color: white;
-}
-
-.pos-forward {
-  z-index: 2;
-}
-
 h2.projects-title-hp {
-  background-color: rgb(51, 51, 51, 0.93);
+  background-color: rgb(51, 51, 51, 0.95);
 }
 
 h2.experience-title-hp, h2.about-me-title-hp {
@@ -155,13 +140,63 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 }
 .exp-conatiner-hp {
   width: 90vw;
-  
 }
 
 .about-me-hp {
   height: 40vh;
 }
 
+/*~~~ HP Videos ~~~*/
+
+.hp-video { 
+  border: 3px rgb(39, 39, 39) solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25rem;
+  box-shadow: 0 0 20px #7796af;
+  z-index: 1;
+}
+
+.video-reflect {
+  opacity: 70%;
+  z-index: 0;
+  height: 25rem;
+  object-fit: cover;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.move-right {
+  margin-right: 22rem;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  overflow: hidden;
+  white-space: hidden;
+}
+
+.move-left {
+  margin-left: 22rem;
+  overflow: hidden;
+  white-space: pre;
+}
+
+.projects-hp {
+  height: 40vh;
+  width: 100vw;
+  color: white;
+  background-color:rgb(39, 39, 39);
+}
+
+.text-box {
+  border: solid rgb(31, 31, 31) 1px;
+}
+
+.pos-forward {
+  z-index: 2;
+  transform: translate(0%, 120%);
+  
+}
 
 /* --------------------- Experience --------------------- */
 

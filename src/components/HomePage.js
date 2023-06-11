@@ -24,14 +24,21 @@ const HomePage = () => {
 
 
             <div className="projects-hp h-100">
-                <div className="position-absolute pos-forward w-100 d-flex justify-content-center ">
-                    <Link className="col d-flex m-auto text-decoration-none text-white" to="/projects"><h2 className="projects-title-hp d-flex align-items-center p-5">View Alex's Coding Projects</h2></Link>
+                <div className="col mx-auto position-absolute pos-forward w-100 d-flex justify-content-center">
+                    <Link className="text-box mb-0 justify-content-center align-items-center text-decoration-none text-white" to="/projects"><h2 className="projects-title-hp d-flex align-items-center p-5">View Alex's Coding Projects</h2></Link>
                 </div>
- 
-                <video className="row hp-video" autoPlay loop muted>
-                        <source src={codingVidBG} type="video/mp4" />
-                </video>
-                
+                {/* try to make it look like a reflection on either side of the video */}
+                <div className="w-100 d-flex justify-content-center x-auto py-5">
+                    <video className="move-right video-reflect" autoPlay loop muted>
+                            <source src={codingVidBG} type="video/mp4" />
+                    </video>
+                    <video className="d-flex justify-content-center align-items-center mx-auto position-absolute hp-video" autoPlay loop muted>
+                            <source src={codingVidBG} type="video/mp4" />
+                    </video>
+                    <video className="move-left video-reflect" autoPlay loop muted>
+                            <source src={codingVidBG} type="video/mp4" />
+                    </video>
+                </div>
             </div>
 
             <div className="exp-abtme-container mb-5">
