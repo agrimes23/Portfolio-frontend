@@ -25,7 +25,7 @@ const HomePage = () => {
 
             <div className="projects-hp h-100">
                 <div className="col mx-auto position-absolute pos-forward w-100 d-flex justify-content-center">
-                    <Link className="text-box mb-0 justify-content-center align-items-center text-decoration-none text-white" to="/projects"><h2 className="projects-title-hp d-flex align-items-center p-5">View Alex's Coding Projects</h2></Link>
+                    <Link title="Alex Grimes' Coding Projects" className="text-box mb-0 justify-content-center align-items-center text-decoration-none text-white" to="/projects"><h2 className="projects-title-hp d-flex align-items-center p-5">View Alex's Coding Projects</h2></Link>
                 </div>
                 {/* try to make it look like a reflection on either side of the video */}
                 <div className="w-100 d-flex justify-content-center x-auto py-5">
@@ -43,14 +43,14 @@ const HomePage = () => {
 
             <div className="exp-abtme-container mb-5">
                 <div className="exp-conatiner-hp m-auto mx-3">
-                    <Link className="text-decoration-none text-white" to="/experience">
+                    <Link title="Alex Grimes' Work Experience" className="text-decoration-none text-white" to="/experience">
                         <div className="experience-hp d-flex justify-content-center align-items-center p-3">
                             <h2 className="experience-title-hp">Read about how Alex became a Programmer and Other Experiences</h2>
                         </div> 
                     </Link>
                 </div>
                 <div className="exp-conatiner-hp m-auto mx-3">
-                    <Link className="text-decoration-none text-black" to="/aboutme">
+                    <Link title="Alex Grimes' About Me Page" className="text-decoration-none text-black" to="/aboutme">
                         <div className="about-me-hp d-flex justify-content-center align-items-center p-3">
                             <h2 className="about-me-title-hp">Still Curious? Read the About Me Page!</h2>
                         </div> 
