@@ -28,7 +28,7 @@ const HomePage = () => {
                     <Link title="Alex Grimes' Coding Projects" className="text-box mb-0 justify-content-center align-items-center text-decoration-none text-white" to="/projects"><h2 className="projects-title-hp d-flex align-items-center p-5">View Alex's Coding Projects</h2></Link>
                 </div>
                 {/* try to make it look like a reflection on either side of the video */}
-                <div className="w-100 video-section d-flex justify-content-center x-auto py-5">
+                <div className="w-100 video-section d-flex justify-content-center py-5">
                     <video className="move-right video-reflect" autoPlay loop muted>
                             <source src={codingVidBG} type="video/mp4" />
                     </video>

@@ -148,6 +148,12 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 
 /*~~~ HP Videos ~~~*/
 
+.projects-hp {
+  height: 40vh;
+  color: white;
+  background-color:rgb(39, 39, 39);
+}
+
 .hp-video { 
   border: 3px rgb(39, 39, 39) solid;
   display: flex;
@@ -181,23 +187,13 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   white-space: hidden;
 }
 
-.projects-hp {
-  height: 40vh;
-  width: 99w;
-  color: white;
-  background-color:rgb(39, 39, 39);
-}
-
 .text-box {
   border: solid rgb(31, 31, 31) 1px;
 }
 
-
-
 .pos-forward {
   z-index: 2;
   transform: translate(0%, 120%);
-  
 }
 
 /* --------------------- Experience --------------------- */
@@ -398,6 +394,26 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
     display: flex;
     flex-direction: column;
   }
+  
+  .video-reflect {
+    height: 20rem;
+  }
+
+  .move-left {
+    margin-left: 18rem;
+  }
+
+  .move-right {
+    margin-right: 18rem;
+  }
+
+  .hp-video {
+    height: 20rem;
+  }
+
+  .pos-forward {
+    transform: translate(0%, 100%);
+  }
 }
 
 @media (min-width: 700px){
@@ -455,6 +471,24 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 
 } */
 
+@media (max-width: 600px) {    
+  .hp-video {
+    height: 15rem;
+  }
+
+  .video-reflect {
+    height: 15rem;
+  }
+
+  .pos-forward {
+    transform: translate(0%, 70%);
+  }
+
+  .projects-hp {
+    height: 20vh;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .footer-ab-me {
     background-color: rgb(4, 69, 70);
@@ -475,4 +509,11 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
       width: 95vw !important;
       height: 65vh !important;
   }
+
+  @media (max-width: 428px) {
+    .pos-forward {
+      transform: translate(0%, 50%);
+    }
+  }
+
 }
