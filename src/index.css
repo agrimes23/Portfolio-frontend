@@ -178,12 +178,12 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 .move-left {
   margin-left: 22rem;
   overflow: hidden;
-  white-space: pre;
+  white-space: hidden;
 }
 
 .projects-hp {
   height: 40vh;
-  width: 100vw;
+  width: 99w;
   color: white;
   background-color:rgb(39, 39, 39);
 }
@@ -191,6 +191,8 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 .text-box {
   border: solid rgb(31, 31, 31) 1px;
 }
+
+
 
 .pos-forward {
   z-index: 2;
