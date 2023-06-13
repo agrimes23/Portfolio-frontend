@@ -240,6 +240,10 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   max-width: 70vw !important;
 }
 
+.exp-content {
+  max-width: 100%;
+}
+
 .img-style {
   max-width: 150px;
 }
@@ -460,10 +464,30 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   }
 }
 
+@media (min-width: 756px) {
+  .resume-note {
+    display: none !important;
+  }
+}
+
 @media (max-width: 755px) {
   .tab-box {
     flex-direction: column;
   }
+
+  .resume-contain {
+    overflow: auto;
+    justify-content: flex-start !important;
+  }
+  .resume-img {
+    width: 700px;    
+  }
+
+  .resume-note {
+    display: flex !important;
+  }
+
+  
 }
 
 /* turn nav bar in hamburger menu

@@ -3,7 +3,6 @@ import { Routes, Link, Route, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import { Document, Page } from 'react-pdf';
 import {pdfjs} from 'react-pdf';
-import myResume from '../../images/Alex_Grimes_Resume.PNG'
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
@@ -94,9 +93,7 @@ const ExperienceContent = (props) => {
                                 </ul>
                               </div>
                           </div>
-
                       </div>
-
 
                         <div className={ props.active === "School" ? "show-tab row fadeInTop" : "hide-tab"}>
                           <div className="py-5">
@@ -141,9 +138,7 @@ const ExperienceContent = (props) => {
 
                       </div>
 
-                      <div>
-                        <img class="mt-5 border" src={myResume} />
-                      </div>
+                      
                       </div>
         </>
     )

@@ -4,6 +4,7 @@ import ExperienceContent from './ExperienceContent'
 import styled from 'styled-components'
 import Footer from '../Footer.js'
 import Resume from '../Resume.js'
+import myResume from '../../images/Alex_Grimes_Resume.PNG'
 
 const Experience = () => {
 
@@ -51,7 +52,6 @@ const Experience = () => {
                             active={active === tab}
                             onClick={() => setActive(tab)}
                             ><h5>
-                            {/* will need to make onClick an actual function with an if statement */}
                             {tab}</h5>
                             </ButtonToggle>
                         ))}
@@ -60,16 +60,23 @@ const Experience = () => {
                     <div className="d-flex col exp-box">
                         <ExperienceContent active={active}/>
                     </div>
+                    
+                </div>
+                <h4 className="resume-note justify-content-center">Scroll to see full resume:</h4>
+                <div className="m-auto resume-contain w-100 d-flex justify-content-center">
+                  <img class="resume-img mt-5 border" src={myResume} />
                 </div>
               </div>
               <div className="m-5 resume-div d-flex row align-items-center justify-content-center">
                 {/* <Resume /> */}
               </div>
-              <footer className="footer footer-exp p-5 text-center">
+
+              <Footer/>
+              {/* <footer className="footer footer-exp p-5 text-center">
                   <a className="py-5" href="https://github.com/agrimes23"><i className="footer-text fa-brands fa-github text-white px-5" title="Github"></i></a>
                   <a className="py-5" href="https://www.linkedin.com/in/alex-grimes-dev/"><i className="footer-text fa-brands fa-linkedin text-white px-5" title="LinkedIn"></i></a>
                   <a className="py-5" href="mailto: alexgrimes23@gmail.com"><i className="footer-text fa-regular fa-envelope text-white px-5" title="Email"></i></a>
-            </footer>
+            </footer> */}
             </div>
 
         </>
