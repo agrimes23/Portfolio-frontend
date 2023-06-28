@@ -1,9 +1,9 @@
 import {useState, useEffect} from 'react'
 import { Routes, Link, Route, useLocation } from 'react-router-dom'
-import travelPlanImg from '../images/TravelPlansScreenShot.PNG'
-import StyleFinderImg from '../images/StyleFinder.PNG'
-import WeatherApp from '../images/WeatherApp.PNG'
-import Footer from './Footer.js'
+import travelPlanImg from '../../images/TravelPlansScreenShot.PNG'
+import StyleFinderImg from '../../images/StyleFinder.PNG'
+import WeatherApp from '../../images/WeatherApp.PNG'
+import Footer from '../Footer.js'
 
 const Projects = () => {
 

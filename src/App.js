@@ -5,7 +5,7 @@ import Experience from './components/Experience/Experience';
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import Navbar from './components/Navbar';
-import Projects from './components/Projects'
+import Projects from './components/Projects/WebProjects'
 
 const App = () => {
   return (
