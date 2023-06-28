@@ -6,6 +6,9 @@ import Footer from '../Footer.js'
 import Resume from '../Resume.js'
 import myResume from '../../images/Alex_Grimes_Resume.PNG'
 
+// TODO: 
+// // Add download button for resume
+
 const Experience = () => {
 
     const tabHeaders = ["Experience", "School", "Skills"]
@@ -62,6 +65,8 @@ const Experience = () => {
                     </div>
                     
                 </div>
+
+                {/* Resume */}
                 <h4 className="resume-note justify-content-center">Scroll to see full resume:</h4>
                 <div className="m-auto resume-contain w-100 d-flex justify-content-center">
                   <img class="resume-img mt-5 border" src={myResume} />
