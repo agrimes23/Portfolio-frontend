@@ -16,7 +16,7 @@ const WebProjects = () => {
             <div className="project-page m-auto">
             <div className="project-content fadeInTop m-5 pb-4 d-flex justify-content-center row m-auto">
                     <div>
-                        <h1 className="mt-5">Projects</h1>
+                        <h1 className="mt-5">Web Projects</h1>
                     </div>
                     <div className="card-container row d-flex justify-content-center m-auto">
                         <div className="rows-container my-5 py-5 d-flex justify-content-center">
