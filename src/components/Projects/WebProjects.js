@@ -5,7 +5,7 @@ import StyleFinderImg from '../../images/StyleFinder.PNG'
 import WeatherApp from '../../images/WeatherApp.PNG'
 import Footer from '../Footer.js'
 
-const Projects = () => {
+const WebProjects = () => {
 
     useEffect (() => {
         window.scroll(0,0)
@@ -91,4 +91,4 @@ const Projects = () => {
 
 }
 
-export default Projects;
+export default WebProjects;
