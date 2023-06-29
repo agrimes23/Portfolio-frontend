@@ -6,8 +6,7 @@ const MobileProjects = () => {
     // TODO: 
     // // Record videos of clicking on features of the mobile app (per project, which there's probably 2)
     // // // Before: make sure each screen is reacting properly
-    // // Make containers for each card. 
-    // // // add video and github link
+    // // Make hover animation for each card
     // // Format/Styling for mobile: should videos take up whole/most of the screen?
     // // Eventually reformat to 
     // // // tailwind css 
@@ -16,25 +15,35 @@ const MobileProjects = () => {
     return (
         <>
             {/* Page Container / Fade-In*/}
-            <div className="project-page m-auto fadeInTop m-5 pb-4 d-flex justify-content-center row m-auto">
+            <div className="project-page fadeInTop m-5 pb-4 d-flex row">
 
                     {/* Page title */}
-                    <div>
-                        <h1 className="mt-5">Mobile Projects (React Native)</h1>
+                    <div className="my-auto">
+                        <h1 className="">Mobile Projects (React Native)</h1>
                     </div>
 
                     {/* Mobile Projects Card Container */}
-                    <div className="card-container row d-flex justify-content-center m-auto">                      
+                    <div className="card-container mx-auto my-5 d-flex row">                      
                         {/* Cards */}
-                        <div>
-
+                        <div className="project-border d-flex p-3 m-2">
+                            <div className="temp-mock-vid"></div>
+                            <div className="p-5 d-flex row mt-auto">
+                                <h2>Project Name</h2>
+                                <h4>Github Code</h4>
+                            </div>
                         </div>
-
+                        <div className="project-border d-flex p-3 m-2">
+                            <div className="temp-mock-vid"></div>
+                            <div className="p-5 d-flex row mt-auto">
+                                <h2>Project Name</h2>
+                                <h4>Github Code</h4>
+                            </div>
+                        </div>
 
                     </div>
 
                     {/* Github link */}
-                    <div className="text-center">
+                    <div className="text-center mb-5">
                         <h3>See my github: <a href="https://github.com/agrimes23">agrimes23</a></h3>
                     </div>
 

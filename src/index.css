@@ -274,11 +274,29 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 
 /* --------------------- Projects --------------------- */
 
+.temp-mock-vid {
+  height: 400px;
+  width: 210px;
+  background-color: #7796af;
+}
+
+.card-container {
+  max-width: 80vw;
+}
+
 .project-page {
-  height: 100vh;
+  height: 100%;
   width: 90%;
 }
 
+.project-border {
+  border: 2px rgb(4, 69, 70) solid;
+  width: 100%;
+}
+
+.title {
+  height: 0px;
+}
 
 .cards {
   width: 330px;
