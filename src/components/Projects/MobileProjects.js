@@ -25,18 +25,25 @@ const MobileProjects = () => {
                     {/* Mobile Projects Card Container */}
                     <div className="card-container mx-auto my-5 d-flex row">                      
                         {/* Cards */}
-                        <div className="project-border d-flex p-3 m-2">
-                            <div className="temp-mock-vid"></div>
-                            <div className="p-5 d-flex row mt-auto">
-                                <h2>Project Name</h2>
-                                <h4>Github Code</h4>
+                        <div className="project-border d-flex p-4 mx-auto my-2">
+                            <div className="temp-mock-vid mx-5"></div>
+                            <div className="m-project-desc p-5 mx-3 d-flex row mt-auto">
+                                <h2 className="py-4">Page with Camera Feature</h2>
+                                <h4>Summary: Testing out camera functionality on React Native by making a </h4>
+                                <h5>Frontend: React Native, Typescript, Nativewind CSS, React Native Image Picker</h5>
+                                <a href="https://github.com/agrimes23/ReactNativeUseCamera"><h6>Github Code</h6></a>
                             </div>
                         </div>
-                        <div className="project-border d-flex p-3 m-2">
-                            <div className="temp-mock-vid"></div>
-                            <div className="p-5 d-flex row mt-auto">
-                                <h2>Project Name</h2>
-                                <h4>Github Code</h4>
+                        <div className="project-border d-flex p-4 mx-auto my-2">
+                            <div className="temp-mock-vid mx-5"></div>
+                            <div className="m-project-desc p-5 mx-3 d-flex row mt-auto">
+                                <h2 className="py-4">Weather App</h2>
+                                <h4>Summary: Testing out different React Native features like slider, React Native Router, BottomTabs, and routing a simple backend with the mobile app </h4>
+                                <h5>Frontend: React Native, Typescript, Nativewind CSS, React Navigation</h5>
+                                <h5>Backend: Node.js, Express, PostreSQL</h5>
+
+                                <a href="https://github.com/agrimes23/ReactNativeWeatherFront"><h6>Frontend Github Code</h6></a>
+                                <a href="https://github.com/agrimes23/ReactNativeWeatherBack"><h6>Backend Github Code</h6></a>
                             </div>
                         </div>
 
