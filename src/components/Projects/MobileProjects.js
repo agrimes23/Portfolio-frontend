@@ -23,22 +23,22 @@ const MobileProjects = () => {
                     </div>
 
                     {/* Mobile Projects Card Container */}
-                    <div className="card-container mx-auto my-5 d-flex row">                      
+                    <div className="card-container mx-auto my-5 row">                      
                         {/* Cards */}
-                        <div className="project-border d-flex p-4 mx-auto my-2">
+                        <div className="project-border rounded d-flex p-4 mx-auto my-2">
                             <div className="temp-mock-vid mx-5"></div>
                             <div className="m-project-desc p-5 mx-3 d-flex row mt-auto">
-                                <h2 className="py-4">Page with Camera Feature</h2>
-                                <h4>Summary: Testing out camera functionality on React Native by making a </h4>
+                                <h3 className="py-4">Page with Camera Feature</h3>
+                                <h5>Summary: Testing out camera functionality on React Native by making a homescreen where users can add photos from gallery or take a picture with their phone camera</h5>
                                 <h5>Frontend: React Native, Typescript, Nativewind CSS, React Native Image Picker</h5>
-                                <a href="https://github.com/agrimes23/ReactNativeUseCamera"><h6>Github Code</h6></a>
+                                <a href="https://github.com/agrimes23/ReactNativeUseCamera"><h6>Frontend Github Code</h6></a>
                             </div>
                         </div>
-                        <div className="project-border d-flex p-4 mx-auto my-2">
+                        <div className="project-border rounded d-flex p-4 mx-auto my-2">
                             <div className="temp-mock-vid mx-5"></div>
                             <div className="m-project-desc p-5 mx-3 d-flex row mt-auto">
-                                <h2 className="py-4">Weather App</h2>
-                                <h4>Summary: Testing out different React Native features like slider, React Native Router, BottomTabs, and routing a simple backend with the mobile app </h4>
+                                <h3 className="py-4">Mobile Weather App</h3>
+                                <h5>Summary: Testing out different React Native features like slider, React Native Router, BottomTabs, and routing a simple backend with the mobile app </h5>
                                 <h5>Frontend: React Native, Typescript, Nativewind CSS, React Navigation</h5>
                                 <h5>Backend: Node.js, Express, PostreSQL</h5>
 
@@ -50,7 +50,7 @@ const MobileProjects = () => {
                     </div>
 
                     {/* Github link */}
-                    <div className="text-center mb-5">
+                    <div className="text-center my-5">
                         <h3>See my github: <a href="https://github.com/agrimes23">agrimes23</a></h3>
                     </div>
 

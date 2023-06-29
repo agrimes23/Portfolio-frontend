@@ -291,11 +291,39 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 }
 
 .project-border {
-  border: 2px rgb(4, 69, 70) solid;
+  border: 1px rgb(153, 156, 156) solid;
   width: 100%;
-  min-width: 800px;
+  min-width: 700px;
   max-width: 1200px;
 }
+
+.project-border:hover {
+  zoom: 1.1 !important;
+  font-size: 10vw !important;
+  border: 5px rgb(4, 69, 70) solid;
+}
+
+/* .nav-item-area:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: -70%;
+  left: 50%;
+  right: 50%;
+  bottom: -70%;
+  opacity: 0;
+  content: "";
+  border-radius: 3%;
+  background-color: rgb(4, 69, 70);
+}
+.nav-item-area:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+} */
+
+
 
 .m-project-desc{
   width: 800px;
@@ -443,7 +471,7 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   }
 }
 
-@media (min-width: 700px){
+@media (min-width: 850px){
   .sm-screen-nav {
     display: none;
   }
@@ -457,7 +485,7 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
   .sm-screen-nav {
     display: flex;
   }
