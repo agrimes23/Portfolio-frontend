@@ -19,10 +19,16 @@ const Navbar = () => {
         navigate("/aboutme")
     }
 
-    const redirectP = () => {
+    const redirectWP = () => {
         setShowTab("d-none")
-        navigate("/projects")
+        navigate("/webprojects")
     }
+
+    const redirectMP = () => {
+        setShowTab("d-none")
+        navigate("/mobileprojects")
+    }
+
     const redirectE = () => {
         setShowTab("d-none")
         navigate("/experience")
@@ -42,7 +48,8 @@ const Navbar = () => {
             <div className="lg-screen-nav justify-content-end">
                 <ul className="d-flex flex-row navbar-nav navbar-right text-white mx-3">
                     <label htmlFor="about me" className="nav-item-area"><Link className="text-decoration-none nav-item p-4" to='/aboutme'>About Me</Link></label>
-                    <label htmlFor="projects" className="nav-item-area"><Link className="text-decoration-none nav-item p-4" to='/projects'>Projects</Link></label>
+                    <label htmlFor="web projects" className="nav-item-area"><Link className="text-decoration-none nav-item p-4" to='/webprojects'>Web Projects</Link></label>
+                    <label htmlFor="web projects" className="nav-item-area"><Link className="text-decoration-none nav-item p-4" to='/mobileprojects'>Mobile Projects</Link></label>
                     <label htmlFor="experience" className="nav-item-area"><Link className="text-decoration-none nav-item p-4" to='/experience'>Experience</Link></label>
                 </ul>
             </div>
@@ -55,7 +62,8 @@ const Navbar = () => {
             <div className={showTab}>
                 <div className="ham-tab NavTop row py-5 text-center">
                     <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectAB}>About Me</a>
-                    <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectP}>Projects</a>
+                    <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectWP}>Web Projects</a>
+                    <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectMP}>Mobile Projects</a>
                     <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectE}>Experience</a>
                 </div>
             </div>

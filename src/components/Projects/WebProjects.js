@@ -5,7 +5,7 @@ import StyleFinderImg from '../../images/StyleFinder.PNG'
 import WeatherApp from '../../images/WeatherApp.PNG'
 import Footer from '../Footer.js'
 
-const Projects = () => {
+const WebProjects = () => {
 
     useEffect (() => {
         window.scroll(0,0)
@@ -16,7 +16,7 @@ const Projects = () => {
             <div className="project-page m-auto">
             <div className="project-content fadeInTop m-5 pb-4 d-flex justify-content-center row m-auto">
                     <div>
-                        <h1 className="mt-5">Projects</h1>
+                        <h1 className="mt-5">Web Projects</h1>
                     </div>
                     <div className="card-container row d-flex justify-content-center m-auto">
                         <div className="rows-container my-5 py-5 d-flex justify-content-center">
@@ -81,6 +81,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
+                {/* <Footer/> */}
                 <footer className="footer footer-projects p-5 text-center">
                     <a className="py-5" href="https://github.com/agrimes23"><i className="footer-text fa-brands fa-github text-white px-5" title="Github"></i></a>
                     <a className="py-5" href="https://www.linkedin.com/in/alex-grimes-dev/"><i className="footer-text fa-brands fa-linkedin text-white px-5" title="LinkedIn"></i></a>
@@ -91,4 +92,4 @@ const Projects = () => {
 
 }
 
-export default Projects;
+export default WebProjects;
