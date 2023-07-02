@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import { Routes, Link, Route, useLocation } from 'react-router-dom'
+import RNWeather from '../../assets/ReactNativeWeatherVid.mp4'
 
 const MobileProjects = () => {
 
@@ -27,6 +28,7 @@ const MobileProjects = () => {
                         {/* Cards */}
                         <div className="project-border rounded d-flex p-4 mx-auto my-2">
                             <div className="temp-mock-vid mx-5"></div>
+                            
                             <div className="m-project-desc p-5 mx-3 d-flex row mt-auto">
                                 <h3 className="py-4">Page with Camera Feature</h3>
                                 <h5>Summary: Testing out camera functionality on React Native by making a homescreen where users can add photos from gallery or take a picture with their phone camera</h5>
@@ -35,7 +37,9 @@ const MobileProjects = () => {
                             </div>
                         </div>
                         <div className="project-border rounded d-flex p-4 mx-auto my-2">
-                            <div className="temp-mock-vid mx-5"></div>
+                            <video className="mobile-video" controls >
+                                <source src={RNWeather} type="video/mp4" />
+                            </video>
                             <div className="m-project-desc p-5 mx-3 d-flex row mt-auto">
                                 <h3 className="py-4">Mobile Weather App</h3>
                                 <h5>Summary: Testing out different React Native features like slider, React Native Router, BottomTabs, and routing a simple backend with the mobile app </h5>

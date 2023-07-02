@@ -303,6 +303,12 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   border: 5px rgb(4, 69, 70) solid;
 }
 
+.mobile-video {
+  width: 20vw;
+  height: 40vh;
+  
+}
+
 /* .nav-item-area:before {
   transition: 0.5s all ease;
   position: absolute;
