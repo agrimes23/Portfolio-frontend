@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import { Routes, Link, Route, useLocation } from 'react-router-dom'
 import RNWeather from '../../assets/ReactNativeWeatherVid.mp4'
+import RNCamera from '../../assets/RNCamera.mp4'
 
 const MobileProjects = () => {
 
@@ -27,11 +28,13 @@ const MobileProjects = () => {
                     <div className="card-container mx-auto my-5 row">                      
                         {/* Cards */}
                         <div className="project-border rounded d-flex p-4 mx-auto my-2">
-                            <div className="temp-mock-vid mx-5"></div>
+                            <video className="mobile-video" controls >
+                                <source src={RNCamera} type="video/mp4" />
+                            </video>
                             
                             <div className="m-project-desc p-5 mx-3 d-flex row mt-auto">
                                 <h3 className="py-4">Page with Camera Feature</h3>
-                                <h5>Summary: Testing out camera functionality on React Native by making a homescreen where users can add photos from gallery or take a picture with their phone camera</h5>
+                                <h5>Summary: Testing out camera functionality on React Native by making a home screen where users can add photos from gallery or take a picture with their phone camera</h5>
                                 <h5>Frontend: React Native, Typescript, Nativewind CSS, React Native Image Picker</h5>
                                 <a href="https://github.com/agrimes23/ReactNativeUseCamera"><h6>Frontend Github Code</h6></a>
                             </div>
