@@ -293,7 +293,6 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 .project-border {
   border: 1px rgb(153, 156, 156) solid;
   width: 100%;
-  min-width: 700px;
   max-width: 1200px;
 }
 
@@ -435,6 +434,11 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   }
 }
 
+@media (max-width: 1050px) {
+  .mobile-video {
+    width: 400px;
+  }
+}
 
 @media (max-width: 1000px) {
   .rows-container {
@@ -475,6 +479,23 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   .pos-forward {
     transform: translate(0%, 100%);
   }
+
+  .project-border {
+    flex-direction: column !important;
+    align-items: center;
+    min-width: none !important;
+    width: 80vw !important;
+    
+  }
+
+  .m-project-desc {
+    width: 80vw;
+  }
+  
+  .project-page {
+    margin: 0px !important;
+
+  }
 }
 
 @media (min-width: 850px){
@@ -499,12 +520,14 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   .lg-screen-nav {
     display: none;
   }
+
+  .mobile-video {
+    width: 60vw;
+  }
 }
 
 @media (max-width: 900px) {
-  .card-container {
-    width: 100%;
-  }
+
   .cards {
     width: 100%;
   }
@@ -546,11 +569,6 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 
   
 }
-
-/* turn nav bar in hamburger menu
-@media (max-width: 590px) {
-
-} */
 
 @media (max-width: 600px) {    
   .hp-video {
@@ -594,6 +612,9 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   @media (max-width: 428px) {
     .pos-forward {
       transform: translate(0%, 50%);
+    }
+    .m-project-desc {
+      padding: 25px !important;
     }
   }
 

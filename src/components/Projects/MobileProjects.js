@@ -21,7 +21,7 @@ const MobileProjects = () => {
 
                     {/* Page title */}
                     <div className="my-auto">
-                        <h1 className="">Mobile Projects (React Native)</h1>
+                        <h1 className="py-5">Mobile Projects (React Native)</h1>
                     </div>
 
                     {/* Mobile Projects Card Container */}
@@ -34,7 +34,7 @@ const MobileProjects = () => {
                             
                             <div className="m-project-desc p-5 mx-3 d-flex row mt-auto">
                                 <h3 className="py-4">Page with Camera Feature</h3>
-                                <h5>Summary: Testing out camera functionality on React Native by making a home screen where users can add photos from gallery or take a picture with their phone camera</h5>
+                                <h5>Summary: Testing out camera functionality on React Native by making a home screen where users can add photos from gallery or take a picture with their phone camera. Also made a modal slide up from the bottom where users can choose how they want to import their photos</h5>
                                 <h5>Frontend: React Native, Typescript, Nativewind CSS, React Native Image Picker</h5>
                                 <a href="https://github.com/agrimes23/ReactNativeUseCamera"><h6>Frontend Github Code</h6></a>
                             </div>
