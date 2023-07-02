@@ -13,12 +13,12 @@ const WebProjects = () => {
 
     return (
         <>
-            <div className="project-page m-auto">
-            <div className="project-content fadeInTop m-5 pb-4 d-flex justify-content-center row m-auto">
+
+            <div className="project-page fadeInTop m-5 pb-5 d-flex row m-auto">
                     <div>
                         <h1 className="mt-5">Web Projects</h1>
                     </div>
-                    <div className="card-container row d-flex justify-content-center m-auto">
+                    <div className="card-container py-5 row d-flex justify-content-center m-auto">
                         <div className="rows-container my-5 py-5 d-flex justify-content-center">
                             
                             <div className="cards container project-card p-3">
@@ -80,9 +80,9 @@ const WebProjects = () => {
                             <h3>See my github: <a href="https://github.com/agrimes23">agrimes23</a></h3>
                         </div>
                     </div>
-                </div>
+
                 {/* <Footer/> */}
-                <footer className="footer footer-projects p-5 text-center">
+                <footer className="footer footer-projects position-relative w-100 p-5 text-center">
                     <a className="py-5" href="https://github.com/agrimes23"><i className="footer-text fa-brands fa-github text-white px-5" title="Github"></i></a>
                     <a className="py-5" href="https://www.linkedin.com/in/alex-grimes-dev/"><i className="footer-text fa-brands fa-linkedin text-white px-5" title="LinkedIn"></i></a>
                     <a className="py-5" href="mailto: alexgrimes23@gmail.com"><i className="footer-text fa-regular fa-envelope text-white px-5" title="Email"></i></a>
