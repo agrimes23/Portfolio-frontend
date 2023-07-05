@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import { Routes, Link, Route, useLocation } from 'react-router-dom'
 import RNWeather from '../../assets/ReactNativeWeatherVid.mp4'
-import RNCamera from '../../assets/RNCamera.mp4'
+import RNCamera from '../../assets/InsuranceCardVid.mp4'
 
 const MobileProjects = () => {
 
