@@ -18,7 +18,6 @@ module.exports = {
       'xlMax': {'max': '900px'},
       'xlMin': {'min': '900px'}, // do I need mins?
       'lgMax': {'max': '755px'},
-      'lgMin': {'min': '755px'}, // do I need mins?
       'mdMax': {'max': '600px'},
       'smMax': {'max': '500px'},
     },

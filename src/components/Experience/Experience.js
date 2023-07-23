@@ -67,9 +67,9 @@ const Experience = () => {
                 </div>
 
                 {/* Resume */}
-                <h4 className="resume-note justify-content-center">Scroll to see full resume:</h4>
-                <div className="m-auto resume-contain w-100 d-flex justify-content-center">
-                  <img class="resume-img mt-5 border" src={myResume} />
+                <h4 className="resume-note hidden lgMax:flex justify-content-center">Scroll to see full resume:</h4>
+                <div className="m-auto lgMax:overflow-auto lgMax:justify-start w-100 d-flex justify-content-center">
+                  <img class="resume-img lgMax:w-[700px] mt-5 border" src={myResume} />
                 </div>
               </div>
               <div className="m-5 resume-div d-flex row align-items-center justify-content-center">

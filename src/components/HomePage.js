@@ -24,8 +24,8 @@ const HomePage = () => {
                     
 
             {/* projects section with video mirroring */}
-            <div className="projects-hp bg-codingDiv h-100">
-                <div className="col mx-auto absolute pos-forward xlMax:translate-y-full z-10 translate-y-full mt-5 w-100 flex justify-center">
+            <div className="projects-hp mdMax:h-64 bg-codingDiv h-100">
+                <div className="col mx-auto absolute pos-forward smMax:translate-y-2/4 mdMax:translate-y-3/4 xlMax:translate-y-full z-10 translate-y-full w-100 flex justify-center">
                     <Link title="Alex Grimes' Coding Projects" className="text-box mb-0 justify-center items-center no-underline text-white" to="/projects"><h2 className="bg-darkBrown text-3xl bg-opacity-95 flex items-center p-5">View Alex's Coding Projects</h2></Link>
                 </div>
                 {/* try to make it look like a reflection on either side of the video */}
@@ -33,7 +33,7 @@ const HomePage = () => {
                     <video className="move-right mr-72 video-reflect xlMax:h-80" autoPlay loop muted>
                             <source src={codingVidBG} type="video/mp4" />
                     </video>
-                    <video className="flex justify-center items-center mx-auto absolute hp-video xlMax:h-80" autoPlay loop muted>
+                    <video className="flex justify-center items-center mx-auto absolute hp-video mdMax:h-72 mdMax:mt-5 xlMax:h-80" autoPlay loop muted>
                             <source src={codingVidBG} type="video/mp4" />
                     </video>
                     <video className="move-left ml-72 video-reflect xlMax:h-80" autoPlay loop muted>
