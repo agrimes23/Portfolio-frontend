@@ -8,6 +8,8 @@ module.exports = {
     },
     colors: {
       'darkGreen': '#022627',
+      'darkBrown': '#333333',
+      'codingDiv': '#272727',
     },
     extend: {},
   },
