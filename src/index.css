@@ -141,9 +141,9 @@ i:hover {
   color: rgb(2, 38, 39);
 } */
 
-h2.projects-title-hp {
+/* h2.projects-title-hp {
   background-color: rgb(51, 51, 51, 0.95);
-}
+} */
 
 h2.experience-title-hp, h2.about-me-title-hp {
   text-align: center;
@@ -169,11 +169,6 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
 
 /*~~~ HP Videos ~~~*/
 
-.projects-hp {
-  height: 40vh;
-  color: white;
-  background-color:rgb(39, 39, 39);
-}
 
 .hp-video { 
   border: 3px rgb(39, 39, 39) solid;
