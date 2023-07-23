@@ -17,7 +17,7 @@ const HomePage = () => {
             <div className="style-border">
                 <div id="intro_section" className="w-4/5 my-36 row text-center mx-auto flex justify-center items-center">
                         <h1 className="font-titleName text-darkGreen text-7xl row justify-center">Alex Grimes</h1>
-                        <h2 className="description-title ">Full-Stack Developer | Web Developer</h2>
+                        <h2 className="description-title font-newsCycle text-6xl text-darkGreen">Full-Stack Developer | Web Developer</h2>
                 </div>
             </div>
 

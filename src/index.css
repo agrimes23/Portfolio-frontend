@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=News+Cycle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=News+Cycle&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -127,12 +128,18 @@ i:hover {
 
 /* --------------------- HomePage --------------------- */
 
+/* already changed to css, leaving in case there's other elements that use these classes */
+/* .main-title {
+  font-size: 5.5rem;
+  font-family: 'Black Han Sans', sans-serif;
+  color: rgb(2, 38, 39);
+}
 
 .description-title {
   font-size: 3.5rem;
   font-family: 'News Cycle', sans-serif;
   color: rgb(2, 38, 39);
-}
+} */
 
 h2.projects-title-hp {
   background-color: rgb(51, 51, 51, 0.95);
