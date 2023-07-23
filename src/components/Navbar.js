@@ -47,10 +47,12 @@ const Navbar = () => {
             </div>
             <div className="lg-screen-nav justify-content-end">
                 <ul className="d-flex flex-row navbar-nav navbar-right text-white mx-3">
-                    <label htmlFor="about me" className="nav-item-area"><Link className="text-decoration-none nav-item p-4" to='/aboutme'>About Me</Link></label>
-                    <label htmlFor="web projects" className="nav-item-area"><Link className="text-decoration-none nav-item p-4" to='/webprojects'>Web Projects</Link></label>
-                    <label htmlFor="web projects" className="nav-item-area"><Link className="text-decoration-none nav-item p-4" to='/mobileprojects'>Mobile Projects</Link></label>
-                    <label htmlFor="experience" className="nav-item-area"><Link className="text-decoration-none nav-item p-4" to='/experience'>Experience</Link></label>
+                    <div className="mt-2"><label htmlFor="download resume"><a className="text-decoration-none button py-3 px-3 mx-4" href="../images/Alexandra_Grimes_Resume.PDF" download="Alexandra_Grimes_Resume.PDF">Download Resume</a></label>
+                    </div>
+                    <label htmlFor="about me" className="nav-item-area pt-2"><Link className="text-decoration-none nav-item p-4" to='/aboutme'>About Me</Link></label>
+                    <label htmlFor="web projects" className="nav-item-area pt-2"><Link className="text-decoration-none nav-item p-4" to='/webprojects'>Web Projects</Link></label>
+                    <label htmlFor="web projects" className="nav-item-area pt-2"><Link className="text-decoration-none nav-item p-4" to='/mobileprojects'>Mobile Projects</Link></label>
+                    <label htmlFor="experience" className="nav-item-area pt-2"><Link className="text-decoration-none nav-item p-4" to='/experience'>Experience</Link></label>
                 </ul>
             </div>
             <div className="sm-screen-nav">
@@ -65,6 +67,9 @@ const Navbar = () => {
                     <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectWP}>Web Projects</a>
                     <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectMP}>Mobile Projects</a>
                     <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectE}>Experience</a>
+                    <a className="sm-nav-item text-decoration-none m-auto text-white p-4" download={"../images/Alexandra_Grimes_Resume.PDF"}>Download Resume</a>
+
+                    
                 </div>
             </div>
 

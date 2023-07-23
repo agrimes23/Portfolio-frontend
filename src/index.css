@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   background-color:rgb(249, 253, 253);
   min-height: 100%;
@@ -23,6 +27,24 @@ nav {
   border-bottom: 1px rgb(4, 69, 70) solid;
   background-color:rgb(249, 253, 253);
 }
+
+.button {
+  font-family: Poppins 700;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: rgb(4, 69, 70);
+  border: rgb(4, 69, 70);
+  color: white;
+  border-radius: 5px;
+  
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: #1d6850;
+  color: white;
+}
+
 .nav-item {
   font-family: Poppins 700;
   font-weight: bold;
@@ -46,10 +68,10 @@ nav {
 .nav-item-area:before {
   transition: 0.5s all ease;
   position: absolute;
-  top: -70%;
+  top: -20%;
   left: 50%;
   right: 50%;
-  bottom: -70%;
+  bottom: -40%;
   opacity: 0;
   content: "";
   border-radius: 3%;
