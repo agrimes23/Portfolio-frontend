@@ -31,7 +31,7 @@ const MobileProjects = () => {
                                 <source src={RNCamera} type="video/mp4" />
                             </video>
                             
-                            <div className="m-project-desc xlMax:w-full p-3 mx-3 flex row mt-auto">
+                            <div className="m-project-desc xlMax:w-full smMax:p-6 p-3 mx-3 flex row mt-auto">
                                 <h3 className="py-4">Page with Camera Feature</h3>
                                 <h5>Summary: Testing out camera functionality on React Native by making a home screen where users can add photos from gallery or take a picture with their phone camera. Also made a modal slide up from the bottom where users can choose how they want to import their photos</h5>
                                 <h5>Frontend: React Native, Typescript, Nativewind CSS, React Native Image Picker</h5>
@@ -42,7 +42,7 @@ const MobileProjects = () => {
                             <video className="mobile-video 2xlMax:w-8/12" controls >
                                 <source src={RNWeather} type="video/mp4" />
                             </video>
-                            <div className="m-project-desc xlMax:w-full p-3 mx-3 flex row mt-auto">
+                            <div className="m-project-desc xlMax:w-full smMax:p-6 p-3 mx-3 flex row mt-auto">
                                 <h3 className="py-4">Mobile Weather App</h3>
                                 <h5>Summary: Testing out different React Native features like slider, React Native Router, BottomTabs, and routing a simple backend with the mobile app </h5>
                                 <h5>Frontend: React Native, Typescript, Nativewind CSS, React Navigation</h5>
@@ -62,7 +62,7 @@ const MobileProjects = () => {
 
             </div>
 
-            <footer className="footer footer-projects p-5 text-center">
+            <footer className="footer footer-projects bg-darkBlueGreen relative smMax:bottom-[-600px] p-5 text-center">
                 <a className="py-5" href="https://github.com/agrimes23"><i className="footer-text fa-brands fa-github text-white px-5" title="Github"></i></a>
                 <a className="py-5" href="https://www.linkedin.com/in/alex-grimes-dev/"><i className="footer-text fa-brands fa-linkedin text-white px-5" title="LinkedIn"></i></a>
                 <a className="py-5" href="mailto: alexgrimes23@gmail.com"><i className="footer-text fa-regular fa-envelope text-white px-5" title="Email"></i></a>

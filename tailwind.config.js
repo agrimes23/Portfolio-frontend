@@ -11,6 +11,7 @@ module.exports = {
       'darkBrown': '#333333',
       'codingDiv': '#272727',
       'darkRed': '#8B0000',
+      'darkBlueGreen': '#044546',
     },
     screens: {
       '2xlMax': {'max': '1110px'},

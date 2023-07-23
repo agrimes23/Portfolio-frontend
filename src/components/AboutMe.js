@@ -10,7 +10,7 @@ const AboutMe = () => {
 
     return (
         <>
-            <div className="aboutme-page">
+            <div className="aboutme-page h-full">
                 <div className="d-flex align-items-center row m-auto w-75">
                     <div className="aboutme-section d-flex row fadeInTop rounded">
                         <div className="my-5">
@@ -28,7 +28,7 @@ const AboutMe = () => {
                     </div>
                 </div>
             </div>
-            <footer className="footer footer-ab-me p-5 text-center">
+            <footer className="footer footer-ab-me bg-darkBlueGreen relative smMax:bottom-[-900px] p-5 text-center">
                     <a className="py-5" href="https://github.com/agrimes23"><i className="footer-text fa-brands fa-github text-white px-5" title="Github"></i></a>
                     <a className="py-5" href="https://www.linkedin.com/in/alex-grimes-dev/"><i className="footer-text fa-brands fa-linkedin text-white px-5" title="LinkedIn"></i></a>
                     <a className="py-5" href="mailto: alexgrimes23@gmail.com"><i className="footer-text fa-regular fa-envelope text-white px-5" title="Email"></i></a>
