@@ -46,11 +46,11 @@ const Experience = () => {
             <div className="work-ex-page">
               <div className="mt-5 row mx-auto px-5">
                 <h1 className="my-5">Work Experience</h1>
-                <div className="exp-container d-flex col">
-                    <div className="tab-box d-flex mb-5">
+                <div className="exp-container flex xlMax:flex-col my-5">
+                    <div className="tab-box mx-10 h-80 flex flex-col mb-5 xlMax:flex-row xlMax:max-h-32 lgMax:flex-col">
                         {tabHeaders.map((tab, key) => (
                             <ButtonToggle 
-                            className="btn-exp btn px-5 rounded-0 flex-fill btn-toggle"
+                            className="btn-exp xlMax:max-h-[100px] btn px-5 rounded-0 flex-fill btn-toggle"
                             key={key}
                             active={active === tab}
                             onClick={() => setActive(tab)}
@@ -67,9 +67,9 @@ const Experience = () => {
                 </div>
 
                 {/* Resume */}
-                <h4 className="resume-note justify-content-center">Scroll to see full resume:</h4>
-                <div className="m-auto resume-contain w-100 d-flex justify-content-center">
-                  <img class="resume-img mt-5 border" src={myResume} />
+                <h4 className="resume-note hidden lgMax:flex justify-content-center">Scroll to see full resume:</h4>
+                <div className="m-auto lgMax:overflow-auto lgMax:justify-start w-100 d-flex justify-content-center">
+                  <img class="resume-img lgMax:w-[700px] mt-5 border" src={myResume} />
                 </div>
               </div>
               <div className="m-5 resume-div d-flex row align-items-center justify-content-center">

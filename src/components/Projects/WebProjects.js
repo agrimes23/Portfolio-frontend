@@ -14,14 +14,14 @@ const WebProjects = () => {
     return (
         <>
 
-            <div className="project-page fadeInTop m-5 pb-5 d-flex row m-auto">
+            <div className="project-page h-full w-90 xlMax:m-0 fadeInTop m-5 pb-5 d-flex row">
                     <div>
                         <h1 className="mt-5">Web Projects</h1>
                     </div>
                     <div className="card-container py-5 row d-flex justify-content-center m-auto">
-                        <div className="rows-container my-5 py-5 d-flex justify-content-center">
+                        <div className="rows-container 2xlMax:flex-col my-5 py-5 d-flex justify-content-center">
                             
-                            <div className="cards container project-card p-3">
+                            <div className="cards w-[330px] 2xlMax:w-full container p-3">
                                 <a className="text-decoration-none" href="https://github.com/agrimes23/travel-plan-frontend">
                                 <div className="d-flex row justify-content-center p-3">
                                     <img className="card-img-top" src={travelPlanImg} alt="card project img"/>
@@ -38,7 +38,7 @@ const WebProjects = () => {
                                 </a>
                             </div>
 
-                            <div className="cards container project-card p-3">
+                            <div className="cards w-[330px] 2xlMax:w-full container p-3">
                             <a className="text-decoration-none" href="https://github.com/agrimes23/GAFrontend">
                                 <div className="d-flex row justify-content-center p-3">
                                     <img className="card-img-top" src={StyleFinderImg} alt="card project img"/>
@@ -55,7 +55,7 @@ const WebProjects = () => {
                                 </a>
                             </div>
 
-                            <div className="cards container project-card p-3">
+                            <div className="cards w-[330px] 2xlMax:w-full container p-3">
                                 <a className="text-decoration-none" href="https://github.com/agrimes23/weather_frontend">
                                 <div className="d-flex row justify-content-center p-3">
                                     <img className="card-img-top" src={WeatherApp} alt="card project img"/>
