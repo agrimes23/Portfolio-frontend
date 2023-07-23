@@ -46,11 +46,11 @@ const Experience = () => {
             <div className="work-ex-page">
               <div className="mt-5 row mx-auto px-5">
                 <h1 className="my-5">Work Experience</h1>
-                <div className="exp-container d-flex col">
-                    <div className="tab-box d-flex mb-5">
+                <div className="exp-container flex xlMax:flex-col my-5">
+                    <div className="tab-box mx-10 h-80 flex flex-col mb-5 xlMax:flex-row xlMax:max-h-32 lgMax:flex-col">
                         {tabHeaders.map((tab, key) => (
                             <ButtonToggle 
-                            className="btn-exp btn px-5 rounded-0 flex-fill btn-toggle"
+                            className="btn-exp xlMax:max-h-[100px] btn px-5 rounded-0 flex-fill btn-toggle"
                             key={key}
                             active={active === tab}
                             onClick={() => setActive(tab)}
