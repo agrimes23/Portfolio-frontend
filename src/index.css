@@ -124,11 +124,6 @@ i:hover {
 }
 
 /* --------------------- HomePage --------------------- */
-.main-intro {
-  width: 80%;
-  /* background-image: url("./images/Nature-bg3.jpg"); */
-  margin: 150px 0;
-}
 
 .main-title {
   font-size: 5.5rem;
