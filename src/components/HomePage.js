@@ -2,7 +2,8 @@ import React, {useState, useEffect} from 'react'
 import { Routes, Link, Route, useLocation } from 'react-router-dom'
 import Footer from './Footer.js'
 import codingVidBG from '../assets/CodingClearShort.mp4'
-
+import bgSplash from '../assets/SplashOfPaint.jpg'
+import treeWater from '../assets/baywithTrees.jpg'
 
 const HomePage = () => {
 
@@ -14,21 +15,26 @@ const HomePage = () => {
     return (
         <>
             {/* name and title */}
-            <div className="style-border">
-                <div id="intro_section" className="w-4/5 my-36 row text-center mx-auto flex justify-center items-center">
-                        <h1 className="font-titleName text-darkGreen text-7xl row justify-center">Alex Grimes</h1>
-                        <h2 className="description-title font-newsCycle text-6xl">Full-Stack Developer | Web Developer</h2>
+           
+            <div className="bg-cover " style={{ backgroundImage: `url(${treeWater})` }} >
+                <div id="intro_section" className="w-4/5 py-60 mx-auto px-32 object-cover row text-center">
+                        <div className="bg-lemonChiffon py-16">
+                            <h1 className="font-titleName text-darkSalmon text-7xl row justify-center ">Alex Grimes</h1>
+                            <h2 className="description-title font-newsCycle text-darkOliveGreen text-6xl">Full-Stack Developer | Web Developer</h2>
+                        </div>
                 </div>
             </div>
+
+            
 
                     
 
             {/* projects section with video mirroring */}
-            <div className="projects-hp mdMax:h-64 bg-codingDiv h-100">
+            {/* <div className="projects-hp mdMax:h-64 bg-codingDiv h-100">
                 <div className="col mx-auto absolute pos-forward smMax:translate-y-2/4 mdMax:translate-y-3/4 xlMax:translate-y-full z-10 translate-y-full w-100 flex justify-center">
                     <Link title="Alex Grimes' Coding Projects" className="text-box mb-0 justify-center items-center no-underline text-white" to="/projects"><h2 className="bg-darkBrown text-3xl bg-opacity-95 flex items-center p-5">View Alex's Coding Projects</h2></Link>
                 </div>
-                {/* try to make it look like a reflection on either side of the video */}
+
                 <div className="w-100 video-section flex justify-center py-5">
                     <video className="move-right mr-72 video-reflect xlMax:h-80" autoPlay loop muted>
                             <source src={codingVidBG} type="video/mp4" />
@@ -40,7 +46,7 @@ const HomePage = () => {
                             <source src={codingVidBG} type="video/mp4" />
                     </video>
                 </div>
-            </div>
+            </div> */}
 
             {/* about me */}
             <div className="exp-abtme-container flex xlMin:flex-row flex-col mb-5">

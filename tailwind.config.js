@@ -12,6 +12,10 @@ module.exports = {
       'codingDiv': '#272727',
       'darkRed': '#8B0000',
       'darkBlueGreen': '#044546',
+      'salmon': '#E79380',
+      'darkSalmon': '#c47564',
+      'lemonChiffon': '#FFF4CB',
+      'darkOliveGreen': '#4B7233'
     },
     screens: {
       '2xlMax': {'max': '1110px'},
