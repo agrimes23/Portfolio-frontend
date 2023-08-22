@@ -30,8 +30,8 @@ const HomePage = () => {
                     
 
             {/* projects section with video mirroring */}
-            <div className="projects-hp my-10 mdMax:h-64 bg-codingDiv h-100">
-                <div className="col mx-auto absolute pos-forward smMax:translate-y-2/4 mdMax:translate-y-3/4 xlMax:translate-y-full z-10 translate-y-full w-100 flex justify-center">
+            <div className="projects-hp my-28 mdMax:h-64 bg-codingDiv h-100">
+                <div className="col mx-auto absolute pos-forward smMax:translate-y-2/4 mdMax:translate-y-3/4 xlMax:translate-y-full z-10 translate-y-full w-100 h-44 flex justify-center">
                     <Link title="Alex Grimes' Coding Projects" className="text-box mb-0 justify-center items-center no-underline text-white" to="/projects"><h2 className="bg-darkBrown text-3xl bg-opacity-95 flex items-center p-5">View Alex's Coding Projects</h2></Link>
                 </div>
 
