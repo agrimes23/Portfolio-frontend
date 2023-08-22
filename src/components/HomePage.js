@@ -15,7 +15,7 @@ const HomePage = () => {
     return (
         <>
             {/* name and title */}
-           
+           <div className="mb-20">
             <div className="bg-cover " style={{ backgroundImage: `url(${treeWater})` }} >
                 <div id="intro_section" className="w-4/5 py-60 mx-auto px-32 object-cover row text-center">
                         <div className="bg-lemonChiffon py-16">
@@ -49,23 +49,25 @@ const HomePage = () => {
             </div>
 
             {/* about me */}
-            <div className="exp-abtme-container flex xlMin:flex-row flex-col mb-5">
-                <div className="exp-conatiner-hp m-auto mx-3">
+            <div className=" flex xlMin:flex-row flex-col items-center justify-center mb-20">
+                <div className="exp-conatiner-hp px-auto ">
                     <Link title="Alex Grimes' Work Experience" className="no-underline text-white" to="/experience">
-                        <div className="experience-hp flex justify-center items-center p-3">
+                        {/* experience-hp */}
+                        <div className="bg-themeTan h-80 rounded w-4/6 flex justify-center items-center p-3">
                             <h2 className="experience-title-hp text-3xl">Read about how Alex became a Programmer and Other Experiences</h2>
                         </div> 
                     </Link>
                 </div>
 
                 {/* experience */}
-                <div className="exp-conatiner-hp m-auto mx-3">
+                <div className="exp-conatiner-hp text-center px-auto">
                     <Link title="Alex Grimes' About Me Page" className="no-underline text-black" to="/aboutme">
-                        <div className="about-me-hp flex justify-center items-center p-3">
-                            <h2 className="about-me-title-hp text-3xl">Still Curious? Read the About Me Page!</h2>
+                        <div className=" bg-darkOliveGreen flex h-80 rounded w-62 justify-center items-center p-3">
+                            <h2 className=" text-lemonChiffon text-3xl px-10">Still Curious? Read the About Me Page!</h2>
                         </div> 
                     </Link>
                 </div>
+            </div>
             </div>
             <Footer/>
         </>

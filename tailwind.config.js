@@ -15,7 +15,8 @@ module.exports = {
       'salmon': '#E79380',
       'darkSalmon': '#c47564',
       'lemonChiffon': '#FFF4CB',
-      'darkOliveGreen': '#4B7233'
+      'darkOliveGreen': '#4B7233',
+      'themeTan': '#D8B390',
     },
     screens: {
       '2xlMax': {'max': '1110px'},
