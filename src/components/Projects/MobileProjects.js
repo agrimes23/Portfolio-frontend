@@ -42,7 +42,7 @@ const MobileProjects = () => {
                             <video className="mobile-video 2xlMax:w-8/12" controls >
                                 <source src={RNWeather} type="video/mp4" />
                             </video>
-                            <div className="m-project-desc xlMax:w-full smMax:p-6 p-3 mx-3 flex row mt-auto">
+                            <div className="m-project-desc xlMax:w-full smMax:p-6 p-3 mx-3 flex row items-center mt-auto">
                                 <h3 className="py-4">Mobile Weather App</h3>
                                 <h5>Summary: Testing out different React Native features like slider, React Native Router, BottomTabs, and routing a simple backend with the mobile app </h5>
                                 <h5>Frontend: React Native, Typescript, Nativewind CSS, React Navigation</h5>

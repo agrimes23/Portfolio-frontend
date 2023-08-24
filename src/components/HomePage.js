@@ -49,12 +49,12 @@ const HomePage = () => {
             </div>
 
             {/* about me */}
-            <div className=" flex xlMin:flex-row flex-col items-center justify-center mb-20">
+            <div className="flex xlMin:flex-row flex-col justify-center mb-20">
                 <div className="exp-conatiner-hp px-auto ">
                     <Link title="Alex Grimes' Work Experience" className="no-underline text-white" to="/experience">
                         {/* experience-hp */}
-                        <div className="bg-themeTan h-80 rounded w-4/6 flex justify-center items-center p-3">
-                            <h2 className="experience-title-hp text-3xl">Read about how Alex became a Programmer and Other Experiences</h2>
+                        <div className="bg-themeTan h-80 rounded w-4/6 flex items-center p-3">
+                            <h2 className="experience-title-hp text-darkBlueGreen text-3xl">Read about how Alex became a Programmer and Other Experiences</h2>
                         </div> 
                     </Link>
                 </div>
