@@ -1,5 +1,5 @@
-import {useState, useEffect} from 'react'
-import { Routes, Link, Route, useLocation, useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import Resume from "../assets/Alexandra_Grimes_Resume.pdf"
 
 const Navbar = () => {
@@ -34,11 +34,6 @@ const Navbar = () => {
         setShowTab("d-none")
         navigate("/experience")
     }
-
-    useEffect (() => { 
-
-    })
-
 
   return (
     <>
