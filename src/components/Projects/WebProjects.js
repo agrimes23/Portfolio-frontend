@@ -18,7 +18,7 @@ const WebProjects = () => {
             <div className="flex min-w-screen h-full xlMax:m-0 fadeInTop pb-5 row">
        
                     <div className="flex w-full h-60 bg-cover" style={{ backgroundImage: `url(${flowerForest})`}}>
-                        <h1 className="my-auto ml-20 text-5xl font-bold text-white bg-darkOliveGreen p-8 rounded">Web Projects</h1>
+                        <h1 className="my-auto ml-20 text-5xl font-bold text-white bg-darkOliveGreen bg-opacity-80 p-8 rounded">Web Projects</h1>
                     </div>
 
 

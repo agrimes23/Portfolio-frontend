@@ -13,7 +13,7 @@ const AboutMe = () => {
         <>
             <div className="flex flex-col min-h-screen my-32">
                 <div className="flex-grow d-flex align-items-center row mx-auto w-75 bg-cover px-32 py-28" style={{ backgroundImage: `url(${forestPath})`}}>
-                    <div className="flex-grow w-3/4 mx-auto px-20 pb-24 pt-10 d-flex row fadeInTop rounded bg-lemonChiffon">
+                    <div className="flex-grow w-3/4 mx-auto px-20 pb-24 pt-10 d-flex row fadeInTop rounded bg-lemonChiffon bg-opacity-90">
                         <div className="my-5">
                             <h1 className="text-5xl font-bold">About Me</h1>
                         </div>

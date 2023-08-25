@@ -21,7 +21,7 @@ const MobileProjects = () => {
 
                     {/* Page title */}
                     <div className="flex w-full h-60 bg-cover" style={{ backgroundImage: `url(${stars})`}}>
-                        <h1 className="my-auto ml-20 text-5xl font-bold bg-darkBlueGreen text-lemonChiffon p-8 rounded">Mobile Projects (React Native)</h1>
+                        <h1 className="my-auto ml-20 text-5xl font-bold bg-darkBlueGreen bg-opacity-90 text-lemonChiffon p-8 rounded">Mobile Projects (React Native)</h1>
                     </div>
 
                     {/* Mobile Projects Card Container */}
