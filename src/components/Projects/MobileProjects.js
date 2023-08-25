@@ -58,7 +58,7 @@ const MobileProjects = () => {
 
                     {/* Github link */}
                     <div className="text-center my-5">
-                        <h3>See my github: <a href="https://github.com/agrimes23">agrimes23</a></h3>
+                        <h3 className="text-xl ">See my github: <a href="https://github.com/agrimes23">agrimes23</a></h3>
                     </div>
 
             </div>
