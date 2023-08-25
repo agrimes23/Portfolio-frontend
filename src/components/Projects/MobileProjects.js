@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react'
 import { Routes, Link, Route, useLocation } from 'react-router-dom'
 import RNWeather from '../../assets/ReactNativeWeatherVid.mp4'
 import RNCamera from '../../assets/InsuranceCardVid.mp4'
+import stars from '../../assets/starry_sky.jpg'
 
 const MobileProjects = () => {
 
@@ -16,15 +17,15 @@ const MobileProjects = () => {
     return (
         <>
             {/* Page Container / Fade-In*/}
-            <div className="project-page h-full w-90 xlMax:m-0 fadeInTop m-5 pb-4 flex row">
+            <div className="project-page min-w-screen h-full w-90 xlMax:m-0 fadeInTop pb-4 flex row">
 
                     {/* Page title */}
-                    <div className="my-auto">
-                        <h1 className="py-5 text-5xl font-bold text-darkSalmon">Mobile Projects (React Native)</h1>
+                    <div className="flex w-full h-60 bg-cover" style={{ backgroundImage: `url(${stars})`}}>
+                        <h1 className="my-auto ml-20 text-5xl font-bold bg-darkBlueGreen text-lemonChiffon p-8 rounded">Mobile Projects (React Native)</h1>
                     </div>
 
                     {/* Mobile Projects Card Container */}
-                    <div className="card-container mx-auto my-5 row">                      
+                    <div className="my-20 card-container mx-auto row">                      
                         {/* Cards */}
                         <div className="project-border flex xlMax:flex-col xlMax:items-center xlMax:min-w-0 xlMax:w-full rounded p-4 mx-auto my-2">
                             <video className="mobile-video 2xlMax:w-8/12" controls >

@@ -4,6 +4,7 @@ import travelPlanImg from '../../images/TravelPlansScreenShot.PNG'
 import StyleFinderImg from '../../images/StyleFinder.PNG'
 import WeatherApp from '../../images/WeatherApp.PNG'
 import Footer from '../Footer.js'
+import flowerForest from '../../assets/flower_bush.jpg'
 
 const WebProjects = () => {
 
@@ -14,50 +15,50 @@ const WebProjects = () => {
     return (
         <>
 
-            <div className="project-page h-full xlMax:m-0 fadeInTop m-20 pb-5 d-flex row">
-                    <div>
-                        <h1 className="mt-5 text-5xl font-bold text-darkOliveGreen">Web Projects</h1>
+            <div className="flex min-w-screen h-full xlMax:m-0 fadeInTop pb-5 row">
+       
+                    <div className="flex w-full h-60 bg-cover" style={{ backgroundImage: `url(${flowerForest})`}}>
+                        <h1 className="my-auto ml-20 text-5xl font-bold text-white bg-darkOliveGreen p-8 rounded">Web Projects</h1>
                     </div>
 
+
                     {/* div for projects container */}
-                    <div className="card-container py-5 row d-flex justify-content-center m-auto">
+                    <div className="my-20 card-container py-5 row d-flex justify-content-center mx-auto">
                         {/* div for projects row */}
                         <div className="rows-container 2xlMax:flex-col my-5 py-5 d-flex justify-content-center">
                             
                             {/* div for first card */}
-                            <div className="cards w-[500px] m-10 2xlMax:w-full p-3  border-2">
-                                <a className="text-decoration-none" href="https://github.com/agrimes23/travel-plan-frontend">
-                                <div className="d-flex row justify-content-center p-3">
-                                    <img className="card-img-top" src={travelPlanImg} alt="card project img"/>
-                                    <h5 className="py-3 text-center text-black">Travel Plans Web App</h5>
-                                </div>
+                            <div className="cards rounded w-[500px] 2xlMax:w-full border-2 m-5">
                                 <div className="">
-                                    <div className="">
-                                        <h5 className="card-title ">Travel Plans Web App</h5>
-                                        <p className="card-text "></p>
-                                        <a className="row text-center flex justify-center text-decoration-none text-darkGreen" href="https://travel-planning.herokuapp.com/">Live Site</a>
-                                        <a className="row text-center flex justify-center text-decoration-none text-darkGreen" href="https://github.com/agrimes23/travel-plan-frontend">See Github Repo</a>
-                                    </div>
+                                    <a className="text-decoration-none" href="https://github.com/agrimes23/travel-plan-frontend">
+                                        <div className="d-flex row">
+                                            <img className="" src={travelPlanImg} alt="card project img"/>
+                                            <h5 className="py-5 text-center text-xl text-black">Travel Plans Web App</h5>
+                                        </div>
+                                    </a>
+                                </div>    
+                                <div className="m-6 flex row justify-around">
+                                        <a className="flex text-center justify-center w-36 py-2 rounded bg-darkOliveGreen text-white text-decoration-none" href="https://travel-planning.herokuapp.com/">Live Site</a>
+                                        <a className="flex text-center justify-center w-36 py-2 rounded bg-salmon text-decoration-none text-darkGreen" href="https://github.com/agrimes23/travel-plan-frontend">See Github Repo</a>
                                 </div>
-                                </a>
+                                
                             </div>
 
                             {/* div for second card */}
-                            <div className="cards  m-10 w-[500px] 2xlMax:w-full p-3 border-2 ">
-                                <a className="text-decoration-none" href="https://github.com/agrimes23/weather_frontend">
-                                <div className="d-flex row justify-content-center p-3">
-                                    <img className="card-img-top" src={WeatherApp} alt="card project img"/>
-                                    <h5 className="py-3 text-center text-black">Weather Notes Web App</h5>
-                                </div>
+                            <div className="cards rounded w-[500px] 2xlMax:w-full border-2 m-5 ">    
                                 <div className="">
-                                    <div className="">
-                                        <h5 className="card-title">Weather Notes Web App</h5>
-                                        <p className="card-text"></p>
-                                        <a className="row text-center flex justify-center text-decoration-none text-darkGreen" href="https://evening-reef-65787.herokuapp.com/">Live Site</a>
-                                        <a className="row text-center flex justify-center text-decoration-none text-darkGreen" href="https://github.com/agrimes23/weather_frontend">See Github Repo</a>
-                                    </div>
+                                    <a className="text-decoration-none" href="https://github.com/agrimes23/weather_frontend">
+                                        <div className="d-flex row">
+                                            <img className="" src={WeatherApp} alt="card project img"/>
+                                            <h5 className="py-5 text-center text-xl text-black">Weather Notes Web App</h5>
+                                        </div>
+                                    </a>
                                 </div>
-                                </a>
+                                <div className="m-6 flex row justify-around">
+                                        <a className="text-center flex justify-center w-36 py-2 rounded bg-darkOliveGreen text-white text-decoration-none" href="https://evening-reef-65787.herokuapp.com/">Live Site</a>
+                                        <a className="text-center flex justify-center w-36 py-2 rounded bg-salmon text-decoration-none text-darkGreen" href="https://github.com/agrimes23/weather_frontend">See Github Repo</a>
+                                </div>
+                                
                             </div>
                             
                         </div>
