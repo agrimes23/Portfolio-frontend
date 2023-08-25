@@ -12,8 +12,8 @@ const AboutMe = () => {
     return (
         <>
             <div className="flex flex-col min-h-screen min-w-screen">
-                <div className="flex-grow flex items-center mx-auto bg-cover px-32 py-28 lgMax:px-10 smMax:px-5" style={{ backgroundImage: `url(${forestPath})`}}>
-                    <div className="flex-grow w-3/4 mx-auto px-20 pb-24 pt-10 d-flex row fadeInTop rounded bg-lemonChiffon bg-opacity-90 lgMax:px-10 smMax:px-5">
+                <div className="flex-grow flex items-center max-w-full bg-cover px-32 py-28 lgMax:px-10 smMax:px-5" style={{ backgroundImage: `url(${forestPath})`}}>
+                    <div className="flex-grow w-3/4 mx-auto max-w-4xl px-20 pb-24 pt-10 d-flex row fadeInTop rounded bg-lemonChiffon bg-opacity-90 lgMax:px-10 smMax:px-5">
                         <div className="my-5">
                             <h1 className="text-5xl smMax:text-4xl font-bold">About Me</h1>
                         </div>
