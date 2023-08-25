@@ -45,8 +45,8 @@ const Experience = () => {
         <>
             <div className="work-ex-page">
               <div className="mt-5 row mx-auto px-5">
-                <h1 className="my-5">Work Experience</h1>
-                <div className="exp-container flex xlMax:flex-col my-5">
+                <h1 className="my-5 text-5xl font-bold">Work Experience</h1>
+                {/* <div className="exp-container flex xlMax:flex-col my-5">
                     <div className="tab-box mx-10 h-80 flex flex-col mb-5 xlMax:flex-row xlMax:max-h-32 lgMax:flex-col">
                         {tabHeaders.map((tab, key) => (
                             <ButtonToggle 
@@ -64,7 +64,7 @@ const Experience = () => {
                         <ExperienceContent active={active}/>
                     </div>
                     
-                </div>
+                </div> */}
 
                 {/* Resume */}
                 <h4 className="resume-note hidden lgMax:flex justify-content-center">Scroll to see full resume:</h4>
