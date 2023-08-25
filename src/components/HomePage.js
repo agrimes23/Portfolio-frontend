@@ -15,19 +15,15 @@ const HomePage = () => {
     return (
         <>
             {/* name and title */}
-           <div className="mb-20">
+           <div className="mb-20 min-w-screen">
             <div className="bg-cover " style={{ backgroundImage: `url(${treeWater})` }} >
-                <div id="intro_section" className="w-4/5 py-60 mx-auto px-32 object-cover row text-center">
-                        <div className="bg-lemonChiffon py-16">
-                            <h1 className="font-titleName text-darkSalmon text-7xl row justify-center ">Alex Grimes</h1>
-                            <h2 className="description-title font-newsCycle text-darkOliveGreen text-6xl">Full-Stack Developer | Web Developer</h2>
+                <div id="intro_section" className=" py-60 flex items-center text-center">
+                        <div className="bg-lemonChiffon max-w-5xl w-4/5 mx-auto p-10 mdMax:px-5">
+                            <h1 className="font-titleName text-darkSalmon text-7xl row justify-center mdMax:text-5xl">Alex Grimes</h1>
+                            <h2 className="description-title font-newsCycle text-darkOliveGreen text-6xl mdMax:text-4xl">Full-Stack Developer | Web Developer</h2>
                         </div>
                 </div>
             </div>
-
-            
-
-                    
 
             {/* projects section with video mirroring */}
             <div className="projects-hp my-28 mdMax:h-64 bg-codingDiv h-100">
