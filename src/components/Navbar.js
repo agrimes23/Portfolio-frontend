@@ -1,5 +1,6 @@
-import {useState, useEffect} from 'react'
-import { Routes, Link, Route, useLocation, useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import Resume from "../assets/Alexandra_Grimes_Resume.pdf"
 
 const Navbar = () => {
 
@@ -34,20 +35,15 @@ const Navbar = () => {
         navigate("/experience")
     }
 
-    useEffect (() => { 
-
-    })
-
-
   return (
     <>
         <nav className="navbar sticky-top p-4 d-flex columnnavbar">
-            <div className="d-flex flex-row">
+            <div className="flex flex-row">
                 <Link className="text-decoration-none" to='/'><h1 className="nav-home" title="Home Page" alt="logo-map-planner-img">AG</h1></Link>
             </div>
-            <div className="lg-screen-nav flex 2xlMax:hidden justify-content-end">
-                <ul className="d-flex flex-row navbar-nav navbar-right text-white mx-3">
-                    <div className="mt-2"><label htmlFor="download resume"><a className="text-decoration-none button py-3 px-3 mx-4" href="../images/Alexandra_Grimes_Resume.PDF" download="Alexandra_Grimes_Resume.PDF">Download Resume</a></label>
+            <div className="lg-screen-nav flex 2xlMax:hidden justify-end">
+                <ul className="flex flex-row navbar-nav navbar-right text-white mx-3">
+                    <div className="mt-2"><label htmlFor="download resume"><a className="text-decoration-none button py-3 px-3 mx-4" href={Resume} download="Alexandra_Grimes_Resume.pdf" target="_blank">Download Resume</a></label>
                     </div>
                     <label htmlFor="about me" className="nav-item-area pt-2"><Link className="text-decoration-none nav-item p-4" to='/aboutme'>About Me</Link></label>
                     <label htmlFor="web projects" className="nav-item-area pt-2"><Link className="text-decoration-none nav-item p-4" to='/webprojects'>Web Projects</Link></label>
@@ -62,12 +58,12 @@ const Navbar = () => {
             </div>
         </nav>
             <div className={showTab}>
-                <div className="ham-tab hidden 2xlMax:flex NavTop row py-5 text-center">
+                <div className="ham-tab hidden 2xlMax:flex NavTop flex-col py-5 text-center">
                     <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectAB}>About Me</a>
                     <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectWP}>Web Projects</a>
                     <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectMP}>Mobile Projects</a>
                     <a className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectE}>Experience</a>
-                    <a className="sm-nav-item text-decoration-none m-auto text-white p-4" download={"../images/Alexandra_Grimes_Resume.PDF"}>Download Resume</a>
+                    <a className="sm-nav-item text-decoration-none m-auto text-white p-4" href={Resume} download="Alexandra_Grimes_Resume" target='_blank'>Download Resume</a>
 
                     
                 </div>
