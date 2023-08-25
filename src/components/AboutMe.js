@@ -11,9 +11,9 @@ const AboutMe = () => {
 
     return (
         <>
-            <div className="aboutme-page h-screen py-24">
-                <div className="d-flex align-items-center row mx-auto w-75 bg-cover px-32 py-44" style={{ backgroundImage: `url(${forestPath})`}}>
-                    <div className="w-3/4 mx-auto p-20 d-flex row fadeInTop rounded bg-lemonChiffon">
+            <div className="flex flex-col min-h-screen my-32">
+                <div className="flex-grow d-flex align-items-center row mx-auto w-75 bg-cover px-32 py-28" style={{ backgroundImage: `url(${forestPath})`}}>
+                    <div className="flex-grow w-3/4 mx-auto px-20 pb-24 pt-10 d-flex row fadeInTop rounded bg-lemonChiffon">
                         <div className="my-5">
                             <h1 className="text-5xl font-bold">About Me</h1>
                         </div>
@@ -29,7 +29,7 @@ const AboutMe = () => {
                     </div>
                 </div>
             </div>
-            <footer className="footer mt-96 footer-ab-me bg-darkBlueGreen relative smMax:bottom-[-900px] p-5 text-center">
+            <footer className="footer bg-darkBlueGreen relative smMax:bottom-[-900px] p-5 text-center">
                     <a className="py-5" href="https://github.com/agrimes23"><i className="footer-text fa-brands fa-github text-white px-5" title="Github"></i></a>
                     <a className="py-5" href="https://www.linkedin.com/in/alex-grimes-dev/"><i className="footer-text fa-brands fa-linkedin text-white px-5" title="LinkedIn"></i></a>
                     <a className="py-5" href="mailto: alexgrimes23@gmail.com"><i className="footer-text fa-regular fa-envelope text-white px-5" title="Email"></i></a>

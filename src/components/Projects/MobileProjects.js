@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react'
 import { Routes, Link, Route, useLocation } from 'react-router-dom'
 import RNWeather from '../../assets/ReactNativeWeatherVid.mp4'
 import RNCamera from '../../assets/InsuranceCardVid.mp4'
+import stars from '../../assets/starry_sky.jpg'
 
 const MobileProjects = () => {
 
@@ -16,15 +17,15 @@ const MobileProjects = () => {
     return (
         <>
             {/* Page Container / Fade-In*/}
-            <div className="project-page h-full w-90 xlMax:m-0 fadeInTop m-5 pb-4 flex row">
+            <div className="project-page min-w-screen h-full w-90 xlMax:m-0 fadeInTop pb-4 flex row">
 
                     {/* Page title */}
-                    <div className="my-auto">
-                        <h1 className="py-5">Mobile Projects (React Native)</h1>
+                    <div className="flex w-full h-60 bg-cover" style={{ backgroundImage: `url(${stars})`}}>
+                        <h1 className="my-auto ml-20 text-5xl font-bold bg-darkBlueGreen text-lemonChiffon p-8 rounded">Mobile Projects (React Native)</h1>
                     </div>
 
                     {/* Mobile Projects Card Container */}
-                    <div className="card-container mx-auto my-5 row">                      
+                    <div className="my-20 card-container mx-auto row">                      
                         {/* Cards */}
                         <div className="project-border flex xlMax:flex-col xlMax:items-center xlMax:min-w-0 xlMax:w-full rounded p-4 mx-auto my-2">
                             <video className="mobile-video 2xlMax:w-8/12" controls >
@@ -32,24 +33,24 @@ const MobileProjects = () => {
                             </video>
                             
                             <div className="m-project-desc xlMax:w-full smMax:p-6 p-3 mx-3 flex row mt-auto">
-                                <h3 className="py-4">Page with Camera Feature</h3>
-                                <h5>Summary: Testing out camera functionality on React Native by making a home screen where users can add photos from gallery or take a picture with their phone camera. Also made a modal slide up from the bottom where users can choose how they want to import their photos</h5>
-                                <h5>Frontend: React Native, Typescript, Nativewind CSS, React Native Image Picker</h5>
-                                <a href="https://github.com/agrimes23/ReactNativeUseCamera"><h6>Frontend Github Code</h6></a>
+                                <h3 className="py-4 text-3xl">Page with Camera Feature</h3>
+                                <h5 className="text-lg">Summary: Testing out camera functionality on React Native by making a home screen where users can add photos from gallery or take a picture with their phone camera. Also made a modal slide up from the bottom where users can choose how they want to import their photos</h5>
+                                <h5 className="text-lg">Frontend: React Native, Typescript, Nativewind CSS, React Native Image Picker</h5>
+                                <a className="text-lg" href="https://github.com/agrimes23/ReactNativeUseCamera"><h6>Frontend Github Code</h6></a>
                             </div>
                         </div>
                         <div className="project-border flex xlMax:flex-col xlMax:items-center xlMax:min-w-0 xlMax:w-full rounded p-4 mx-auto my-2">
                             <video className="mobile-video 2xlMax:w-8/12" controls >
                                 <source src={RNWeather} type="video/mp4" />
                             </video>
-                            <div className="m-project-desc xlMax:w-full smMax:p-6 p-3 mx-3 flex row mt-auto">
-                                <h3 className="py-4">Mobile Weather App</h3>
-                                <h5>Summary: Testing out different React Native features like slider, React Native Router, BottomTabs, and routing a simple backend with the mobile app </h5>
-                                <h5>Frontend: React Native, Typescript, Nativewind CSS, React Navigation</h5>
-                                <h5>Backend: Node.js, Express, PostreSQL</h5>
+                            <div className="m-project-desc xlMax:w-full smMax:p-6 p-3 mx-3 flex row items-center mt-auto">
+                                <h3 className="py-4 text-3xl">Mobile Weather App</h3>
+                                <h5 className="text-lg">Summary: Testing out different React Native features like slider, React Native Router, BottomTabs, and routing a simple backend with the mobile app </h5>
+                                <h5 className="text-lg">Frontend: React Native, Typescript, Nativewind CSS, React Navigation</h5>
+                                <h5 className="text-lg">Backend: Node.js, Express, PostreSQL</h5>
 
-                                <a href="https://github.com/agrimes23/ReactNativeWeatherFront"><h6>Frontend Github Code</h6></a>
-                                <a href="https://github.com/agrimes23/ReactNativeWeatherBack"><h6>Backend Github Code</h6></a>
+                                <a className="text-lg" href="https://github.com/agrimes23/ReactNativeWeatherFront"><h6>Frontend Github Code</h6></a>
+                                <a className="text-lg" href="https://github.com/agrimes23/ReactNativeWeatherBack"><h6>Backend Github Code</h6></a>
                             </div>
                         </div>
 

@@ -48,21 +48,22 @@ const HomePage = () => {
                 </div>
             </div>
 
-            {/* about me */}
-            <div className=" flex xlMin:flex-row flex-col items-center justify-center mb-20">
-                <div className="exp-conatiner-hp px-auto ">
+            {/* container for two boxes */}
+            <div className="flex xlMin:flex-row flex-col justify-center mx-20 mb-20">
+                {/* about me */}
+                <div className="exp-conatiner-hp my-5 px-auto ">
                     <Link title="Alex Grimes' Work Experience" className="no-underline text-white" to="/experience">
                         {/* experience-hp */}
-                        <div className="bg-themeTan h-80 rounded w-4/6 flex justify-center items-center p-3">
-                            <h2 className="experience-title-hp text-3xl">Read about how Alex became a Programmer and Other Experiences</h2>
+                        <div className="bg-themeTan h-80 rounded xlMin:w-4/6 flex items-center p-3">
+                            <h2 className="experience-title-hp text-darkBlueGreen text-3xl">Read about how Alex became a Programmer and Other Experiences</h2>
                         </div> 
                     </Link>
                 </div>
 
                 {/* experience */}
-                <div className="exp-conatiner-hp text-center px-auto">
+                <div className="exp-conatiner-hp text-center my-5 px-auto">
                     <Link title="Alex Grimes' About Me Page" className="no-underline text-black" to="/aboutme">
-                        <div className=" bg-darkOliveGreen flex h-80 rounded w-62 justify-center items-center p-3">
+                        <div className=" bg-darkOliveGreen flex h-80 rounded xlMin:w-62 justify-center items-center p-3">
                             <h2 className=" text-lemonChiffon text-3xl px-10">Still Curious? Read the About Me Page!</h2>
                         </div> 
                     </Link>
