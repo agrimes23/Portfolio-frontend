@@ -17,22 +17,22 @@ const MobileProjects = () => {
     return (
         <>
             {/* Page Container / Fade-In*/}
-            <div className="project-page min-w-screen h-full w-90 xlMax:m-0 fadeInTop pb-4 flex row">
+            <div className=" min-w-screen min-h-screen w-90 xlMax:m-0 fadeInTop pb-4 flex row">
 
                     {/* Page title */}
-                    <div className="flex w-full h-60 bg-cover" style={{ backgroundImage: `url(${stars})`}}>
-                        <h1 className="my-auto ml-20 text-5xl font-bold bg-darkBlueGreen bg-opacity-90 text-lemonChiffon p-8 rounded">Mobile Projects (React Native)</h1>
+                    <div className="flex w-full h-60 bg-cover smMax:h-72" style={{ backgroundImage: `url(${stars})`}}>
+                        <h1 className="my-auto ml-20 text-5xl font-bold bg-darkBlueGreen bg-opacity-90 text-lemonChiffon p-8 rounded mdMax:mx-auto">Mobile Projects (React Native)</h1>
                     </div>
 
                     {/* Mobile Projects Card Container */}
-                    <div className="my-20 card-container mx-auto row">                      
+                    <div className="my-20  mx-auto ">                      
                         {/* Cards */}
                         <div className="project-border flex xlMax:flex-col xlMax:items-center xlMax:min-w-0 xlMax:w-full rounded p-4 mx-auto my-2">
                             <video className="mobile-video 2xlMax:w-8/12" controls >
                                 <source src={RNCamera} type="video/mp4" />
                             </video>
                             
-                            <div className="m-project-desc xlMax:w-full smMax:p-6 p-3 mx-3 flex row mt-auto">
+                            <div className="m-project-desc p-3 mx-3 flex row mt-auto xlMax:w-full ">
                                 <h3 className="py-4 text-3xl">Page with Camera Feature</h3>
                                 <h5 className="text-lg">Summary: Testing out camera functionality on React Native by making a home screen where users can add photos from gallery or take a picture with their phone camera. Also made a modal slide up from the bottom where users can choose how they want to import their photos</h5>
                                 <h5 className="text-lg">Frontend: React Native, Typescript, Nativewind CSS, React Native Image Picker</h5>
@@ -63,7 +63,7 @@ const MobileProjects = () => {
 
             </div>
 
-            <footer className="footer footer-projects bg-darkBlueGreen relative smMax:bottom-[-600px] p-5 text-center">
+            <footer className="footer footer-projects bg-darkBlueGreen relative p-5 text-center">
                 <a className="py-5" href="https://github.com/agrimes23"><i className="footer-text fa-brands fa-github text-white px-5" title="Github"></i></a>
                 <a className="py-5" href="https://www.linkedin.com/in/alex-grimes-dev/"><i className="footer-text fa-brands fa-linkedin text-white px-5" title="LinkedIn"></i></a>
                 <a className="py-5" href="mailto: alexgrimes23@gmail.com"><i className="footer-text fa-regular fa-envelope text-white px-5" title="Email"></i></a>
