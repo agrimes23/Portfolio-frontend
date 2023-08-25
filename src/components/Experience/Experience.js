@@ -4,7 +4,7 @@ import ExperienceContent from './ExperienceContent'
 import styled from 'styled-components'
 import Footer from '../Footer.js'
 import Resume from '../Resume.js'
-import myResume from '../../images/Alex_Grimes_Resume.PNG'
+import myResume from '../../assets/Alex-Grimes-Resume.PNG'
 
 // TODO: 
 // // Add download button for resume

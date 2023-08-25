@@ -14,7 +14,7 @@ const WebProjects = () => {
     return (
         <>
 
-            <div className="project-page h-full xlMax:m-0  fadeInTop m-20 pb-5 d-flex row">
+            <div className="project-page h-full xlMax:m-0 fadeInTop m-20 pb-5 d-flex row">
                     <div>
                         <h1 className="mt-5 text-5xl font-bold text-darkOliveGreen">Web Projects</h1>
                     </div>
