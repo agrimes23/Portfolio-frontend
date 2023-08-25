@@ -43,8 +43,8 @@ const Experience = () => {
 
     return (
         <>
-            <div className="work-ex-page">
-              <div className="mt-5 row mx-auto px-5">
+            <div className="flex min-h-screen min-w-screen flex-col">
+              <div className="flex text-center mt-5 row smMax:m-0 smMax:px-5">
                 <h1 className="my-5 text-5xl font-bold">Work Experience</h1>
                 {/* <div className="exp-container flex xlMax:flex-col my-5">
                     <div className="tab-box mx-10 h-80 flex flex-col mb-5 xlMax:flex-row xlMax:max-h-32 lgMax:flex-col">
@@ -67,9 +67,9 @@ const Experience = () => {
                 </div> */}
 
                 {/* Resume */}
-                <h4 className="resume-note hidden lgMax:flex justify-content-center">Scroll to see full resume:</h4>
-                <div className="m-auto lgMax:overflow-auto lgMax:justify-start w-100 d-flex justify-content-center">
-                  <img class="resume-img lgMax:w-[700px] mt-5 border" src={myResume} />
+                <h4 className="flex my-5 justify-center text-lg">Scroll to see full resume:</h4>
+                <div className="overflow-auto flex mdMin:justify-center mdMax:justify-start w-11/12 mdMin:mx-auto">
+                  <img class="min-w-[700px] mt-5 border-2 overflow-hidden" src={myResume} />
                 </div>
               </div>
               <div className="m-5 resume-div d-flex row align-items-center justify-content-center">

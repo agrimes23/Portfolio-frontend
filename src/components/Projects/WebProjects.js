@@ -26,7 +26,7 @@ const WebProjects = () => {
                     <div className="my-20 py-5 xlMax:flex-col xlMax:mx-auto flex justify-center ">
                             
                             {/* div for first card */}
-                            <div className="bg-lemonChiffon rounded w-[500px] 2xlMax:max-w-md border-2 border-themeTan m-5 flex flex-col items-stretch mdMax:w-[300px] ">
+                            <div className="bg-lemonChiffon rounded w-[500px] 2xlMax:max-w-md border-2 border-themeTan flex flex-col items-stretch mdMax:w-[300px] mdMin:m-5 mdMax:m-1">
                                 <div className="p-3">
                                     <a className="text-decoration-none" href="https://github.com/agrimes23/travel-plan-frontend">
                                         <div className="border">
@@ -45,7 +45,7 @@ const WebProjects = () => {
                             </div>
 
                             {/* div for second card */}
-                            <div className="bg-lemonChiffon rounded w-[500px] 2xlMax:max-w-md border-2 border-themeTan m-5 flex flex-col items-stretch mdMax:w-[300px] ">    
+                            <div className="bg-lemonChiffon rounded w-[500px] 2xlMax:max-w-md border-2 border-themeTan flex flex-col items-stretch mdMax:w-[300px] mdMin:m-5 mdMax:m-1">    
                                 <div className="">
                                     <a className="text-decoration-none" href="https://github.com/agrimes23/weather_frontend">
                                         <div className="p-3">
