@@ -45,7 +45,7 @@ const HomePage = () => {
             </div>
 
             {/* container for two boxes */}
-            <div className="flex xlMin:flex-row flex-col justify-center mx-20 mb-20">
+            <div className="flex xlMin:flex-row flex-col justify-center mx-20 mb-20 smMax:mx-5">
                 {/* about me */}
                 <div className="exp-conatiner-hp my-5 px-auto ">
                     <Link title="Alex Grimes' Work Experience" className="no-underline text-white" to="/experience">
