@@ -71,10 +71,10 @@ nav {
 .nav-item-area:before {
   transition: 0.5s all ease;
   position: absolute;
-  top: -20%;
+  top: 5%;
   left: 50%;
   right: 50%;
-  bottom: -40%;
+  bottom: 5%;
   opacity: 0;
   content: "";
   border-radius: 3%;
