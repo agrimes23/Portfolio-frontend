@@ -6,7 +6,7 @@ import codingVidBG from '../assets/CodingClearShort.mp4'
 import bgSplash from '../assets/SplashOfPaint.jpg'
 import treeWater from '../assets/baywithTrees.jpg'
 import colorGrad from '../assets/watercolor_gradient.jpg'
-import orangeGrad from '../assets/orange_gradient.jpg'
+import pyGrad from '../assets/purp_yellow_gradient.jpg'
 
 const HomePage = () => {
 
@@ -32,15 +32,15 @@ const HomePage = () => {
         };
       }, []);
 
-    useEffect (() => {
-        window.scroll(0,0)
-    })
+    // useEffect (() => {
+    //     window.scroll(0,0)
+    // })
 
     return (
         <>
             {/* name and title */}
-           <div className="mb-20 min-w-screen">
-            <motion.div className="bg-cover h-screen" style={{ backgroundImage: `url(${colorGrad})` }} >
+           <div className="pb-20 min-w-screen bg-lemonChiffon">
+            <motion.div className="bg-cover h-screen" style={{ backgroundImage: `url(${pyGrad})` }} >
                 <div id="intro_section" className=" py-60 flex flex-col items-center text-center">
                         <motion.div className="border-navyBlue border-5 rounded max-w-5xl w-1/2 mx-auto p-10 mdMax:px-5" style={{
                             transform: `rotateX(${tilt.y}deg) rotateY(${tilt.x}deg)`,
@@ -53,7 +53,7 @@ const HomePage = () => {
             </motion.div>
 
             {/* projects section with video mirroring */}
-            <div className="projects-hp my-28 mdMax:h-64 bg-codingDiv h-100">
+            {/* <div className="projects-hp my-28 mdMax:h-64 bg-codingDiv h-100">
                 <div className="col mx-auto absolute pos-forward smMax:translate-y-2/4 mdMax:translate-y-3/4 xlMax:translate-y-full z-10 translate-y-full w-100 h-44 flex justify-center">
                     <Link title="Alex Grimes' Coding Projects" className="text-box mb-0 justify-center items-center no-underline text-white" to="/projects"><h2 className="bg-darkBrown text-3xl bg-opacity-95 flex items-center p-5">View Alex's Coding Projects</h2></Link>
                 </div>
@@ -69,6 +69,29 @@ const HomePage = () => {
                             <source src={codingVidBG} type="video/mp4" />
                     </video>
                 </div>
+            </div> */}
+
+            {/* on scroll, appear */}
+            <div className="h-screen">
+                <motion.div className="max-w-4xl border-2 my-20 h-1/2 mx-auto bg-gradient-to-r from-navyBlue shadow-2xl p-5 flex justify-around rounded" initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+      variants={{
+        visible: { opacity: 1 },
+        hidden: { opacity: 0 }
+      }}>
+                    {/* text */}
+                    <div className="text-white text-4xl w-4/12">
+                        <h2>View Alex's Coding Projects</h2>
+                    </div>
+                    {/* video? */}
+                    <div className="">
+                        <video className="flex h-60 mdMax:mt-5 " autoPlay loop muted>
+                                <source src={codingVidBG} type="video/mp4" />
+                        </video>
+                    </div>
+                </motion.div>
             </div>
 
             {/* container for two boxes */}
