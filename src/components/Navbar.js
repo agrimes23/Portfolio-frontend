@@ -64,21 +64,56 @@ const Navbar = () => {
               </a>
             </div>
             <label htmlFor="about me"/>
-              <button className="nav-item nav-item-area p-4">
+              <motion.button className="nav-item nav-item-area rounded p-4" initial={{ top: '-10%', bottom: '-40%', transition: {duration: 0.5, ease: "all ease"} }}
+              whileHover={{
+                opacity: 1,
+                left: 0,
+                right: 0,
+                transition: { duration: 0.5, ease: 'easeOut' },
+                backgroundColor: 'rgb(4, 69, 70)',
+                color: 'white',
+              }}>
                 About Me
-              </button>
+              </motion.button>
             <label htmlFor="web projects"/>
-              <button className="nav-item nav-item-area p-4">
+              <motion.button className="nav-item nav-item-area rounded p-4" initial={{ top: '-10%', bottom: '-40%', transition: {duration: 0.5, ease: "all ease"} }}
+              whileHover={{
+                opacity: 1,
+                left: 0,
+                right: 0,
+                transition: { duration: 0.5, ease: 'easeOut' },
+                backgroundColor: 'rgb(4, 69, 70)',
+                color: 'white',
+              }}>
                 Web Projects
-              </button>
+              </motion.button>
             <label htmlFor="web projects"/>
-              <button className="nav-item nav-item-area p-4">
+              <motion.button className="nav-item nav-item-area rounded p-4" initial={{ top: '-10%', bottom: '-40%', transition: {duration: 0.5, ease: "all ease"} }}
+              whileHover={{
+                opacity: 1,
+                left: 0,
+                right: 0,
+                transition: { duration: 0.5, ease: 'easeOut' },
+                backgroundColor: 'rgb(4, 69, 70)',
+                color: 'white',
+              }}>
                 Mobile Projects
-              </button>
+              </motion.button>
             <label htmlFor="experience"/>
-              <button className="nav-item nav-item-area p-4">
+              <motion.button 
+              className="nav-item nav-item-area rounded p-4"
+              initial={{ top: '-10%', bottom: '-40%', transition: {duration: 0.5, ease: "all ease"} }}
+              whileHover={{
+                opacity: 1,
+                left: 0,
+                right: 0,
+                transition: { duration: 0.5, ease: 'easeOut' },
+                backgroundColor: 'rgb(4, 69, 70)',
+                color: 'white',
+              }}
+              >
                 Experience
-              </button>
+              </motion.button>
           </div>
         </div>
         <div className="sm-screen-nav hidden 2xlMax:flex">

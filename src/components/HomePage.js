@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { Routes, Link, Route, useLocation } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import Footer from './Footer.js'
 import codingVidBG from '../assets/CodingClearShort.mp4'
 import bgSplash from '../assets/SplashOfPaint.jpg'
@@ -50,18 +51,18 @@ const HomePage = () => {
                 <div className="exp-conatiner-hp my-5 px-auto ">
                     <Link title="Alex Grimes' Work Experience" className="no-underline text-white" to="/experience">
                         {/* experience-hp */}
-                        <div className="bg-themeTan h-80 rounded xlMin:w-4/6 flex items-center p-3">
+                        <motion.div className="bg-themeTan h-80 rounded xlMin:w-4/6 flex items-center p-3" whileHover={{ scale: 1.1 }}>
                             <h2 className="experience-title-hp text-darkBlueGreen text-3xl">Read about how Alex became a Programmer and Other Experiences</h2>
-                        </div> 
+                        </motion.div> 
                     </Link>
                 </div>
 
                 {/* experience */}
                 <div className="exp-conatiner-hp text-center my-5 px-auto">
                     <Link title="Alex Grimes' About Me Page" className="no-underline text-black" to="/aboutme">
-                        <div className=" bg-darkOliveGreen flex h-80 rounded xlMin:w-62 justify-center items-center p-3">
+                        <motion.div className=" bg-darkOliveGreen flex h-80 rounded xlMin:w-62 justify-center items-center p-3" whileHover={{ scale: 1.1 }}>
                             <h2 className=" text-lemonChiffon text-3xl px-10">Still Curious? Read the About Me Page!</h2>
-                        </div> 
+                        </motion.div> 
                     </Link>
                 </div>
             </div>

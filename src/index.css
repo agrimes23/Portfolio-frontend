@@ -62,7 +62,7 @@ nav {
   color: rgb(4, 69, 70);
 }
 
-.nav-item-area {
+/* .nav-item-area {
   transition: ease-out 0.3s;
   position: relative;
   z-index: 1;
@@ -90,7 +90,7 @@ nav {
 
 .nav-item:hover {
   color: white;
-}
+} */
 
 .ham-tab {
   z-index: 1;
