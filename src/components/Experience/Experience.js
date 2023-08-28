@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Footer from '../Footer.js'
 import Resume from '../Resume.js'
 import myResume from '../../assets/Alex-Grimes-Resume.PNG'
+import pyGrad from '../../assets/purp_yellow_gradient.jpg'
 
 // TODO: 
 // // Add download button for resume
@@ -44,8 +45,10 @@ const Experience = () => {
     return (
         <>
             <div className="flex min-h-screen min-w-screen flex-col">
-              <div className="flex text-center mt-5 row smMax:m-0 smMax:px-5">
-                <h1 className="my-5 text-5xl font-bold">Work Experience</h1>
+              <div className="flex text-center row smMax:m-0 smMax:px-5">
+              <div className="flex w-full h-60 bg-cover" style={{ backgroundImage: `url(${pyGrad})`}}>
+                        <h1 className="my-auto ml-20 text-5xl font-bold text-white bg-navyBlue bg-opacity-60 p-8 rounded mdMax:mx-auto">Web Projects</h1>
+                    </div>
                 {/* <div className="exp-container flex xlMax:flex-col my-5">
                     <div className="tab-box mx-10 h-80 flex flex-col mb-5 xlMax:flex-row xlMax:max-h-32 lgMax:flex-col">
                         {tabHeaders.map((tab, key) => (
