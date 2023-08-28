@@ -18,7 +18,9 @@ module.exports = {
       'darkOliveGreen': '#4B7233',
       'themeTan': '#D8B390',
       'navyBlue': '#0d0d52',
-      'teal': '#014D4E'
+      'teal': '#014D4E',
+      'lightGray': '#D3D3D3',
+      'coral': '#fcb195',
     },
     screens: {
       '2xlMax': {'max': '1110px'},

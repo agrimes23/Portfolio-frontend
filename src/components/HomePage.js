@@ -36,11 +36,13 @@ const HomePage = () => {
     //     window.scroll(0,0)
     // })
 
+    // box-shadow: 0 0 8px 8px white inset;
+
     return (
         <>
             {/* name and title */}
            <div className="pb-20 min-w-screen bg-lemonChiffon">
-            <motion.div className="bg-cover h-screen" style={{ backgroundImage: `url(${pyGrad})` }} >
+            <motion.div className="bg-cover h-screen from-transparent border-opacity-25" style={{ backgroundImage: `url(${pyGrad})` }} >
                 <div id="intro_section" className=" py-60 flex flex-col items-center text-center">
                         <motion.div className="border-navyBlue border-5 rounded max-w-5xl w-1/2 mx-auto p-10 mdMax:px-5" style={{
                             transform: `rotateX(${tilt.y}deg) rotateY(${tilt.x}deg)`,
@@ -72,15 +74,12 @@ const HomePage = () => {
             </div> */}
 
             {/* on scroll, appear */}
-            <div className="h-screen">
-                <motion.div className="max-w-4xl border-2 my-20 h-1/2 mx-auto bg-gradient-to-r from-navyBlue shadow-2xl p-5 flex justify-around rounded" initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      transition={{ duration: 1 }}
-      variants={{
-        visible: { opacity: 1 },
-        hidden: { opacity: 0 }
-      }}>
+            <div className="h-screen flex px-8 items-center">
+                <motion.div className="max-w-6xl border-4 border-navyBlue h-1/2 mx-auto bg-gradient-to-r from-navyBlue shadow-2xl p-5 flex justify-around rounded" initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2 }}
+                >
                     {/* text */}
                     <div className="text-white text-4xl w-4/12">
                         <h2>View Alex's Coding Projects</h2>
@@ -95,13 +94,16 @@ const HomePage = () => {
             </div>
 
             {/* container for two boxes */}
-            <div className="flex xlMin:flex-row flex-col justify-center mx-20 mb-20 smMax:mx-5">
+            <motion.div className="flex xlMin:flex-row flex-col justify-center mx-20 mb-20 smMax:mx-5" initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2 }}>
                 {/* about me */}
                 <div className="exp-conatiner-hp my-5 px-auto ">
                     <Link title="Alex Grimes' Work Experience" className="no-underline text-white" to="/experience">
                         {/* experience-hp */}
-                        <motion.div className="bg-themeTan h-80 rounded xlMin:w-4/6 flex items-center p-3" whileHover={{ scale: 1.1 }}>
-                            <h2 className="experience-title-hp text-darkBlueGreen text-3xl">Read about how Alex became a Programmer and Other Experiences</h2>
+                        <motion.div className="bg-coral h-80 rounded xlMin:w-4/6 flex items-center p-3" whileHover={{ scale: 1.1 }}>
+                            <h2 className="experience-title-hp text-black text-3xl">Read about how Alex became a Programmer and Other Experiences</h2>
                         </motion.div> 
                     </Link>
                 </div>
@@ -109,12 +111,12 @@ const HomePage = () => {
                 {/* experience */}
                 <div className="exp-conatiner-hp text-center my-5 px-auto">
                     <Link title="Alex Grimes' About Me Page" className="no-underline text-black" to="/aboutme">
-                        <motion.div className=" bg-darkOliveGreen flex h-80 rounded xlMin:w-62 justify-center items-center p-3" whileHover={{ scale: 1.1 }}>
-                            <h2 className=" text-lemonChiffon text-3xl px-10">Still Curious? Read the About Me Page!</h2>
+                        <motion.div className=" bg-navyBlue flex h-80 rounded xlMin:w-62 justify-center items-center p-3" whileHover={{ scale: 1.1 }}>
+                            <h2 className=" text-white text-3xl px-10">Still Curious? Read the About Me Page!</h2>
                         </motion.div> 
                     </Link>
                 </div>
-            </div>
+            </motion.div>
             </div>
             <Footer/>
         </>
