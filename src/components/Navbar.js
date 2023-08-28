@@ -40,7 +40,7 @@ const Navbar = () => {
     <>
       <nav className="navbar sticky-top p-4 d-flex columnnavbar">
         <div className="flex flex-row">
-          <button className="text-decoration-none">
+          <button className="text-decoration-none" onPress={() => navigate.navigation("/")}>
             <h1
               className="nav-home"
               title="Home Page"
@@ -64,7 +64,7 @@ const Navbar = () => {
               </a>
             </div>
             <label htmlFor="about me"/>
-              <motion.button className="nav-item nav-item-area rounded p-4" initial={{ top: '-10%', bottom: '-40%', transition: {duration: 0.5, ease: "all ease"} }}
+              <motion.button className="nav-item nav-item-area rounded p-4" onPress={redirectAB} initial={{ top: '-10%', bottom: '-40%', transition: {duration: 0.5, ease: "all ease"} }}
               whileHover={{
                 opacity: 1,
                 left: 0,
