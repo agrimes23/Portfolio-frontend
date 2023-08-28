@@ -5,9 +5,32 @@ import Footer from './Footer.js'
 import codingVidBG from '../assets/CodingClearShort.mp4'
 import bgSplash from '../assets/SplashOfPaint.jpg'
 import treeWater from '../assets/baywithTrees.jpg'
+import colorGrad from '../assets/watercolor_gradient.jpg'
+import orangeGrad from '../assets/orange_gradient.jpg'
 
 const HomePage = () => {
 
+    const [tilt, setTilt] = useState({ x: 0, y: 0 });
+
+    // Update the tilt values on mousemove
+    const handleMouseMove = (e) => {
+        const { clientX, clientY } = e;
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+    
+        // Calculate tilt values based on mouse movement direction
+        const xTilt = ((clientX / windowWidth) * 2 - 1) * 30; // Exaggerated tilt factor
+        const yTilt = ((clientY / windowHeight) * 2 - 1) * 30; // Exaggerated tilt factor
+    
+        setTilt({ x: xTilt, y: yTilt });
+      };
+  
+      useEffect(() => {
+        window.addEventListener('mousemove', handleMouseMove);
+        return () => {
+          window.removeEventListener('mousemove', handleMouseMove);
+        };
+      }, []);
 
     useEffect (() => {
         window.scroll(0,0)
@@ -17,14 +40,17 @@ const HomePage = () => {
         <>
             {/* name and title */}
            <div className="mb-20 min-w-screen">
-            <div className="bg-cover " style={{ backgroundImage: `url(${treeWater})` }} >
-                <div id="intro_section" className=" py-60 flex items-center text-center">
-                        <div className="bg-lemonChiffon max-w-5xl w-4/5 mx-auto p-10 mdMax:px-5">
-                            <h1 className="font-titleName text-darkSalmon text-7xl row justify-center mdMax:text-5xl">Alex Grimes</h1>
-                            <h2 className="description-title font-newsCycle text-darkOliveGreen text-6xl mdMax:text-4xl">Full-Stack Developer | Web Developer</h2>
-                        </div>
+            <motion.div className="bg-cover h-screen" style={{ backgroundImage: `url(${colorGrad})` }} >
+                <div id="intro_section" className=" py-60 flex flex-col items-center text-center">
+                        <motion.div className="border-navyBlue border-5 rounded max-w-5xl w-1/2 mx-auto p-10 mdMax:px-5" style={{
+                            transform: `rotateX(${tilt.y}deg) rotateY(${tilt.x}deg)`,
+                            }}>
+                            <h1 className="font-titleName text-navyBlue text-7xl row justify-center mdMax:text-5xl">Alex Grimes</h1>
+                            <h2 className="description-title font-newsCycle text-teal text-6xl mdMax:text-4xl">Full-Stack Developer | Web Developer</h2>
+                        </motion.div>
+                        
                 </div>
-            </div>
+            </motion.div>
 
             {/* projects section with video mirroring */}
             <div className="projects-hp my-28 mdMax:h-64 bg-codingDiv h-100">

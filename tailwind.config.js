@@ -17,6 +17,8 @@ module.exports = {
       'lemonChiffon': '#FFF4CB',
       'darkOliveGreen': '#4B7233',
       'themeTan': '#D8B390',
+      'navyBlue': '#0d0d52',
+      'teal': '#014D4E'
     },
     screens: {
       '2xlMax': {'max': '1110px'},

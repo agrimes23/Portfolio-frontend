@@ -70,7 +70,7 @@ const Navbar = () => {
                 left: 0,
                 right: 0,
                 transition: { duration: 0.5, ease: 'easeOut' },
-                backgroundColor: 'rgb(4, 69, 70)',
+                backgroundColor: '#0d0d52',
                 color: 'white',
               }}>
                 About Me
@@ -82,7 +82,7 @@ const Navbar = () => {
                 left: 0,
                 right: 0,
                 transition: { duration: 0.5, ease: 'easeOut' },
-                backgroundColor: 'rgb(4, 69, 70)',
+                backgroundColor: '#0d0d52',
                 color: 'white',
               }}>
                 Web Projects
@@ -94,7 +94,7 @@ const Navbar = () => {
                 left: 0,
                 right: 0,
                 transition: { duration: 0.5, ease: 'easeOut' },
-                backgroundColor: 'rgb(4, 69, 70)',
+                backgroundColor: '#0d0d52',
                 color: 'white',
               }}>
                 Mobile Projects
@@ -108,7 +108,7 @@ const Navbar = () => {
                 left: 0,
                 right: 0,
                 transition: { duration: 0.5, ease: 'easeOut' },
-                backgroundColor: 'rgb(4, 69, 70)',
+                backgroundColor: '#0d0d52',
                 color: 'white',
               }}
               >

@@ -27,7 +27,7 @@ body {
 /* --------------------- NavBar --------------------- */
 
 nav {
-  border-bottom: 1px rgb(4, 69, 70) solid;
+  border-bottom: 1px #0d0d52 solid;
   background-color:rgb(249, 253, 253);
 }
 
@@ -35,8 +35,8 @@ nav {
   font-family: Poppins 700;
   font-weight: bold;
   font-size: 1.3rem;
-  background-color: rgb(4, 69, 70);
-  border: rgb(4, 69, 70);
+  background-color: #0d0d52;
+  border: #0d0d52;
   color: white;
   border-radius: 5px;
   
@@ -44,7 +44,7 @@ nav {
 
 .button:hover {
   transform: scale(1.1);
-  background-color: #1d6850;
+  background-color: #2020be;
   color: white;
 }
 
@@ -52,14 +52,14 @@ nav {
   font-family: Poppins 700;
   font-weight: bold;
   font-size: 1.3rem;
-  color: rgb(4, 69, 70);
+  color: #0d0d52;
 }
 
 .nav-home {
   font-family: Poppins 700;
   font-weight: bold;
   font-size: 3rem;
-  color: rgb(4, 69, 70);
+  color: #0d0d52;
 }
 
 /* .nav-item-area {
@@ -98,7 +98,7 @@ nav {
   left:0;
   right:0;
   width: 100vw;
-  background-color: #0e3529;
+  background-color: #0d0d52;
   font-size: 1.2em;
   transition: 1s ease;
 }
@@ -107,7 +107,7 @@ nav {
   cursor: pointer;
 }
 .sm-nav-item:hover {
-  background-color: #061813;
+  background-color: #050520;
 }
 
 /* --------------------- footer --------------------- */
