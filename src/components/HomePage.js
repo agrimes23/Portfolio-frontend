@@ -42,7 +42,7 @@ const HomePage = () => {
         <>
             {/* name and title */}
            <div className="pb-20 min-w-screen bg-lemonChiffon">
-            <motion.div className="bg-cover h-screen from-transparent border-opacity-25" style={{ backgroundImage: `url(${pyGrad})` }} >
+            <motion.div className="bg-cover h-full py-14 from-transparent border-opacity-25" style={{ backgroundImage: `url(${pyGrad})` }} >
                 <div id="intro_section" className=" py-60 flex flex-col items-center text-center">
                         <motion.div className="border-navyBlue border-5 rounded max-w-5xl w-1/2 mx-auto p-10 mdMax:px-5" style={{
                             transform: `rotateX(${tilt.y}deg) rotateY(${tilt.x}deg)`,
