@@ -5,6 +5,7 @@ import StyleFinderImg from '../../images/StyleFinder.PNG'
 import WeatherApp from '../../images/WeatherApp.PNG'
 import Footer from '../Footer.js'
 import flowerForest from '../../assets/flower_bush.jpg'
+import wood from '../../assets/wood.jpg'
 
 const WebProjects = () => {
 
