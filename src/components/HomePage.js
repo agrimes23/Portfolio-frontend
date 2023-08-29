@@ -42,17 +42,19 @@ const HomePage = () => {
         <>
             {/* name and title */}
            <div className="pb-20 min-w-screen bg-lemonChiffon">
-            <motion.div className="bg-cover h-full py-14 from-transparent border-opacity-25" style={{ backgroundImage: `url(${pyGrad})` }} >
-                <div id="intro_section" className=" py-60 flex flex-col items-center text-center">
-                        <motion.div className="border-navyBlue border-5 rounded max-w-5xl w-1/2 mx-auto p-10 mdMax:px-5" style={{
-                            transform: `rotateX(${tilt.y}deg) rotateY(${tilt.x}deg)`,
-                            }}>
-                            <h1 className="font-titleName text-navyBlue text-7xl row justify-center mdMax:text-5xl">Alex Grimes</h1>
-                            <h2 className="description-title font-newsCycle text-teal text-6xl mdMax:text-4xl">Full-Stack Developer | Web Developer</h2>
-                        </motion.div>
-                        
-                </div>
-            </motion.div>
+            <div className="-pb-20 shadow-inner shadow-xl">
+                <motion.div className="bg-cover h-full from-transparent border-opacity-25" style={{ backgroundImage: `url(${pyGrad})` }} >
+                    <div id="intro_section" className=" py-60 flex flex-col items-center text-center">
+                            <motion.div className="border-navyBlue border-5 rounded max-w-5xl w-1/2 mx-auto p-10 mdMax:px-5" style={{
+                                transform: `rotateX(${tilt.y}deg) rotateY(${tilt.x}deg)`,
+                                }}>
+                                <h1 className="font-titleName text-navyBlue text-7xl row justify-center mdMax:text-5xl">Alex Grimes</h1>
+                                <h2 className="description-title font-newsCycle text-teal text-6xl mdMax:text-4xl">Full-Stack Developer | Web Developer</h2>
+                            </motion.div>
+                            
+                    </div>
+                </motion.div>
+            </div>
 
             {/* projects section with video mirroring */}
             {/* <div className="projects-hp my-28 mdMax:h-64 bg-codingDiv h-100">
@@ -75,21 +77,24 @@ const HomePage = () => {
 
             {/* on scroll, appear */}
             <div className="h-screen flex px-8 items-center">
-                <motion.div className="max-w-6xl border-4 border-navyBlue h-1/2 mx-auto bg-gradient-to-r from-navyBlue shadow-2xl p-5 flex justify-around rounded" initial={{ opacity: 0, y: 100 }}
+                <motion.div className="h-1/2 mx-auto" initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                
                 viewport={{ once: true }}
                 transition={{ duration: 2 }}
                 >
+                <motion.div className="max-w-6xl border-4 border-lemonChiffon flex justify-around items-center rounded p-5 h-full  bg-gradient-to-r from-coral shadow-2xl " whileHover={{ scale: 1.1 }}>
                     {/* text */}
-                    <div className="text-white text-4xl w-4/12">
+                    <div className="text-navyBlue font-bold my-auto text-4xl w-4/12">
                         <h2>View Alex's Coding Projects</h2>
                     </div>
                     {/* video? */}
-                    <div className="">
-                        <video className="flex h-60 mdMax:mt-5 " autoPlay loop muted>
+                    <div className="my-auto  ">
+                        <video className="flex h-60 mdMax:mt-5 shadow-outline shadow-xl shadow-darkSalmon" autoPlay loop muted>
                                 <source src={codingVidBG} type="video/mp4" />
                         </video>
                     </div>
+                </motion.div>
                 </motion.div>
             </div>
 
@@ -102,14 +107,14 @@ const HomePage = () => {
                 <div className="exp-conatiner-hp my-5 px-auto ">
                     <Link title="Alex Grimes' Work Experience" className="no-underline text-white" to="/experience">
                         {/* experience-hp */}
-                        <motion.div className="bg-coral h-80 rounded xlMin:w-4/6 flex items-center p-3" whileHover={{ scale: 1.1 }}>
+                        <motion.div className="bg-coral shadow-2xl h-80 rounded xlMin:w-4/6 flex items-center p-3" whileHover={{ scale: 1.1 }}>
                             <h2 className="experience-title-hp text-black text-3xl">Read about how Alex became a Programmer and Other Experiences</h2>
                         </motion.div> 
                     </Link>
                 </div>
 
                 {/* experience */}
-                <div className="exp-conatiner-hp text-center my-5 px-auto">
+                <div className="exp-conatiner-hp shadow-2xl text-center my-5 px-auto">
                     <Link title="Alex Grimes' About Me Page" className="no-underline text-black" to="/aboutme">
                         <motion.div className=" bg-navyBlue flex h-80 rounded xlMin:w-62 justify-center items-center p-3" whileHover={{ scale: 1.1 }}>
                             <h2 className=" text-white text-3xl px-10">Still Curious? Read the About Me Page!</h2>

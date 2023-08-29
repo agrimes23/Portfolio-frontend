@@ -6,12 +6,12 @@
 @tailwind utilities;
 
 html {
-  background-color:rgb(249, 253, 253);
+  /* background-color:rgb(249, 253, 253); */
   min-height: 100%;
 }
 
 body {
-  background-color:rgb(249, 253, 253);
+  /* background-color:rgb(249, 253, 253); */
   min-height: 100%;
 }
 
@@ -28,7 +28,7 @@ body {
 
 nav {
   border-bottom: 1px #0d0d52 solid;
-  background-color:rgb(249, 253, 253);
+  /* background-color:rgb(249, 253, 253); */
 }
 
 .button {

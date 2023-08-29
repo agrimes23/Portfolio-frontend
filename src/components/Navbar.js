@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import Resume from "../assets/Alexandra_Grimes_Resume.pdf"
+import pyGrad from '../assets/purp_yellow_gradient.jpg'
+
 
 const Navbar = () => {
 
@@ -38,7 +40,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar sticky-top p-4 d-flex columnnavbar">
+      <nav className="navbar bg-transparent sticky-top p-4 d-flex columnnavbar bg-cover" style={{ backgroundImage: `url(${pyGrad})` }} >
         <div className="flex flex-row">
           <button className="text-decoration-none" onClick={() => navigate("/")}>
             <h1
