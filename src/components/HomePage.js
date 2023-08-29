@@ -5,6 +5,7 @@ import Footer from './Footer.js'
 import codingVidBG from '../assets/CodingClearShort.mp4'
 import bgSplash from '../assets/SplashOfPaint.jpg'
 import treeWater from '../assets/baywithTrees.jpg'
+import vines from '../assets/green_vines.jpg'
 
 const HomePage = () => {
 
@@ -17,9 +18,9 @@ const HomePage = () => {
         <>
             {/* name and title */}
            <div className="mb-20 min-w-screen">
-            <div className="bg-cover " style={{ backgroundImage: `url(${treeWater})` }} >
-                <div id="intro_section" className=" py-60 flex items-center text-center">
-                        <div className="bg-lemonChiffon max-w-5xl w-4/5 mx-auto p-10 mdMax:px-5">
+            <div className="bg-cover " style={{ backgroundImage: `url(${vines})` }} >
+                <div id="intro_section" className=" py-80 flex items-center text-center">
+                        <div className="bg-lemonChiffon bg-opacity-90 rounded max-w-5xl w-4/5 mx-auto py-10 px-8 mdMax:px-8">
                             <h1 className="font-titleName text-darkSalmon text-7xl row justify-center mdMax:text-5xl">Alex Grimes</h1>
                             <h2 className="description-title font-newsCycle text-darkOliveGreen text-6xl mdMax:text-4xl">Full-Stack Developer | Web Developer</h2>
                         </div>
