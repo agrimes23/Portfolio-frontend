@@ -19,7 +19,7 @@ const HomePage = () => {
         <>
             {/* name and title */}
            <div className="mb-20 min-w-screen">
-            <div className="bg-cover " style={{ backgroundImage: `url(${vines})` }} >
+            <div className="bg-cover shadow-2xl" style={{ backgroundImage: `url(${vines})` }} >
                 <div id="intro_section" className=" py-80 flex items-center text-center">
                         <div className="bg-lemonChiffon bg-opacity-90 rounded max-w-5xl w-4/5 mx-auto py-10 px-8 mdMax:px-8">
                             <h1 className="font-titleName text-darkSalmon text-7xl row justify-center mdMax:text-5xl">Alex Grimes</h1>
@@ -29,9 +29,13 @@ const HomePage = () => {
             </div>
 
             {/* projects section with video mirroring */}
-            <div className="projects-hp py-36 bg-codingDiv mdMax:h-64 h-100" >
-                <div className="col mx-auto absolute pos-forward smMax:translate-y-2/4 mdMax:translate-y-3/4 xlMax:translate-y-full z-10 translate-y-full w-100 h-44 flex justify-center">
-                    <Link title="Alex Grimes' Coding Projects" className="text-box mb-0 justify-center items-center no-underline text-white" to="/projects"><motion.h2 className="bg-darkBrown text-3xl bg-opacity-95 flex items-center p-5" whileHover={{ scale: 1.1 }}>View Alex's Coding Projects</motion.h2></Link>
+            <div className="w-3/4 m-32  mx-auto py-36 bg-codingDiv mdMax:h-64 h-full">
+                <motion.div initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 2 }}>
+                <div className="col absolute pos-forward smMax:translate-y-2/4 mdMax:translate-y-3/4 xlMax:translate-y-full z-10 translate-y-full h-44 flex mx-auto justify-center w-3/4" >
+                    <Link title="Alex Grimes' Coding Projects" className="mb-0 justify-center items-center no-underline text-white" to="/projects"><motion.h2 className="bg-darkBrown text-3xl bg-opacity-95 flex items-center p-5" whileHover={{ scale: 1.1 }}>View Alex's Coding Projects</motion.h2></Link>
                 </div>
 
                 <div className="w-100 bg-codingDiv video-section flex justify-center py-5">
@@ -45,6 +49,7 @@ const HomePage = () => {
                             <source src={codingVidBG} type="video/mp4" />
                     </video>
                 </div>
+                </motion.div>
             </div>
 
             {/* container for two boxes */}
