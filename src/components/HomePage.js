@@ -3,10 +3,10 @@ import { Routes, Link, Route, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import Footer from './Footer.js'
 import codingVidBG from '../assets/CodingClearShort.mp4'
-import bgSplash from '../assets/SplashOfPaint.jpg'
 import treeWater from '../assets/baywithTrees.jpg'
 import vines from '../assets/green_vines.jpg'
 import wood from '../assets/wood.jpg'
+import waterColorPbp from '../assets/blue_purple_pink.jpg'
 
 const HomePage = () => {
 
