@@ -28,7 +28,7 @@ const HomePage = () => {
            <div className="mb-20 min-w-screen">
             <div className="bg-cover shadow-2xl" style={{ backgroundImage: `url(${darkWaterColor})` }} >
                 <div id="intro_section" className=" py-52 flex items-center  justify-center">
-                        <motion.div className="border-lemonChiffon border-4 -mt-44 bg-opacity-90 rounded px-6 max-w-4xl min-w-sm w-4/12 py-14 mdMax:px-8" 
+                        <motion.div className="border-lemonChiffon border-4 -mt-44 rounded px-6 max-w-4xl min-w-sm w-4/12 py-14 mdMax:px-8" 
                         initial={{x: -300, opacity: 0 }} 
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 2 }}
@@ -36,7 +36,7 @@ const HomePage = () => {
                             <h1 className="font-titleName text-lemonChiffon text-center text-7xl row justify-center mdMax:text-5xl">Alex Grimes</h1>
                             <h2 className="description-title font-newsCycle text-[#77d8ff] text-center text-6xl mdMax:text-4xl">Full Stack Developer</h2>
                         </motion.div>
-                        <motion.div className="bg-[#111c41] mx-10 p-10 mt-44 max-w-xl bg-opacity-60 rounded self-end interactive-div"
+                        <motion.div className="bg-[#2f2081] mx-10 p-10 mt-44 max-w-xl bg-opacity-50 rounded self-end interactive-div"
                         initial={{x: 300, opacity: 0 }} 
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 2 }}
