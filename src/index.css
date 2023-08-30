@@ -35,7 +35,7 @@ nav {
   font-family: Poppins 700;
   font-weight: bold;
   font-size: 1.3rem;
-  background-color: rgb(4, 69, 70);
+  background-color: #002f6c;
   border: rgb(4, 69, 70);
   color: white;
   border-radius: 5px;
@@ -44,7 +44,7 @@ nav {
 
 .button:hover {
   transform: scale(1.1);
-  background-color: #1d6850;
+  background-color: #0457c4;
   color: white;
 }
 
@@ -52,14 +52,14 @@ nav {
   font-family: Poppins 700;
   font-weight: bold;
   font-size: 1.3rem;
-  color: rgb(4, 69, 70);
+  color: #002f6c;
 }
 
 .nav-home {
   font-family: Poppins 700;
   font-weight: bold;
   font-size: 3rem;
-  color: rgb(4, 69, 70);
+  color: #002f6c;
 }
 
 .nav-item-area {
@@ -78,7 +78,7 @@ nav {
   opacity: 0;
   content: "";
   border-radius: 3%;
-  background-color: rgb(4, 69, 70);
+  background-color: #002f6c;
 }
 .nav-item-area:hover:before {
   transition: 0.5s all ease;
@@ -98,7 +98,7 @@ nav {
   left:0;
   right:0;
   width: 100vw;
-  background-color: #0e3529;
+  background-color: #002f6c;
   font-size: 1.2em;
   transition: 1s ease;
 }
@@ -145,20 +145,19 @@ i:hover {
   background-color: rgb(51, 51, 51, 0.95);
 } */
 
-/* CSS */
-.perspective {
-  perspective: 1200px; /* Adjust the perspective value as needed */
-  
-  /* background-color: blue; */
+/* DELETE LATER */
+/* .perspective {
+  perspective: 1200px;
 }
 
 .rotate-text {
-  transform: rotateY(50deg); /* Adjust the angle as needed */
+  transform: rotateY(50deg); 
 }
 
 .backEffect {
   clip-path: polygon(100% 85%, 0% 100%, 0% 0%, 100% 15%);
-}
+} */
+
 
 h2.experience-title-hp, h2.about-me-title-hp {
   text-align: center;
