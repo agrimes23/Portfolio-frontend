@@ -20,7 +20,7 @@ const HomePage = () => {
             {/* name and title */}
            <div className="mb-20 min-w-screen">
             <div className="bg-cover shadow-2xl" style={{ backgroundImage: `url(${vines})` }} >
-                <div id="intro_section" className=" py-80 flex items-center  text-center justify-center">
+                <div id="intro_section" className=" py-60 flex items-center  text-center justify-center">
                         <div className="bg-lemonChiffon bg-opacity-90 rounded px-10 max-w-5xl w-2/5 py-20 mdMax:px-8">
                             <h1 className="font-titleName text-darkSalmon text-7xl row justify-center mdMax:text-5xl">Alex Grimes</h1>
                             <h2 className="description-title font-newsCycle text-darkOliveGreen text-6xl mdMax:text-4xl">Full-Stack Developer | Web Developer</h2>
