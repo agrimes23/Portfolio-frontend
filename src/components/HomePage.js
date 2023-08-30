@@ -20,16 +20,20 @@ const HomePage = () => {
             {/* name and title */}
            <div className="mb-20 min-w-screen">
             <div className="bg-cover shadow-2xl" style={{ backgroundImage: `url(${vines})` }} >
-                <div id="intro_section" className=" py-80 flex items-center text-center">
-                        <div className="bg-lemonChiffon bg-opacity-90 rounded max-w-5xl w-4/5 mx-auto py-10 px-8 mdMax:px-8">
+                <div id="intro_section" className=" py-80 flex items-center  text-center justify-center">
+                        <div className="bg-lemonChiffon bg-opacity-90 rounded px-10 max-w-5xl w-2/5 py-20 mdMax:px-8">
                             <h1 className="font-titleName text-darkSalmon text-7xl row justify-center mdMax:text-5xl">Alex Grimes</h1>
                             <h2 className="description-title font-newsCycle text-darkOliveGreen text-6xl mdMax:text-4xl">Full-Stack Developer | Web Developer</h2>
+                        </div>
+                        <div className="bg-lemonChiffon m-10 p-10 bg-opacity-90 rounded ">
+                            <h1>Well Hi</h1>
+                            <h1>See my github</h1>
                         </div>
                 </div>
             </div>
 
-            {/* projects section with video mirroring */}
-            <div className="w-3/4 m-32  mx-auto py-36 bg-codingDiv mdMax:h-64 h-full">
+          {/* projects section with video mirroring */}
+            <div className="w-3/4 m-32 mx-auto py-36 bg-codingDiv mdMax:h-64 mdMax:mb-80 h-full">
                 <motion.div initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -53,21 +57,21 @@ const HomePage = () => {
             </div>
 
             {/* container for two boxes */}
-            <div className="flex xlMin:flex-row flex-col justify-center mx-20 mb-20 smMax:mx-5">
+            <div className="flex  flex-col justify-center xlMin:justify-around xlMin:mx-52 xlMin:flex-row mb-20">
                 {/* about me */}
-                <div className="exp-conatiner-hp my-5 px-auto ">
+                <div className="exp-conatiner-hp flex justify-center m-5 px-auto ">
                     <Link title="Alex Grimes' Work Experience" className="no-underline text-white" to="/experience">
                         {/* experience-hp */}
-                        <motion.div className="bg-themeTan h-80 rounded xlMin:w-4/6 flex items-center p-3" whileHover={{ scale: 1.1 }}>
+                        <motion.div className="bg-themeTan h-80 w-96 rounded flex items-center p-3" whileHover={{ scale: 1.1 }}>
                             <h2 className="experience-title-hp text-darkBlueGreen text-3xl">Read about how Alex became a Programmer and Other Experiences</h2>
                         </motion.div> 
                     </Link>
                 </div>
 
                 {/* experience */}
-                <div className="exp-conatiner-hp text-center my-5 px-auto">
+                <div className="exp-conatiner-hp text-center flex justify-center m-5 px-auto">
                     <Link title="Alex Grimes' About Me Page" className="no-underline text-black" to="/aboutme">
-                        <motion.div className=" bg-darkOliveGreen flex h-80 rounded xlMin:w-62 justify-center items-center p-3" whileHover={{ scale: 1.1 }}>
+                        <motion.div className=" bg-darkOliveGreen flex h-80 w-96 rounded xlMin:w-62 justify-center items-center p-3" whileHover={{ scale: 1.1 }}>
                             <h2 className=" text-lemonChiffon text-3xl px-10">Still Curious? Read the About Me Page!</h2>
                         </motion.div> 
                     </Link>

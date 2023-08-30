@@ -145,6 +145,21 @@ i:hover {
   background-color: rgb(51, 51, 51, 0.95);
 } */
 
+/* CSS */
+.perspective {
+  perspective: 1200px; /* Adjust the perspective value as needed */
+  
+  /* background-color: blue; */
+}
+
+.rotate-text {
+  transform: rotateY(50deg); /* Adjust the angle as needed */
+}
+
+.backEffect {
+  clip-path: polygon(100% 85%, 0% 100%, 0% 0%, 100% 15%);
+}
+
 h2.experience-title-hp, h2.about-me-title-hp {
   text-align: center;
 }
