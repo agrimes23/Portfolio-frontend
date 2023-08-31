@@ -20,7 +20,7 @@ body {
 } */
 
 *::selection {
-  background-color: #0e3529;
+  background-color: #0c569b;
   color: white;
 }
 
@@ -112,7 +112,6 @@ nav {
 
 /* --------------------- footer --------------------- */
 .footer {
-  background-color: rgb(4, 69, 70);
   position: relative;
   bottom: 0;
 }
@@ -324,12 +323,6 @@ h2.projects-title-hp:hover, .experience-hp:hover, .about-me-hp:hover {
   border: 1px rgb(153, 156, 156) solid;
   width: 100%;
   max-width: 1200px;
-}
-
-.project-border:hover {
-  /* zoom: 1.1 !important; */
-  /* font-size: 10vw !important; */
-  border: 5px rgb(4, 69, 70) solid;
 }
 
 .mobile-video {

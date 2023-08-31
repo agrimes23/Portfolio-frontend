@@ -3,6 +3,7 @@ import { Routes, Link, Route, useLocation } from 'react-router-dom'
 import RNWeather from '../../assets/ReactNativeWeatherVid.mp4'
 import RNCamera from '../../assets/InsuranceCardVid.mp4'
 import stars from '../../assets/starry_sky.jpg'
+import { motion } from 'framer-motion'
 
 const MobileProjects = () => {
 
@@ -27,7 +28,9 @@ const MobileProjects = () => {
                     {/* Mobile Projects Card Container */}
                     <div className="my-20  mx-auto ">                      
                         {/* Cards */}
-                        <div className="project-border flex xlMax:flex-col xlMax:items-center xlMax:min-w-0 xlMax:w-full rounded p-4 mx-auto my-2">
+                        <motion.div className="project-border flex xlMax:flex-col xlMax:items-center xlMax:min-w-0 xlMax:w-full rounded p-4 mx-auto my-3"
+                        whileHover={{ scale: 1.04 }}
+                        >
                             <video className="mobile-video 2xlMax:w-8/12" controls >
                                 <source src={RNCamera} type="video/mp4" />
                             </video>
@@ -38,8 +41,10 @@ const MobileProjects = () => {
                                 <h5 className="text-lg">Frontend: React Native, Typescript, Nativewind CSS, React Native Image Picker</h5>
                                 <a className="text-lg" href="https://github.com/agrimes23/ReactNativeUseCamera"><h6>Frontend Github Code</h6></a>
                             </div>
-                        </div>
-                        <div className="project-border flex xlMax:flex-col xlMax:items-center xlMax:min-w-0 xlMax:w-full rounded p-4 mx-auto my-2">
+                        </motion.div>
+                        <motion.div className="project-border flex xlMax:flex-col xlMax:items-center xlMax:min-w-0 xlMax:w-full rounded p-4 mx-auto my-2"
+                        whileHover={{ scale: 1.04 }}
+                        >
                             <video className="mobile-video 2xlMax:w-8/12" controls >
                                 <source src={RNWeather} type="video/mp4" />
                             </video>
@@ -52,7 +57,7 @@ const MobileProjects = () => {
                                 <a className="text-lg" href="https://github.com/agrimes23/ReactNativeWeatherFront"><h6>Frontend Github Code</h6></a>
                                 <a className="text-lg" href="https://github.com/agrimes23/ReactNativeWeatherBack"><h6>Backend Github Code</h6></a>
                             </div>
-                        </div>
+                        </motion.div>
 
                     </div>
 

@@ -28,7 +28,7 @@ const HomePage = () => {
            <div className="mb-20 min-w-screen">
             <div className="bg-cover shadow-2xl" style={{ backgroundImage: `url(${darkWaterColor})` }} >
                 <div id="intro_section" className=" py-52 flex items-center  justify-center">
-                        <motion.div className="border-lemonChiffon border-4 -mt-44 rounded px-6 max-w-4xl min-w-sm w-4/12 py-14 mdMax:px-8" 
+                        <motion.div className="-mt-44 rounded px-6 max-w-4xl min-w-sm w-4/12 py-14 mdMax:px-8" 
                         initial={{x: -300, opacity: 0 }} 
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 2 }}
@@ -41,8 +41,8 @@ const HomePage = () => {
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 2 }}
                         >
-                            <h1 className="text-lemonChiffon text-2xl">I'm a software engineer and full stack developer who writes dynamic, well organized code.</h1>
-                            <h1 className="text-lemonChiffon text-2xl mt-5">Delve deeper by exploring this site's <a className="text-[#94e1ff] underline" href='https://github.com/agrimes23/Portfolio-frontend'>code on GitHub</a></h1>
+                            <h1 className="text-lemonChiffon text-xl">I'm a software engineer and full stack developer who writes dynamic, well organized code.</h1>
+                            <h1 className="text-lemonChiffon text-xl mt-5">Delve deeper by exploring this site's <a className="text-[#94e1ff] underline" href='https://github.com/agrimes23/Portfolio-frontend'>code on GitHub</a></h1>
                         </motion.div>
                 </div>
             </div>
