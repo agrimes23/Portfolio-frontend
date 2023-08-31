@@ -10,6 +10,8 @@ import waterColorPbp from '../assets/blue_purple_pink.jpg'
 import darkWaterColor from '../assets/darkWaterColor.jpg'
 import divWaterColor from '../assets/blue_purple.jpg'
 import divWaterColor2 from '../assets/blue_purple_pink.jpg'
+import purpleGrad from '../assets/dark_light_purple.jpg'
+import flippedVid from '../assets/Flipped_coding_vid.mp4'
 
 const HomePage = () => {
 
@@ -48,7 +50,7 @@ const HomePage = () => {
             </div>
 
           {/* projects section with video mirroring */}
-            <div className="w-3/4 m-32 mx-auto py-32 rounded bg-codingDiv shadow-2xl mdMax:h-64 mdMax:mb-80 h-full">
+            {/* <div className="w-3/4 m-32 mx-auto py-32 rounded bg-codingDiv shadow-2xl mdMax:h-64 mdMax:mb-80 h-full">
                 <motion.div initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 2 }}>
@@ -68,10 +70,44 @@ const HomePage = () => {
                         </video>
                     </div>
                 </motion.div>
+            </div> */}
+
+            {/* -------------------- New Video Section --------------------- */}
+
+            <div className="w-screen max-h-screen mt-44 px-10 flex justify-center">
+
+                {/* container for card */}
+                <motion.div className="flex flex-row min-h-[500px] max-w-6xl rounded bg-gradient-to-t from-[#231d2c] to-[#4a356a] w-full bg-cover" initial={{y: 200, opacity: 0 }} 
+                        whileInView={{ y: 0, opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 2 }}>
+                    <div className="flex flex-col justify-around p-20 w-2/4">
+                        <h2 className="text-white text-2xl">View Some of Alex's Latest Projects</h2>
+                        <div className="flex flex-col">
+                            <motion.button className="bg-lemonChiffon rounded my-3 w-60 py-3 font-bold" whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.99 }}>See Web Projects</motion.button>
+                            <motion.button className="bg-lemonChiffon rounded my-3 w-60 py-3 font-bold " whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.99 }}>See Mobile Projects</motion.button>
+                        </div>
+                    </div>
+                    {/* video container */}
+                    <div className="bg-codingDiv h-[120px] mt-5 mx-auto" >
+                        
+                        <video className="w-[500px] shadow-2xl shadow-[#000000]" autoPlay loop muted>
+                                <source src={codingVidBG} type="video/mp4" />
+                        </video>
+                        <div className="w-[500px] h-[120px] flex z-10 absolute bg-gradient-to-t from-[#231d2c] reflect-div shadow shadow-[#000000]" ></div>
+                        <video className="w-[500px] h-[120px] absolute opacity-80 reflect-div transform" autoPlay loop muted>
+                                <source src={flippedVid} type="video/mp4" />
+                        </video>
+
+                    </div>
+                </motion.div>
             </div>
+            {/* ----------------------------------------------- */}
 
             {/* container for two boxes */}
-            <div className="flex  flex-col justify-center xlMin:justify-around xlMin:mx-52 xlMin:flex-row mb-20">
+            <div className="flex flex-col justify-center xlMin:justify-around xlMin:mx-52 xlMin:flex-row mt-44 mb-44">
                 {/* about me */}
                 <div className="exp-conatiner-hp flex justify-center m-5 px-auto ">
                     <Link title="Alex Grimes' Work Experience" className="no-underline text-white" to="/experience">
@@ -85,7 +121,7 @@ const HomePage = () => {
                 {/* experience */}
                 <div className="exp-conatiner-hp text-center flex justify-center m-5 px-auto">
                     <Link title="Alex Grimes' About Me Page" className="no-underline text-black" to="/aboutme">
-                        <motion.div className="  flex h-80 w-96 rounded xlMin:w-62 justify-center items-center p-3" style={{ backgroundImage: `url(${divWaterColor})` }} whileHover={{ scale: 1.1 }}>
+                        <motion.div className="  flex h-80 w-96 rounded xlMin:w-62 justify-center items-center p-3" style={{ backgroundImage: `url(${divWaterColor})` }} whileHover={{ scale: 1.1 }} >
                             <h2 className=" text-lemonChiffon text-3xl px-10">Still Curious? Read the About Me Page!</h2>
                         </motion.div> 
                     </Link>

@@ -157,6 +157,13 @@ i:hover {
   clip-path: polygon(100% 85%, 0% 100%, 0% 0%, 100% 15%);
 } */
 
+video {
+  object-fit: fill;
+}
+
+.reflect-div {
+  transform: translatex(-60px) skew(135deg);
+}
 
 h2.experience-title-hp, h2.about-me-title-hp {
   text-align: center;
