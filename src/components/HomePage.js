@@ -126,7 +126,7 @@ const HomePage = () => {
               {/* video container */}
               <div className="bg-codingDiv h-[120px] mt-5 mx-auto">
                 <video
-                  className="w-[500px] shadow-2xl shadow-[#000000]"
+                  className="w-[500px] shadow-2xl shadow-[#000000] object-fill"
                   autoPlay
                   loop
                   muted
@@ -135,7 +135,7 @@ const HomePage = () => {
                 </video>
                 <div className="w-[500px] h-[120px] flex z-10 absolute bg-gradient-to-t from-[#231d2c] reflect-div shadow shadow-[#000000]"></div>
                 <video
-                  className="w-[500px] h-[120px] absolute opacity-80 reflect-div transform"
+                  className="w-[500px] h-[120px] absolute opacity-80 reflect-div transform object-fill"
                   autoPlay
                   loop
                   muted
