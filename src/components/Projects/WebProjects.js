@@ -61,7 +61,7 @@ const WebProjects = () => {
                   >
                     <h5 className="flex items-center ">View Code</h5>
 
-                    <i class="fa-brands fa-github fa-2xl ml-2"></i>
+                    <i className="fa-brands fa-github fa-2xl ml-2"></i>
                   </a>
                   <a
                     className="flex items-center mx-2"
@@ -116,7 +116,7 @@ const WebProjects = () => {
                   >
                     <h5 className="flex items-center ">View Code</h5>
 
-                    <i class="fa-brands fa-github fa-2xl ml-2"></i>
+                    <i className="fa-brands fa-github fa-2xl ml-2"></i>
                   </a>
                   <a
                     className="flex items-center mx-2"

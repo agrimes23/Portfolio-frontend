@@ -50,7 +50,7 @@ const MobileProjects = () => {
                     className="flex items-center mx-2"
                     href="https://github.com/agrimes23/ReactNativeUseCamera"
                   >
-                    <i class="fa-brands fa-github fa-2xl"></i>
+                    <i className="fa-brands fa-github fa-2xl"></i>
                   </a>
                 </div>
               </div>
@@ -87,7 +87,7 @@ const MobileProjects = () => {
                     className="flex items-center mx-2"
                     href="https://github.com/agrimes23/ReactNativeWeatherBack"
                   >
-                    <i class="fa-brands fa-github fa-2xl"></i>
+                    <i className="fa-brands fa-github fa-2xl"></i>
                   </a>
                 </div>
               </div>
