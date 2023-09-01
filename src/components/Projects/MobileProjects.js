@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import { Routes, Link, Route, useLocation } from 'react-router-dom'
+import Navbar from '../Navbar'
 import RNWeather from '../../assets/ReactNativeWeatherVid.mp4'
 import RNCamera from '../../assets/InsuranceCardVid.mp4'
 import stars from '../../assets/starry_sky.jpg'
@@ -17,6 +18,7 @@ const MobileProjects = () => {
 
     return (
         <>
+            <Navbar />
             {/* Page Container / Fade-In*/}
             <div className=" min-w-screen min-h-screen w-90 xlMax:m-0 fadeInTop pb-4 flex row">
 

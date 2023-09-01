@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import { Routes, Link, Route, useLocation } from 'react-router-dom'
 import ExperienceContent from './ExperienceContent'
+import Navbar from '../Navbar'
 import styled from 'styled-components'
 import Footer from '../Footer.js'
 import Resume from '../Resume.js'
@@ -44,6 +45,7 @@ const Experience = () => {
 
     return (
         <>
+            <Navbar />
             <div className="flex min-h-screen min-w-screen flex-col">
               <div className="flex text-center row smMax:m-0 smMax:px-5">
               <div className="flex w-full h-60 bg-cover" style={{ backgroundImage: `url(${pyGrad})`}}>

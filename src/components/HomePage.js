@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Routes, Link, Route, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import Navbar from './Navbar.js'
 import Footer from './Footer.js'
 import codingVidBG from '../assets/CodingClearShort.mp4'
 import treeWater from '../assets/baywithTrees.jpg'
@@ -26,6 +27,7 @@ const HomePage = () => {
 
     return (
         <>
+         <Navbar />
             {/* name and title */}
            <div className="mb-20 min-w-screen">
             <div className="bg-cover shadow-2xl" style={{ backgroundImage: `url(${darkWaterColor})` }} >
@@ -41,9 +43,9 @@ const HomePage = () => {
                         <motion.div className="bg-[#2f2081] mx-10 p-10 mt-44 max-w-xl bg-opacity-50 rounded self-end interactive-div"
                         initial={{x: 300, opacity: 0 }} 
                         animate={{ x: 0, opacity: 1 }}
-                        transition={{ duration: 2 }}
+                        transition={{ duration: 1.5 }}
                         >
-                            <h1 className="text-lemonChiffon text-xl">I'm a software engineer and full stack developer who writes dynamic, well organized code.</h1>
+                            <h1 className="text-lemonChiffon text-xl">A software engineer and full stack developer who writes dynamic, well organized code.</h1>
                             <h1 className="text-lemonChiffon text-xl mt-5">Delve deeper by exploring this site's <a className="text-[#94e1ff] underline" href='https://github.com/agrimes23/Portfolio-frontend'>code on GitHub</a></h1>
                         </motion.div>
                 </div>
@@ -73,7 +75,7 @@ const HomePage = () => {
             </div> */}
 
             {/* -------------------- New Video Section --------------------- */}
-
+           
             <div className="w-screen max-h-screen mt-44 px-10 flex justify-center">
 
                 {/* container for card */}
