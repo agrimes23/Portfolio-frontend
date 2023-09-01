@@ -36,7 +36,6 @@ nav {
   font-weight: bold;
   font-size: 1.3rem;
   background-color: #002f6c;
-  border: rgb(4, 69, 70);
   color: white;
   border-radius: 5px;
   
@@ -71,10 +70,10 @@ nav {
 .nav-item-area:before {
   transition: 0.5s all ease;
   position: absolute;
-  top: -20%;
+  top: 5%;
   left: 50%;
   right: 50%;
-  bottom: -40%;
+  bottom: 5%;
   opacity: 0;
   content: "";
   border-radius: 3%;

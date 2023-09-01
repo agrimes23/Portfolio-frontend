@@ -1,7 +1,5 @@
-import {useState, useEffect} from 'react'
-import { Routes, Link, Route, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 import Footer from './Footer.js'
-import forestPath from '../assets/dimForest.jpg'
 import blueGoldWC from '../assets/blue_gold_watercolor.jpg'
 
 const AboutMe = () => {

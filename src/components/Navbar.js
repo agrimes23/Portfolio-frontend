@@ -1,10 +1,20 @@
-import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { Link, useNavigate, useResolvedPath, useMatch } from 'react-router-dom'
 import Resume from "../assets/Alexandra_Grimes_Resume.pdf"
+
+
 
 const Navbar = () => {
 
     const [showTab, setShowTab] = useState("d-none")
+    const [currentPage, setCurrentPage] = useState("home")
+
+    const [bgAM, setBgAM] = useState("bg-white text-navyBlue")
+    const [bgWP, setBgWP] = useState("bg-white text-navyBlue")
+    const [bgMP, setBgMP] = useState("bg-white text-navyBlue")
+    const [bgEx, setBgEx] = useState("bg-white text-navyBlue")
+    
+    
     const navigate = useNavigate();
 
     const setDisplayTab = () => {
@@ -35,6 +45,7 @@ const Navbar = () => {
         navigate("/experience")
     }
 
+
   return (
     <>
         <nav className="navbar sticky-top p-4 d-flex columnnavbar">
@@ -43,12 +54,28 @@ const Navbar = () => {
             </div>
             <div className="lg-screen-nav flex 2xlMax:hidden justify-end">
                 <ul className="flex flex-row navbar-nav navbar-right text-white mx-3">
-                    <div className="mt-2"><label htmlFor="download resume"><a className="text-decoration-none button py-3 px-3 mx-4" href={Resume} download="Alexandra_Grimes_Resume.pdf" target="_blank">Download Resume</a></label>
+                    <div className="mt-4"><label htmlFor="download resume"><a className="text-decoration-none button py-3 px-3 mx-4" href={Resume} download="Alexandra_Grimes_Resume.pdf" target="_blank">Download Resume</a></label>
                     </div>
-                    <label htmlFor="about me" className="nav-item-area pt-2"><Link className="text-decoration-none nav-item p-4" to='/aboutme'>About Me</Link></label>
-                    <label htmlFor="web projects" className="nav-item-area pt-2"><Link className="text-decoration-none nav-item p-4" to='/webprojects'>Web Projects</Link></label>
-                    <label htmlFor="web projects" className="nav-item-area pt-2"><Link className="text-decoration-none nav-item p-4" to='/mobileprojects'>Mobile Projects</Link></label>
-                    <label htmlFor="experience" className="nav-item-area pt-2"><Link className="text-decoration-none nav-item p-4" to='/experience'>Experience</Link></label>
+                    <label htmlFor="about me"/>
+              <button className="nav-item nav-item-area rounded p-4 focus:bg-navyBlue focus:text-white" onClick={() => {
+                navigate("/aboutme")}}>
+                About Me
+              </button>
+            <label htmlFor="web projects"/>
+              <button className="nav-item nav-item-area rounded p-4 focus:bg-navyBlue focus:text-white" onClick={() => navigate("/webprojects")}>
+                Web Projects
+              </button>
+            <label htmlFor="web projects"/>
+              <button className="nav-item nav-item-area rounded p-4 focus:bg-navyBlue focus:text-white" onClick={() => navigate("/mobileprojects")}>
+                Mobile Projects
+              </button>
+            <label htmlFor="experience"/>
+              <button 
+              className="nav-item nav-item-area rounded p-4 focus:bg-navyBlue focus:text-white"
+              onClick={() => navigate("/experience")}
+              >
+                Experience
+              </button>
                 </ul>
             </div>
             <div className="sm-screen-nav hidden 2xlMax:flex">

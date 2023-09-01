@@ -1,9 +1,6 @@
 import {useState, useEffect} from 'react'
-import { Routes, Link, Route, useLocation } from 'react-router-dom'
-import ExperienceContent from './ExperienceContent'
 import styled from 'styled-components'
 import Footer from '../Footer.js'
-import Resume from '../Resume.js'
 import myResume from '../../assets/Alex-Grimes-Resume.PNG'
 import pyGrad from '../../assets/purp_yellow_gradient.jpg'
 
@@ -44,6 +41,7 @@ const Experience = () => {
 
     return (
         <>
+
             <div className="flex min-h-screen min-w-screen flex-col">
               <div className="flex text-center row smMax:m-0 smMax:px-5">
               <div className="flex w-full h-60 bg-cover" style={{ backgroundImage: `url(${pyGrad})`}}>
@@ -70,6 +68,7 @@ const Experience = () => {
                 </div> */}
 
                 {/* Resume */}
+                <div className="fadeInTop">
                 <h4 className="flex my-5 justify-center text-lg">Scroll to see full resume:</h4>
                 <div className="overflow-auto flex mdMin:justify-center mdMax:justify-start w-11/12 mdMin:mx-auto">
                   <img class="min-w-[700px] mt-5 border-2 overflow-hidden" src={myResume} />
@@ -78,7 +77,7 @@ const Experience = () => {
               <div className="m-5 resume-div d-flex row align-items-center justify-content-center">
                 {/* <Resume /> */}
               </div>
-
+              </div>
               <Footer/>
               {/* <footer className="footer footer-exp p-5 text-center">
                   <a className="py-5" href="https://github.com/agrimes23"><i className="footer-text fa-brands fa-github text-white px-5" title="Github"></i></a>
@@ -86,6 +85,7 @@ const Experience = () => {
                   <a className="py-5" href="mailto: alexgrimes23@gmail.com"><i className="footer-text fa-regular fa-envelope text-white px-5" title="Email"></i></a>
             </footer> */}
             </div>
+            
 
         </>
     )
