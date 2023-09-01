@@ -48,7 +48,7 @@ const Navbar = () => {
 
   return (
     <>
-        <nav className="navbar sticky-top p-4 d-flex columnnavbar">
+        <nav className="navbar sticky-top p-4 d-flex columnnavbar shadow-2xl">
             <div className="flex flex-row">
                 <Link className="text-decoration-none" to='/'><h1 className="nav-home" title="Home Page" alt="logo-map-planner-img">AG</h1></Link>
             </div>
