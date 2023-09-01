@@ -106,7 +106,7 @@ const WebProjects = () => {
               </a>
             </div>
 
-            <div className="w-3/4 max-h-80 px-3 mr-3 my-3 flex items-center self-center rounded border-2 row ">
+            <div className="w-3/4 max-h-80 px-3 mr-3 my-3 flex items-center self-center rounded border-2 row bg-gradient-to-t to-[#2d1640] from-[#684f7d] text-white">
               <div className="flex justify-between py-3">
                 <h3 className="text-2xl">Weather Notes Web App</h3>
                 <div className="flex flex-row">
