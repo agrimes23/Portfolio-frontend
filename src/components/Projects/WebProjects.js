@@ -4,6 +4,10 @@ import travelPlanImg from "../../images/TravelPlansScreenShot.PNG";
 import WeatherApp from "../../images/WeatherApp.PNG";
 import Footer from "../Footer.js";
 import flowerForest from "../../assets/flower_bush.jpg";
+import purpleGold from '../../assets/purple_gold.jpg'
+import purpleWC from '../../assets/purpleWC2.jpg'
+import purpleOnly from '../../assets/purpleonlyWatercolor.jpg'
+import glitterold  from '../../assets/glitter_gold.jpg'
 
 const WebProjects = () => {
   useEffect(() => {
@@ -15,9 +19,9 @@ const WebProjects = () => {
       <div className="min-w-screen min-h-screen w-90 xlMax:m-0 pb-4 flex flex-col">
         <div
           className="flex w-full h-60 bg-cover"
-          style={{ backgroundImage: `url(${flowerForest})` }}
+          style={{ backgroundImage: `url(${purpleGold})` }}
         >
-          <h1 className="my-auto ml-20 text-5xl font-bold text-white bg-darkOliveGreen bg-opacity-80 p-8 rounded mdMax:mx-auto">
+          <h1 className="my-auto ml-20 text-5xl font-bold text-white bg-[#000000] bg-opacity-40 p-8 rounded mdMax:mx-auto">
             Web Projects
           </h1>
         </div>
@@ -26,7 +30,7 @@ const WebProjects = () => {
         <div className="my-28 py-5 mx-auto flex justify-center flex-col ">
           {/* first card */}
           <motion.div
-            className="flex xlMax:flex-col xlMin:justify-around xlMax:items-center max-w-[1000px] mx-auto my-5 justify-center"
+            className="flex xlMax:flex-col xlMin:justify-around xlMax:items-center max-w-[1000px] mx-auto my-5 justify-center bg-cover rounded"
             initial={{ y: -200, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
@@ -37,7 +41,7 @@ const WebProjects = () => {
                 className="text-decoration-none"
                 href="https://travel-planning.herokuapp.com/"
               >
-                <div className="border">
+                <div className="border-2">
                   <img
                     className="flex-1 h-[300px] bg-cover"
                     src={travelPlanImg}
@@ -47,10 +51,10 @@ const WebProjects = () => {
               </a>
             </div>
 
-            <div className="w-3/4 max-h-80 px-3 ml-3 my-3 flex items-center self-center rounded border-2 row ">
+            <div className="w-3/4 max-h-80 py-3 px-3 ml-3 my-3 flex items-center self-center rounded border-2 row bg-gradient-to-t to-[#2d1640] from-[#684f7d] text-white" >
               <div className="flex justify-between py-3">
                 <h3 className="text-2xl">Travel Plans Web App</h3>
-                <div className="flex flex-row mx-3">
+                <div className="flex flex-row mx-1">
                   <a
                     className="flex items-center mx-2"
                     href="https://github.com/agrimes23/travel-plan-frontend"

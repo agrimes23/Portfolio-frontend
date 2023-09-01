@@ -3,6 +3,7 @@ import RNWeather from "../../assets/ReactNativeWeatherVid.mp4";
 import RNCamera from "../../assets/InsuranceCardVid.mp4";
 import stars from "../../assets/starry_sky.jpg";
 import { motion } from "framer-motion";
+import greenGold from "../../assets/green_gold.jpg"
 
 const MobileProjects = () => {
   // TODO:
@@ -20,7 +21,7 @@ const MobileProjects = () => {
         {/* Page title */}
         <div
           className="flex w-full h-60 bg-cover smMax:h-72"
-          style={{ backgroundImage: `url(${stars})` }}
+          style={{ backgroundImage: `url(${greenGold})` }}
         >
           <h1 className="my-auto ml-20 text-5xl font-bold bg-darkBlueGreen bg-opacity-90 text-lemonChiffon p-8 rounded mdMax:mx-auto">
             Mobile Projects (React Native)
@@ -39,8 +40,8 @@ const MobileProjects = () => {
                 <source src={RNCamera} type="video/mp4" />
               </video>
             </div>
-
-            <div className="w-2/4 max-h-80 px-3 mr-3 my-3 flex items-center self-center rounded border-2 row ">
+ 
+            <div className="w-2/4 max-h-80 px-3 my-3 flex items-center self-center rounded border-2 row text-white bg-[#07261c] " >
               <div className="flex justify-between py-3">
                 <h3 className="text-2xl">Page with Camera Feature</h3>
                 <div className="flex flex-row">
@@ -77,7 +78,7 @@ const MobileProjects = () => {
               </video>
             </div>
 
-            <div className="w-2/4 max-h-80 px-3 ml-3 my-3 flex items-center self-center rounded border-2 row ">
+            <div className="w-2/4 max-h-80 px-3 ml-3 my-3 flex items-center self-center rounded border-2 row text-white bg-[#07261c]">
               <div className="flex justify-between py-3">
                 <h3 className="text-2xl">Mobile Weather App</h3>
                 <div className="flex flex-row hover:text-darkBlueGreen">
