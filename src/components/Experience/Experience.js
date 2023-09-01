@@ -1,10 +1,6 @@
 import {useState, useEffect} from 'react'
-import { Routes, Link, Route, useLocation } from 'react-router-dom'
-import ExperienceContent from './ExperienceContent'
-import Navbar from '../Navbar'
 import styled from 'styled-components'
 import Footer from '../Footer.js'
-import Resume from '../Resume.js'
 import myResume from '../../assets/Alex-Grimes-Resume.PNG'
 import pyGrad from '../../assets/purp_yellow_gradient.jpg'
 
