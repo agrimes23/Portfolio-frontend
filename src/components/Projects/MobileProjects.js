@@ -4,6 +4,7 @@ import RNCamera from "../../assets/InsuranceCardVid.mp4";
 import stars from "../../assets/starry_sky.jpg";
 import { motion } from "framer-motion";
 
+
 const MobileProjects = () => {
   // TODO:
   // // Record videos of clicking on features of the mobile app (per project, which there's probably 2)
@@ -31,72 +32,67 @@ const MobileProjects = () => {
         <div className="my-20 fadeInTop mx-auto ">
           {/* first card */}
           <motion.div
-            className="flex xlMax:flex-col xlMax:items-center rounded p-4 mx-52 justify-center my-3"
+            className="flex xlMax:flex-col xlMin:justify-around xlMax:items-center max-w-[1000px] mx-auto justify-center"
             whileHover={{ scale: 1.04 }}
           >
-            <div className="">
+            <div className="px-3">
                 <video className="max-w-[250px] " controls>
                 <source src={RNCamera} type="video/mp4" />
                 </video>
             </div>
 
-            <div className=" p-3 m-3 flex items-center border-2 row ">
-              <h3 className="py-2 text-3xl">Page with Camera Feature</h3>
-              <h5 className="text-lg">
-                Testing out camera functionality on React Native by
-                making a home screen where users can add photos from gallery or
-                take a picture with their phone camera. Also made a modal slide
-                up from the bottom where users can choose how they want to
+            <div className="w-2/4 max-h-80 px-3 mr-3 my-3 flex items-center self-center rounded border-2 row ">
+                <div className="flex justify-between py-3">
+                    <h3 className="text-2xl">Page with Camera Feature</h3>
+                    <div className="flex flex-row"> 
+                        <h5 className="flex items-center ">View Code</h5>
+                        <a className="flex items-center mx-2" href="https://github.com/agrimes23/ReactNativeUseCamera"
+                        ><i class="fa-brands fa-github fa-2xl"></i></a>
+                    </div>
+                </div>
+              <h5 className="text-base py-3">
+                Testing out camera functionality on React Native where users can add photos from their phone gallery or
+                take a picture with their phone camera. Also made a modal slide up from the bottom of the screen asking the users how they want to
                 import their photos
               </h5>
-              <h5 className="text-lg">
-                React Native, Typescript, Nativewind CSS, React Native
-                Image Picker
+              <h5 className="text-base py-3">
+                React Native, Typescript, Nativewind CSS, React Native Image Picker
               </h5>
-              <a
-                className="text-lg"
-                href="https://github.com/agrimes23/ReactNativeUseCamera"
-              >
-                <h6>Frontend Github Code</h6>
-              </a>
             </div>
           </motion.div>
 
-          {/* second card */}
+{/* second card */}
           <motion.div
-            className="project-border flex xlMax:flex-col xlMax:items-center xlMax:min-w-0 xlMax:w-full rounded p-4 mx-auto my-2"
+            className="flex xlMax:flex-col xlMin:justify-around xlMin:flex-row-reverse xlMax:items-center p-4 w-[1000px] mx-auto justify-center"
             whileHover={{ scale: 1.04 }}
           >
-            <video className="mobile-video 2xlMax:w-8/12" controls>
-              <source src={RNWeather} type="video/mp4" />
-            </video>
-            <div className="m-project-desc xlMax:w-full smMax:p-6 p-3 mx-3 flex row items-center mt-auto">
-              <h3 className="py-4 text-3xl">Mobile Weather App</h3>
-              <h5 className="text-lg">
-                Summary: Testing out different React Native features like
-                slider, React Native Router, BottomTabs, and routing a simple
-                backend with the mobile app{" "}
-              </h5>
-              <h5 className="text-lg">
-                Frontend: React Native, Typescript, Nativewind CSS, React
-                Navigation
-              </h5>
-              <h5 className="text-lg">Backend: Node.js, Express, PostreSQL</h5>
+            <div className="px-5">
+                <video className="max-w-[250px] " controls>
+                    <source src={RNWeather} type="video/mp4" />
+                </video>
+            </div>
 
-              <a
-                className="text-lg"
-                href="https://github.com/agrimes23/ReactNativeWeatherFront"
-              >
-                <h6>Frontend Github Code</h6>
-              </a>
-              <a
-                className="text-lg"
-                href="https://github.com/agrimes23/ReactNativeWeatherBack"
-              >
-                <h6>Backend Github Code</h6>
-              </a>
+            <div className="w-2/4 max-h-80 px-3 ml-3 my-3 flex items-center self-center rounded border-2 row ">
+                <div className="flex justify-between py-3">
+                    <h3 className="text-2xl">Mobile Weather App</h3>
+                    <div className="flex flex-row"> 
+                        <h5 className="flex items-center">View Code</h5>
+                        <a className="flex items-center mx-2" href="https://github.com/agrimes23/ReactNativeWeatherBack"
+                        ><i class="fa-brands fa-github fa-2xl"></i></a>
+                    </div>
+                </div>
+              <h5 className="text-base py-3">
+              Testing out different React Native features like
+                slider, React Native Router, BottomTabs, and routing a simple
+                backend with the mobile app
+              </h5>
+              <h5 className="text-base py-3">
+                React Native, Typescript, Nativewind CSS, React
+                Navigation, Node.js, Express, PostreSQL
+              </h5>
             </div>
           </motion.div>
+        
         </div>
 
         {/* Github link */}

@@ -40,6 +40,7 @@ const WebProjects = () => {
                                 <div className="flex flex-col justify-end">
                                     <h5 className="py-5 text-center text-xl text-black font-bold">Travel Plans Web App</h5>
                                     <div className="m-6 flex row justify-around">
+                                    <i class="fa-solid fa-up-right-from-square flex items-center mx-1"></i>
                                         <a className="flex text-center justify-center w-36 py-2 rounded bg-darkOliveGreen text-white text-decoration-none mdMax:m-2" href="https://travel-planning.herokuapp.com/">Live Site</a>
                                         <a className="flex text-center justify-center w-36 py-2 rounded bg-salmon text-decoration-none text-darkGreen mdMax:m-2" href="https://github.com/agrimes23/travel-plan-frontend">See Github Repo</a>
                                     </div>
