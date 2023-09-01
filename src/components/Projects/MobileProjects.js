@@ -19,7 +19,7 @@ const MobileProjects = () => {
     return (
         <>
             {/* Page Container / Fade-In*/}
-            <div className=" min-w-screen min-h-screen w-90 xlMax:m-0 fadeInTop pb-4 flex row">
+            <div className=" min-w-screen min-h-screen w-90 xlMax:m-0 pb-4 flex row">
 
                     {/* Page title */}
                     <div className="flex w-full h-60 bg-cover smMax:h-72" style={{ backgroundImage: `url(${stars})`}}>
@@ -27,7 +27,7 @@ const MobileProjects = () => {
                     </div>
 
                     {/* Mobile Projects Card Container */}
-                    <div className="my-20  mx-auto ">                      
+                    <div className="my-20 fadeInTop mx-auto ">                      
                         {/* Cards */}
                         <motion.div className="project-border flex xlMax:flex-col xlMax:items-center xlMax:min-w-0 xlMax:w-full rounded p-4 mx-auto my-3"
                         whileHover={{ scale: 1.04 }}
@@ -69,7 +69,7 @@ const MobileProjects = () => {
 
             </div>
 
-            <footer className="footer footer-projects bg-darkBlueGreen relative p-5 text-center">
+            <footer className="footer footer-projects bg-[#0e2038] relative p-5 text-center">
                 <a className="py-5" href="https://github.com/agrimes23"><i className="footer-text fa-brands fa-github text-white px-5" title="Github"></i></a>
                 <a className="py-5" href="https://www.linkedin.com/in/alex-grimes-dev/"><i className="footer-text fa-brands fa-linkedin text-white px-5" title="LinkedIn"></i></a>
                 <a className="py-5" href="mailto: alexgrimes23@gmail.com"><i className="footer-text fa-regular fa-envelope text-white px-5" title="Email"></i></a>
