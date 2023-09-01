@@ -18,7 +18,6 @@ const MobileProjects = () => {
 
     return (
         <>
-            <Navbar />
             {/* Page Container / Fade-In*/}
             <div className=" min-w-screen min-h-screen w-90 xlMax:m-0 fadeInTop pb-4 flex row">
 

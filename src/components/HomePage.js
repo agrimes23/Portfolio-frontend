@@ -27,7 +27,7 @@ const HomePage = () => {
 
     return (
         <>
-         <Navbar />
+         
             {/* name and title */}
            <div className="mb-20 min-w-screen">
             <div className="bg-cover shadow-2xl" style={{ backgroundImage: `url(${darkWaterColor})` }} >

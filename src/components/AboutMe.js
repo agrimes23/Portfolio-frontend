@@ -13,7 +13,6 @@ const AboutMe = () => {
 
     return (
         <>
-            <Navbar />
             <div className="flex flex-col min-h-screen min-w-screen">
                 <div className="flex-grow flex items-center max-w-full bg-cover px-32 py-28 lgMax:px-10 smMax:px-5" style={{ backgroundImage: `url(${blueGoldWC})`}}>
                     <div className="flex-grow w-3/4 mx-auto max-w-4xl px-20 pb-24 pt-10 d-flex row fadeInTop rounded bg-lemonChiffon border-navyBlue border-4 bg-opacity-90 lgMax:px-10 smMax:px-5">

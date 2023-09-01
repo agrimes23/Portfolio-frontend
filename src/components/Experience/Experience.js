@@ -45,7 +45,7 @@ const Experience = () => {
 
     return (
         <>
-            <Navbar />
+
             <div className="flex min-h-screen min-w-screen flex-col">
               <div className="flex text-center row smMax:m-0 smMax:px-5">
               <div className="flex w-full h-60 bg-cover" style={{ backgroundImage: `url(${pyGrad})`}}>

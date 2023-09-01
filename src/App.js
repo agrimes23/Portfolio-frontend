@@ -11,6 +11,7 @@ import MobileProjects from './components/Projects/MobileProjects';
 const App = () => {
   return (
     <>
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/aboutme" element={<AboutMe />}></Route>

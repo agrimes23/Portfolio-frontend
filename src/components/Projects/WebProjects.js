@@ -17,7 +17,6 @@ const WebProjects = () => {
 
     return (
         <>
-            <Navbar />
             <div className="flex min-w-screen min-h-screen xlMax:m-0 pb-5 flex-col">
        
                     <div className="flex w-full h-60 bg-cover" style={{ backgroundImage: `url(${flowerForest})`}}>
