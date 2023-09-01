@@ -4,7 +4,6 @@ import RNCamera from "../../assets/InsuranceCardVid.mp4";
 import stars from "../../assets/starry_sky.jpg";
 import { motion } from "framer-motion";
 
-
 const MobileProjects = () => {
   // TODO:
   // // Record videos of clicking on features of the mobile app (per project, which there's probably 2)
@@ -17,7 +16,7 @@ const MobileProjects = () => {
   return (
     <>
       {/* Page Container / Fade-In*/}
-      <div className=" min-w-screen min-h-screen w-90 xlMax:m-0 pb-4 flex row">
+      <div className=" min-w-screen min-h-screen w-90 xlMax:m-0 pb-4 flex flex-col">
         {/* Page title */}
         <div
           className="flex w-full h-60 bg-cover smMax:h-72"
@@ -36,63 +35,72 @@ const MobileProjects = () => {
             whileHover={{ scale: 1.04 }}
           >
             <div className="px-3">
-                <video className="max-w-[250px] " controls>
+              <video className="max-w-[250px] " controls>
                 <source src={RNCamera} type="video/mp4" />
-                </video>
+              </video>
             </div>
 
             <div className="w-2/4 max-h-80 px-3 mr-3 my-3 flex items-center self-center rounded border-2 row ">
-                <div className="flex justify-between py-3">
-                    <h3 className="text-2xl">Page with Camera Feature</h3>
-                    <div className="flex flex-row"> 
-                        <h5 className="flex items-center ">View Code</h5>
-                        <a className="flex items-center mx-2" href="https://github.com/agrimes23/ReactNativeUseCamera"
-                        ><i class="fa-brands fa-github fa-2xl"></i></a>
-                    </div>
+              <div className="flex justify-between py-3">
+                <h3 className="text-2xl">Page with Camera Feature</h3>
+                <div className="flex flex-row">
+                  <h5 className="flex items-center ">View Code</h5>
+                  <a
+                    className="flex items-center mx-2"
+                    href="https://github.com/agrimes23/ReactNativeUseCamera"
+                  >
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                  </a>
                 </div>
+              </div>
               <h5 className="text-base py-3">
-                Testing out camera functionality on React Native where users can add photos from their phone gallery or
-                take a picture with their phone camera. Also made a modal slide up from the bottom of the screen asking the users how they want to
-                import their photos
+                Testing out camera functionality on React Native where users can
+                add photos from their phone gallery or take a picture with their
+                phone camera. Also made a modal slide up from the bottom of the
+                screen asking the users how they want to import their photos
               </h5>
               <h5 className="text-base py-3">
-                React Native, Typescript, Nativewind CSS, React Native Image Picker
+                React Native, Typescript, Nativewind CSS, React Native Image
+                Picker
               </h5>
             </div>
           </motion.div>
 
-{/* second card */}
+          {/* second card */}
           <motion.div
             className="flex xlMax:flex-col xlMin:justify-around xlMin:flex-row-reverse xlMax:items-center p-4 w-[1000px] mx-auto justify-center"
             whileHover={{ scale: 1.04 }}
           >
             <div className="px-5">
-                <video className="max-w-[250px] " controls>
-                    <source src={RNWeather} type="video/mp4" />
-                </video>
+              <video className="max-w-[250px] " controls>
+                <source src={RNWeather} type="video/mp4" />
+              </video>
             </div>
 
             <div className="w-2/4 max-h-80 px-3 ml-3 my-3 flex items-center self-center rounded border-2 row ">
-                <div className="flex justify-between py-3">
-                    <h3 className="text-2xl">Mobile Weather App</h3>
-                    <div className="flex flex-row"> 
-                        <h5 className="flex items-center">View Code</h5>
-                        <a className="flex items-center mx-2" href="https://github.com/agrimes23/ReactNativeWeatherBack"
-                        ><i class="fa-brands fa-github fa-2xl"></i></a>
-                    </div>
+              <div className="flex justify-between py-3">
+                <h3 className="text-2xl">Mobile Weather App</h3>
+                <div className="flex flex-row hover:text-darkBlueGreen">
+                  <h5 className="flex items-center">View Code</h5>
+                  <a
+                    className="flex items-center mx-2"
+                    href="https://github.com/agrimes23/ReactNativeWeatherBack"
+                  >
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                  </a>
                 </div>
+              </div>
               <h5 className="text-base py-3">
-              Testing out different React Native features like
-                slider, React Native Router, BottomTabs, and routing a simple
-                backend with the mobile app
+                Testing out different React Native features like slider, React
+                Native Router, BottomTabs, and routing a simple backend with the
+                mobile app
               </h5>
               <h5 className="text-base py-3">
-                React Native, Typescript, Nativewind CSS, React
-                Navigation, Node.js, Express, PostreSQL
+                React Native, Typescript, Nativewind CSS, React Navigation,
+                Node.js, Express, PostreSQL
               </h5>
             </div>
           </motion.div>
-        
         </div>
 
         {/* Github link */}

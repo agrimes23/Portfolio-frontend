@@ -1,86 +1,155 @@
-import { useEffect } from 'react'
-import { motion } from 'framer-motion'
-import travelPlanImg from '../../images/TravelPlansScreenShot.PNG'
-import WeatherApp from '../../images/WeatherApp.PNG'
-import Footer from '../Footer.js'
-import flowerForest from '../../assets/flower_bush.jpg'
+import { useEffect } from "react";
+import { motion } from "framer-motion";
+import travelPlanImg from "../../images/TravelPlansScreenShot.PNG";
+import WeatherApp from "../../images/WeatherApp.PNG";
+import Footer from "../Footer.js";
+import flowerForest from "../../assets/flower_bush.jpg";
 
 const WebProjects = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  });
 
-    useEffect (() => {
-        window.scroll(0,0)
-    })
+  return (
+    <>
+      <div className="min-w-screen min-h-screen w-90 xlMax:m-0 pb-4 flex flex-col">
+        <div
+          className="flex w-full h-60 bg-cover"
+          style={{ backgroundImage: `url(${flowerForest})` }}
+        >
+          <h1 className="my-auto ml-20 text-5xl font-bold text-white bg-darkOliveGreen bg-opacity-80 p-8 rounded mdMax:mx-auto">
+            Web Projects
+          </h1>
+        </div>
 
-    return (
-        <>
-            <div className="flex min-w-screen min-h-screen xlMax:m-0 pb-5 flex-col">
-       
-                    <div className="flex w-full h-60 bg-cover" style={{ backgroundImage: `url(${flowerForest})`}}>
-                        <h1 className="my-auto ml-20 text-5xl font-bold text-white bg-darkOliveGreen bg-opacity-80 p-8 rounded mdMax:mx-auto">Web Projects</h1>
-                    </div>
+        {/* div for projects container */}
+        <motion.div
+          className="my-28 py-5 mx-auto flex justify-center flex-col "
+          initial={{ y: -200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 2 }}
+        >
 
+            {/* first card */}
+          <div className="flex xlMax:flex-col xlMin:justify-around xlMax:items-center max-w-[1000px] mx-auto my-5 justify-center">
+            <div className="px-3">
+              <a
+                className="text-decoration-none"
+                href="https://travel-planning.herokuapp.com/"
+              >
+                <div className="border">
+                  <img
+                    className="flex-1 h-[300px] bg-cover"
+                    src={travelPlanImg}
+                    alt="card project img"
+                  />
+                </div>
+              </a>
+            </div>
 
-                    {/* div for projects container */}
-                    <motion.div className="my-20 py-5 xlMax:flex-col xlMax:mx-auto flex justify-center " 
-                        initial={{y: -200, opacity: 0 }} 
-                        whileInView={{ y: 0, opacity: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 2 }}>
-                            
-                            {/* div for first card */}
-                            <div className="bg-lemonChiffon rounded w-[500px] 2xlMax:max-w-md border-2 border-themeTan flex flex-col items-stretch mdMax:w-[300px] mdMin:m-5 mdMax:m-1">
-                                <div className="p-3">
-                                    <a className="text-decoration-none" href="https://github.com/agrimes23/travel-plan-frontend">
-                                        <div className="border">
-                                            <img className="flex-1 w-full h-[300px] bg-cover" src={travelPlanImg} alt="card project img"/>
-                                            
-                                        </div>
-                                    </a>
-                                </div>
-                                <div className="flex flex-col justify-end">
-                                    <h5 className="py-5 text-center text-xl text-black font-bold">Travel Plans Web App</h5>
-                                    <div className="m-6 flex row justify-around">
-                                    <i class="fa-solid fa-up-right-from-square flex items-center mx-1"></i>
-                                        <a className="flex text-center justify-center w-36 py-2 rounded bg-darkOliveGreen text-white text-decoration-none mdMax:m-2" href="https://travel-planning.herokuapp.com/">Live Site</a>
-                                        <a className="flex text-center justify-center w-36 py-2 rounded bg-salmon text-decoration-none text-darkGreen mdMax:m-2" href="https://github.com/agrimes23/travel-plan-frontend">See Github Repo</a>
-                                    </div>
-                                </div>    
-                            </div>
+            <div className="w-3/4 max-h-80 px-3 mr-3 my-3 flex items-center self-center rounded border-2 row ">
+              <div className="flex justify-between py-3">
+                <h3 className="text-2xl">Travel Plans Web App</h3>
+                <div className="flex flex-row mx-3">
+                    <a
+                    className="flex items-center mx-2"
+                    href="https://github.com/agrimes23/travel-plan-frontend"
+                    >
+                    <h5 className="flex items-center ">View Code</h5>
+                    
+                    <i class="fa-brands fa-github fa-2xl ml-2"></i>
+                    </a>
+                    <a className="flex items-center mx-2"
+                    href="https://travel-planning.herokuapp.com/">
+                        <h5 className="flex items-center ">View Site</h5>
+                        <i className="fa-solid fa-up-right-from-square flex items-center ml-2"></i>
+                    </a>
+                </div>
+              </div>
+              <h5 className="text-base py-3">
+                You can plan your trips by finding transportation, hotels, and
+                activities, and mixing and matching until you find the best
+                trip!
+              </h5>
+              <h5 className="text-base py-3">
+                React, Bootstrap CSS, Java, Spring Boot, JWT Auth
+              </h5>
+            </div>
+          </div>
 
-                            {/* div for second card */}
-                            <div className="bg-lemonChiffon rounded w-[500px] 2xlMax:max-w-md border-2 border-themeTan flex flex-col items-stretch mdMax:w-[300px] mdMin:m-5 mdMax:m-1">    
-                                <div className="">
-                                    <a className="text-decoration-none" href="https://github.com/agrimes23/weather_frontend">
-                                        <div className="p-3">
-                                            <img className="flex-1 w-full h-[300px] bg-cover" src={WeatherApp} alt="card project img"/>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div className="flex flex-col justify-end ">
-                                    <h5 className="py-5 text-center text-xl text-black font-bold">Weather Notes Web App</h5>
-                                    <div className="m-6 flex row justify-around">
-                                        <a className="text-center flex justify-center w-36 py-2 rounded bg-darkOliveGreen text-white text-decoration-none mdMax:m-2" href="https://evening-reef-65787.herokuapp.com/">Live Site</a>
-                                        <a className="text-center flex justify-center w-36 py-2 rounded bg-salmon text-decoration-none text-darkGreen mdMax:m-2" href="https://github.com/agrimes23/weather_frontend">See Github Repo</a>
-                                    </div>
-                                </div>
-                            </div>
-                
-                        </motion.div>
+          {/* second card */}
+          <div className="flex flex-row-reverse xlMin:justify-around xlMax:items-center max-w-[1000px] mx-auto my-5 justify-center">
+            <div className="px-3">
+              <a
+                className="text-decoration-none"
+                href="https://evening-reef-65787.herokuapp.com/"
+              >
+                <div className="border">
+                  <img
+                    className="flex-1 h-[300px] bg-cover"
+                    src={WeatherApp}
+                    alt="card project img"
+                  />
+                </div>
+              </a>
+            </div>
 
-                        <div className="text-center">
-                            <h3 className="text-xl ">See my github: <a href="https://github.com/agrimes23">agrimes23</a></h3>
-                        </div>
-                    </div>
+            <div className="w-3/4 max-h-80 px-3 mr-3 my-3 flex items-center self-center rounded border-2 row ">
+              <div className="flex justify-between py-3">
+                <h3 className="text-2xl">Weather Notes Web App</h3>
+                <div className="flex flex-row">
+                  <h5 className="flex items-center ">View Code</h5>
+                  <a
+                    className="flex items-center mx-2"
+                    href="https://github.com/agrimes23/weather_frontend"
+                  >
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                  </a>
+                </div>
+              </div>
+              <h5 className="text-base py-3">
+                You can plan your trips by finding transportation, hotels, and
+                activities, and mixing and matching until you find the best
+                trip!
+              </h5>
+              <h5 className="text-base py-3">
+                React, Bootstrap CSS, Python, Django
+              </h5>
+            </div>
+          </div>
+        </motion.div>
 
-                {/* <Footer/> */}
-                <footer className="footer footer-projects relative bg-[#0e2038] p-5 text-center">
-                    <a className="py-5" href="https://github.com/agrimes23"><i className="footer-text fa-brands fa-github text-white px-5" title="Github"></i></a>
-                    <a className="py-5" href="https://www.linkedin.com/in/alex-grimes-dev/"><i className="footer-text fa-brands fa-linkedin text-white px-5" title="LinkedIn"></i></a>
-                    <a className="py-5" href="mailto: alexgrimes23@gmail.com"><i className="footer-text fa-regular fa-envelope text-white px-5" title="Email"></i></a>
-                </footer>
-        </>
-    )
+        <div className="text-center">
+          <h3 className="text-xl ">
+            See my github: <a href="https://github.com/agrimes23">agrimes23</a>
+          </h3>
+        </div>
+      </div>
 
-}
+      {/* <Footer/> */}
+      <footer className="footer footer-projects relative bg-[#0e2038] p-5 text-center">
+        <a className="py-5" href="https://github.com/agrimes23">
+          <i
+            className="footer-text fa-brands fa-github text-white px-5"
+            title="Github"
+          ></i>
+        </a>
+        <a className="py-5" href="https://www.linkedin.com/in/alex-grimes-dev/">
+          <i
+            className="footer-text fa-brands fa-linkedin text-white px-5"
+            title="LinkedIn"
+          ></i>
+        </a>
+        <a className="py-5" href="mailto: alexgrimes23@gmail.com">
+          <i
+            className="footer-text fa-regular fa-envelope text-white px-5"
+            title="Email"
+          ></i>
+        </a>
+      </footer>
+    </>
+  );
+};
 
 export default WebProjects;
