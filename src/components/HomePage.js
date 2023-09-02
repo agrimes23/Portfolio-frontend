@@ -71,31 +71,7 @@ const HomePage = () => {
               </motion.div>
             </div>
           </div>
-
-          {/* projects section with video mirroring */}
-          {/* <div className="w-3/4 m-32 mx-auto py-32 rounded bg-codingDiv shadow-2xl mdMax:h-64 mdMax:mb-80 h-full">
-                <motion.div initial={{ opacity: 0, y: 100 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 2 }}>
-                <div className="absolute smMax:translate-y-2/4 bg-salmon mdMax:translate-y-3/4  z-10 translate-y-full h-44 flex justify-center w-3/4" >
-                    <Link title="Alex Grimes' Coding Projects" className="no-underline text-white" to="/projects"><motion.h2 className="bg-[#091625] text-3xl bg-opacity-95 flex items-center p-5" whileHover={{ scale: 1.1 }}>View Alex's Coding Projects</motion.h2></Link>
-                </div>
-
-                    <div className="w-full bg-codingDiv video-section flex justify-center py-5">
-                        <video className="move-right mr-72 video-reflect xlMax:h-80" autoPlay loop muted>
-                                <source src={codingVidBG} type="video/mp4" />
-                        </video>
-                        <video className="flex justify-center items-center absolute hp-video mdMax:h-72 mdMax:mt-5 xlMax:h-80" autoPlay loop muted>
-                                <source src={codingVidBG} type="video/mp4" />
-                        </video>
-                        <video className="move-left ml-72 video-reflect xlMax:h-80" autoPlay loop muted>
-                                <source src={codingVidBG} type="video/mp4" />
-                        </video>
-                    </div>
-                </motion.div>
-            </div> */}
-
-          {/* -------------------- New Video Section --------------------- */}
+          {/* -------------------- Video Section --------------------- */}
 
           <div className="w-screen max-h-screen mt-44 px-10 flex justify-center">
             {/* container for card */}
