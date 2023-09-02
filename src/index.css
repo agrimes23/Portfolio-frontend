@@ -156,9 +156,9 @@ i:hover {
   clip-path: polygon(100% 85%, 0% 100%, 0% 0%, 100% 15%);
 } */
 
-video {
+/* video {
   object-fit: fill;
-}
+} */
 
 .reflect-div {
   transform: translatex(-60px) skew(135deg);
