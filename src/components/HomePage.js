@@ -6,7 +6,6 @@ import codingVidBG from '../assets/CodingClearShort.mp4'
 import darkWaterColor from '../assets/darkWaterColor.jpg'
 import divWaterColor from '../assets/blue_purple.jpg'
 import divWaterColor2 from '../assets/blue_purple_pink.jpg'
-import purpleGrad from '../assets/dark_light_purple.jpg'
 import flippedVid from '../assets/Flipped_coding_vid.mp4'
 
 const HomePage = () => {
