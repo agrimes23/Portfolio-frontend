@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import RNWeather from "../../assets/ReactNativeWeatherVid.mp4";
 import RNCamera from "../../assets/InsuranceCardVid.mp4";
-import stars from "../../assets/starry_sky.jpg";
 import { motion } from "framer-motion";
 import greenGold from "../../assets/green_gold.jpg"
 
@@ -13,7 +12,7 @@ const MobileProjects = () => {
 
   return (
     <>
-      {/* Page Container / Fade-In*/}
+      {/* Page Container */}
       <div className=" min-w-screen min-h-screen w-90 xlMax:m-0 pb-4 flex flex-col">
         {/* Page title */}
         <div

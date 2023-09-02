@@ -3,11 +3,8 @@ import { motion } from "framer-motion";
 import travelPlanImg from "../../images/TravelPlansScreenShot.PNG";
 import WeatherApp from "../../images/WeatherApp.PNG";
 import Footer from "../Footer.js";
-import flowerForest from "../../assets/flower_bush.jpg";
 import purpleGold from '../../assets/purple_gold.jpg'
-import purpleWC from '../../assets/purpleWC2.jpg'
-import purpleOnly from '../../assets/purpleonlyWatercolor.jpg'
-import glitterold  from '../../assets/glitter_gold.jpg'
+
 
 const WebProjects = () => {
   useEffect(() => {
