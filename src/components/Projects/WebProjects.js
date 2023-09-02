@@ -38,7 +38,7 @@ const WebProjects = () => {
           > */}
 
           <div className="w-full mt-18 ">
-            <motion.div whileHover={{ scale: 1.04 }} className="flex flex-row mx-auto -z-10 w-3/4 max-h-80 h-full bg-gradient-to-t to-[#2d1640] from-[#684f7d] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center">
+            <motion.div whileHover={{ scale: 1.04 }} className="flex 2xlMin:flex-row 2xlMin:w-3/4 2xlMin:max-h-80 mx-auto -z-10  h-full bg-gradient-to-t to-[#2d1640] from-[#684f7d] items-center justify-center 2xlMax:w-2/4 lgMax:w-full 2xlMax:flex-col 2xlMax:py-5 my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center">
             <div className="px-3">
               <a
                 className="text-decoration-none"
@@ -46,7 +46,7 @@ const WebProjects = () => {
               >
                 <div className="border-2">
                   <img
-                    className="flex-1 h-[350px] bg-cover"
+                    className="flex-1 xlMax:h-[200px] xlMin:h-[350px] bg-cover"
                     src={travelPlanImg}
                     alt="card project img"
                   />
@@ -54,7 +54,7 @@ const WebProjects = () => {
               </a>
             </div>
 
-            <div className="w-3/4 mdMin:max-h-80 py-3 m-2 px-3 xlMax:mx-3 flex items-center self-center rounded row text-white" >
+            <div className="2xlMin:w-3/4 mdMin:max-h-80 py-3 m-2 px-3 xlMax:mx-3 flex items-center self-center rounded row text-white" >
               <div className="flex justify-between py-3 xlMax:flex-col xlMax:items-center">
                 <h3 className="text-2xl xlMax:m-2 xlMax:text-center">Travel Plans Web App</h3>
                 <div className="flex xlMin:flex-row xlMax:m-2">
@@ -96,7 +96,7 @@ const WebProjects = () => {
             transition={{ duration: 2 }}
           > */}
             <div className="w-full mt-44">
-            <motion.div whileHover={{ scale: 1.04 }} className="flex 2xlMin:flex-row-reverse 2xlMin:w-3/4 2xlMin:max-h-80 -z-10 mx-auto bg-gradient-to-t to-[#2d1640] from-[#684f7d] items-center justify-center my-auto 2xlMax:w-2/4 2xlMax:flex-col 2xlMax:py-5 xlMin:justify-around xlMax:items-center">
+            <motion.div whileHover={{ scale: 1.04 }} className="flex 2xlMin:flex-row-reverse 2xlMin:w-3/4 2xlMin:max-h-80 -z-10 mx-auto bg-gradient-to-t to-[#2d1640] from-[#684f7d] items-center justify-center my-auto 2xlMax:w-2/4 lgMax:w-full 2xlMax:flex-col 2xlMax:py-5 xlMin:justify-around xlMax:items-center">
             <div className="px-3">
               <a
                 className="text-decoration-none"
@@ -104,7 +104,7 @@ const WebProjects = () => {
               >
                 <div className="border">
                   <img
-                    className="flex-1 h-[350px] bg-cover"
+                    className="flex-1 xlMax:h-[200px] xlMin:h-[350px] bg-cover"
                     src={WeatherApp}
                     alt="card project img"
                   />
