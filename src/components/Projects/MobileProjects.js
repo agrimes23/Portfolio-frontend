@@ -31,17 +31,19 @@ const MobileProjects = () => {
         {/* Mobile Projects Card Container */}
         <div className="my-20 fadeInTop mx-auto ">
           {/* first card */}
-          <motion.div
-            className="flex xlMax:flex-col xlMin:justify-around xlMax:items-center max-w-[1000px] mx-auto justify-center"
-            whileHover={{ scale: 1.04 }}
-          >
+          {/* <div
+            className="flex xlMax:flex-col xlMin:justify-around xlMax:items-center max-w-[1000px] mx-auto justify-center my-44"
+            
+          > */}
+          <div className="max-w-[1000px] my-28">
+            <motion.div whileHover={{ scale: 1.04 }} className="flex flex-row -z-10 w-full max-h-80 bg-[#07261c] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center">
             <div className="px-3">
               <video className="max-w-[250px] " controls>
                 <source src={RNCamera} type="video/mp4" />
               </video>
             </div>
  
-            <div className="w-2/4 max-h-80 px-3 my-3 flex items-center self-center rounded border-2 row text-white bg-[#07261c] " >
+            <div className="w-2/4 max-h-80 px-3 ml-3 my-3 flex items-center self-center rounded row text-white bg-[#07261c] " >
               <div className="flex justify-between py-3">
                 <h3 className="text-2xl">Page with Camera Feature</h3>
                 <div className="flex flex-row">
@@ -64,21 +66,26 @@ const MobileProjects = () => {
                 React Native, Typescript, Nativewind CSS, React Native Image
                 Picker
               </h5>
-            </div>
-          </motion.div>
+              </div>
+            </motion.div>
+          </div>
 
           {/* second card */}
-          <motion.div
-            className="flex xlMax:flex-col xlMin:justify-around xlMin:flex-row-reverse xlMax:items-center p-4 w-[1000px] mx-auto justify-center"
-            whileHover={{ scale: 1.04 }}
-          >
+          {/* <div
+            className="flex xlMax:flex-col xlMin:justify-around xlMin:flex-row-reverse xlMax:items-center p-4 w-[1000px] mx-auto justify-center my-44"
+            
+          > */}
+
+          <div className="w-[1000px] mt-44">
+            <motion.div whileHover={{ scale: 1.04 }} className="flex flex-row-reverse  -z-10 w-full max-h-80 bg-[#07261c] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center">
             <div className="px-5">
               <video className="max-w-[250px] " controls>
                 <source src={RNWeather} type="video/mp4" />
               </video>
             </div>
 
-            <div className="w-2/4 max-h-80 px-3 ml-3 my-3 flex items-center self-center rounded border-2 row text-white bg-[#07261c]">
+          
+            <div className="w-2/4 max-h-80 px-3 mr-3 my-3 flex items-center self-center rounded row text-white bg-[#07261c]">
               <div className="flex justify-between py-3">
                 <h3 className="text-2xl">Mobile Weather App</h3>
                 <div className="flex flex-row hover:text-darkBlueGreen">
@@ -101,8 +108,10 @@ const MobileProjects = () => {
                 Node.js, Express, PostreSQL
               </h5>
             </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
+        
 
         {/* Github link */}
         <div className="text-center my-5">
@@ -111,6 +120,7 @@ const MobileProjects = () => {
           </h3>
         </div>
       </div>
+      
 
       <footer className="footer footer-projects bg-[#0e2038] relative p-5 text-center">
         <a className="py-5" href="https://github.com/agrimes23">

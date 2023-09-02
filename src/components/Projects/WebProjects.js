@@ -73,7 +73,7 @@ const WebProjects = () => {
                 </div>
               </div>
               <h5 className="text-base py-3">
-                You can plan your trips by finding transportation, hotels, and
+                Plan your trips by finding transportation, hotels, and
                 activities, and mixing and matching until you find the best
                 trip!
               </h5>
@@ -128,9 +128,7 @@ const WebProjects = () => {
                 </div>
               </div>
               <h5 className="text-base py-3">
-                You can plan your trips by finding transportation, hotels, and
-                activities, and mixing and matching until you find the best
-                trip!
+                Check the weather of any city in the world, and save city's to the dashboard so you can write notes and check up-to-date weather-related info for each saved city.
               </h5>
               <h5 className="text-base py-3">
                 React, Bootstrap CSS, Python, Django
