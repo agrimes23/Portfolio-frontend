@@ -51,10 +51,10 @@ const WebProjects = () => {
               </a>
             </div>
 
-            <div className="w-3/4 max-h-80 py-3 px-3 ml-3 my-3 flex items-center self-center rounded border-2 row bg-gradient-to-t to-[#2d1640] from-[#684f7d] text-white" >
-              <div className="flex justify-between py-3">
-                <h3 className="text-2xl">Travel Plans Web App</h3>
-                <div className="flex flex-row mx-1">
+            <div className="w-3/4 mdMin:max-h-80 py-3 px-3 xlMin:ml-3 xlMax:mx-3 my-3 flex items-center self-center rounded border-2 row bg-gradient-to-t to-[#2d1640] from-[#684f7d] text-white" >
+              <div className="flex justify-between py-3 xlMax:flex-col xlMax:items-center">
+                <h3 className="text-2xl xlMax:m-2 xlMax:text-center">Travel Plans Web App</h3>
+                <div className="flex xlMin:flex-row xlMax:m-2">
                   <a
                     className="flex items-center mx-2"
                     href="https://github.com/agrimes23/travel-plan-frontend"
@@ -85,7 +85,7 @@ const WebProjects = () => {
 
           {/* second card */}
           <motion.div
-            className="flex flex-row-reverse xlMin:justify-around xlMax:items-center max-w-[1000px] mx-auto my-5 justify-center"
+            className="flex xlMin:flex-row-reverse xlMax:flex-col xlMin:justify-around xlMax:items-center max-w-[1000px] mx-auto my-5 justify-center"
             initial={{ y: -200, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
@@ -106,10 +106,10 @@ const WebProjects = () => {
               </a>
             </div>
 
-            <div className="w-3/4 max-h-80 px-3 mr-3 my-3 flex items-center self-center rounded border-2 row bg-gradient-to-t to-[#2d1640] from-[#684f7d] text-white">
-              <div className="flex justify-between py-3">
-                <h3 className="text-2xl">Weather Notes Web App</h3>
-                <div className="flex flex-row">
+            <div className="w-3/4 mdMin:max-h-80 px-3 xlMin:ml-3 xlMax:mx-3 my-3 flex items-center self-center rounded border-2 row bg-gradient-to-t to-[#2d1640] from-[#684f7d] text-white">
+              <div className="flex justify-between py-3 xlMax:flex-col xlMax:items-center">
+                <h3 className="text-2xl xlMax:m-2 xlMax:text-center">Weather Notes Web App</h3>
+                <div className="flex xlMin:flex-row xlMax:m-2">
                   <a
                     className="flex items-center mx-2"
                     href="https://github.com/agrimes23/weather_frontend"
