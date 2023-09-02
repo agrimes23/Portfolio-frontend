@@ -29,13 +29,16 @@ const WebProjects = () => {
         {/* div for projects container */}
         <div className="my-28 py-5 mx-auto flex justify-center flex-col ">
           {/* first card */}
-          <motion.div
+          {/* <motion.div
             className="flex xlMax:flex-col xlMin:justify-around xlMax:items-center max-w-[1000px] mx-auto my-5 justify-center bg-cover rounded"
             initial={{ y: -200, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 2 }}
-          >
+          > */}
+
+          <div className="w-[1200px] mt-18">
+            <motion.div whileHover={{ scale: 1.04 }} className="flex flex-row -z-10 w-full max-h-60 bg-gradient-to-t to-[#2d1640] from-[#684f7d] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center">
             <div className="px-3">
               <a
                 className="text-decoration-none"
@@ -51,7 +54,7 @@ const WebProjects = () => {
               </a>
             </div>
 
-            <div className="w-3/4 mdMin:max-h-80 py-3 px-3 xlMin:ml-3 xlMax:mx-3 my-3 flex items-center self-center rounded border-2 row bg-gradient-to-t to-[#2d1640] from-[#684f7d] text-white" >
+            <div className="w-2/4 mdMin:max-h-80 py-3 px-3 xlMin:ml-3 xlMax:mx-3 my-3 flex items-center self-center rounded row bg-gradient-to-t to-[#2d1640] from-[#684f7d] text-white" >
               <div className="flex justify-between py-3 xlMax:flex-col xlMax:items-center">
                 <h3 className="text-2xl xlMax:m-2 xlMax:text-center">Travel Plans Web App</h3>
                 <div className="flex xlMin:flex-row xlMax:m-2">
@@ -82,15 +85,18 @@ const WebProjects = () => {
               </h5>
             </div>
           </motion.div>
+          </div>
 
           {/* second card */}
-          <motion.div
+          {/* <motion.div
             className="flex xlMin:flex-row-reverse xlMax:flex-col xlMin:justify-around xlMax:items-center max-w-[1000px] mx-auto my-5 justify-center"
             initial={{ y: -200, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 2 }}
-          >
+          > */}
+            <div className="w-[1200px] mt-44">
+            <motion.div whileHover={{ scale: 1.04 }} className="flex flex-row-reverse -z-10 w-full max-h-60 bg-gradient-to-t to-[#2d1640] from-[#684f7d] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center">
             <div className="px-3">
               <a
                 className="text-decoration-none"
@@ -106,7 +112,7 @@ const WebProjects = () => {
               </a>
             </div>
 
-            <div className="w-3/4 mdMin:max-h-80 px-3 xlMin:ml-3 xlMax:mx-3 my-3 flex items-center self-center rounded border-2 row bg-gradient-to-t to-[#2d1640] from-[#684f7d] text-white">
+            <div className="w-2/4 mdMin:max-h-80 px-3 xlMin:ml-3 xlMax:mx-3  flex items-center self-center rounded row bg-gradient-to-t to-[#2d1640] from-[#684f7d] text-white">
               <div className="flex justify-between py-3 xlMax:flex-col xlMax:items-center">
                 <h3 className="text-2xl xlMax:m-2 xlMax:text-center">Weather Notes Web App</h3>
                 <div className="flex xlMin:flex-row xlMax:m-2">
@@ -135,6 +141,7 @@ const WebProjects = () => {
               </h5>
             </div>
           </motion.div>
+          </div>
         </div>
 
         <div className="text-center">
