@@ -7,9 +7,6 @@ import greenGold from "../../assets/green_gold.jpg"
 
 const MobileProjects = () => {
   // TODO:
-  // // Record videos of clicking on features of the mobile app (per project, which there's probably 2)
-  // // Change hover animation to framer motion (can just fix errors for now)
-  // // Format/Styling for mobile: should videos take up whole/most of the screen?
   // // Eventually reformat to
   // // // tailwind css
   // // // typescript
