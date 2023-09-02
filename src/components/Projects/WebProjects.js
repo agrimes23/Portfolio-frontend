@@ -37,7 +37,10 @@ const WebProjects = () => {
             transition={{ duration: 2 }}
           > */}
 
-          <div className="w-full mt-18 ">
+          <motion.div className="w-full mt-18 " initial={{ y: -200, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}>
             <motion.div whileHover={{ scale: 1.04 }} className="flex 2xlMin:flex-row 2xlMin:w-3/4 2xlMin:max-h-80 mx-auto -z-10  h-full bg-gradient-to-t to-[#2d1640] from-[#684f7d] items-center justify-center 2xlMax:w-2/4 lgMax:w-full 2xlMax:flex-col 2xlMax:py-5 my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center">
             <div className="px-3">
               <a
@@ -85,7 +88,7 @@ const WebProjects = () => {
               </h5>
             </div>
           </motion.div>
-          </div>
+          </motion.div>
 
           {/* second card */}
           {/* <motion.div
@@ -95,7 +98,11 @@ const WebProjects = () => {
             viewport={{ once: true }}
             transition={{ duration: 2 }}
           > */}
-            <div className="w-full mt-44">
+            <motion.div className="w-full mt-44" 
+            initial={{ y: -200, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}>
             <motion.div whileHover={{ scale: 1.04 }} className="flex 2xlMin:flex-row-reverse 2xlMin:w-3/4 2xlMin:max-h-80 -z-10 mx-auto bg-gradient-to-t to-[#2d1640] from-[#684f7d] items-center justify-center my-auto 2xlMax:w-2/4 lgMax:w-full 2xlMax:flex-col 2xlMax:py-5 xlMin:justify-around xlMax:items-center">
             <div className="px-3">
               <a
@@ -141,7 +148,7 @@ const WebProjects = () => {
               </h5>
             </div>
           </motion.div>
-          </div>
+          </motion.div>
         </div>
 
         <div className="text-center">

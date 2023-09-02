@@ -29,13 +29,17 @@ const MobileProjects = () => {
         </div>
 
         {/* Mobile Projects Card Container */}
-        <div className="my-20 fadeInTop mx-auto ">
+        <div className="my-20 mx-auto ">
           {/* first card */}
           {/* <div
             className="flex xlMax:flex-col xlMin:justify-around xlMax:items-center max-w-[1000px] mx-auto justify-center my-44"
             
           > */}
-          <div className="w-full max-w-[1300px] my-28 ">
+          <motion.div className="w-full max-w-[1300px] my-28 "
+          initial={{ y: -200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 2 }}>
             <motion.div whileHover={{ scale: 1.04 }} className="flex mdMin:flex-row -z-10 mdMin:w-11/12 lgMin:max-h-80 mdMax:flex-col lgMax:h-3/4 lgMax:p-7  mdMax:self-center mdMax:w-full  mx-auto bg-[#07261c] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center">
             <div className="lgMin:px-5">
               <video className="max-w-[250px] " controls>
@@ -67,7 +71,7 @@ const MobileProjects = () => {
               </h5>
               </div>
             </motion.div>
-          </div>
+          </motion.div>
 
           {/* second card */}
           {/* <div
@@ -75,7 +79,11 @@ const MobileProjects = () => {
             
           > */}
 
-          <div className="w-full max-w-[1300px] mt-44">
+          <motion.div className="w-full max-w-[1300px] mt-44" 
+          initial={{ y: -200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 2 }}>
             <motion.div whileHover={{ scale: 1.04 }} className="flex mdMin:flex-row-reverse mdMax:flex-col mdMin:w-11/12 -z-10 lgMin:max-h-80 lgMax:h-3/4 lgMax:p-5 mx-auto bg-[#07261c] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center">
             <div className="lgMin:px-5 ">
               <video className="max-w-[250px] " controls>
@@ -108,7 +116,7 @@ const MobileProjects = () => {
               </h5>
             </div>
             </motion.div>
-          </div>
+          </motion.div>
         </div>
         
 
