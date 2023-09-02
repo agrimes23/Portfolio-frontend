@@ -13,9 +13,6 @@ const HomePage = () => {
 
     const [hovered, setHovered] = useState(false);
 
-
-
-
     // useEffect (() => {
     //     window.scroll(0,0)
     // })

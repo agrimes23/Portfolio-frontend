@@ -1,6 +1,4 @@
 import {useState, useEffect} from 'react'
-import { Routes, Link, Route, useLocation } from 'react-router-dom'
-import wood from '../assets/wood.jpg'
 
 const Footer = () => {
     return (

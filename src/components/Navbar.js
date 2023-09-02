@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link, useNavigate, useResolvedPath, useMatch } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Resume from "../assets/Alexandra_Grimes_Resume.pdf"
 
 
