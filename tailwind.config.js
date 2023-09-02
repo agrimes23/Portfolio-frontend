@@ -28,6 +28,7 @@ module.exports = {
       'lgMax': {'max': '755px'},
       'mdMin': {'min': '600px'},
       'mdMax': {'max': '600px'},
+      'smMin': {'min': '500px'},
       'smMax': {'max': '500px'},
     },
     extend: {},
