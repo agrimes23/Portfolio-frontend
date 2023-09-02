@@ -23,7 +23,7 @@ const MobileProjects = () => {
           className="flex w-full h-60 bg-cover smMax:h-72"
           style={{ backgroundImage: `url(${greenGold})` }}
         >
-          <h1 className="my-auto ml-20 text-5xl font-bold bg-darkBlueGreen bg-opacity-90 text-lemonChiffon p-8 rounded mdMax:mx-auto">
+          <h1 className="my-auto ml-20 smMin:text-5xl smMax:text-4xl font-bold bg-darkBlueGreen bg-opacity-90 text-lemonChiffon p-8 rounded mdMax:mx-auto">
             Mobile Projects (React Native)
           </h1>
         </div>
@@ -35,18 +35,18 @@ const MobileProjects = () => {
             className="flex xlMax:flex-col xlMin:justify-around xlMax:items-center max-w-[1000px] mx-auto justify-center my-44"
             
           > */}
-          <div className="max-w-[1000px] my-28">
-            <motion.div whileHover={{ scale: 1.04 }} className="flex flex-row -z-10 w-full max-h-80 bg-[#07261c] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center">
-            <div className="px-3">
+          <div className="w-full max-w-[1300px] my-28 ">
+            <motion.div whileHover={{ scale: 1.04 }} className="flex mdMin:flex-row -z-10 mdMin:w-11/12 lgMin:max-h-80 mdMax:flex-col lgMax:h-3/4 lgMax:p-7  mdMax:self-center mdMax:w-full  mx-auto bg-[#07261c] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center">
+            <div className="lgMin:px-5">
               <video className="max-w-[250px] " controls>
                 <source src={RNCamera} type="video/mp4" />
               </video>
             </div>
  
-            <div className="w-2/4 max-h-80 px-3 ml-3 my-3 flex items-center self-center rounded row text-white bg-[#07261c] " >
-              <div className="flex justify-between py-3">
-                <h3 className="text-2xl">Page with Camera Feature</h3>
-                <div className="flex flex-row">
+            <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:ml-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full rounded row text-white bg-[#07261c] " >
+              <div className="flex justify-between py-3 lgMax:flex-col">
+                <h3 className="text-2xl mdMax:self-center">Page with Camera Feature</h3>
+                <div className="flex flex-row lgMax:pt-5 mdMax:self-center">
                   <h5 className="flex items-center ">View Code</h5>
                   <a
                     className="flex items-center mx-2"
@@ -57,10 +57,9 @@ const MobileProjects = () => {
                 </div>
               </div>
               <h5 className="text-base py-3">
-                Testing out camera functionality on React Native where users can
-                add photos from their phone gallery or take a picture with their
-                phone camera. Also made a modal slide up from the bottom of the
-                screen asking the users how they want to import their photos
+                Testing out camera functionality where users can
+                add photos from phone gallery or take a picture with the
+                phone's camera. Users can choose how to import their photos.
               </h5>
               <h5 className="text-base py-3">
                 React Native, Typescript, Nativewind CSS, React Native Image
@@ -76,20 +75,20 @@ const MobileProjects = () => {
             
           > */}
 
-          <div className="w-[1000px] mt-44">
-            <motion.div whileHover={{ scale: 1.04 }} className="flex flex-row-reverse  -z-10 w-full max-h-80 bg-[#07261c] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center">
-            <div className="px-5">
+          <div className="w-full max-w-[1300px] mt-44">
+            <motion.div whileHover={{ scale: 1.04 }} className="flex mdMin:flex-row-reverse mdMax:flex-col mdMin:w-11/12 -z-10 lgMin:max-h-80 lgMax:h-3/4 lgMax:p-5 mx-auto bg-[#07261c] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center">
+            <div className="lgMin:px-5 ">
               <video className="max-w-[250px] " controls>
                 <source src={RNWeather} type="video/mp4" />
               </video>
             </div>
 
           
-            <div className="w-2/4 max-h-80 px-3 mr-3 my-3 flex items-center self-center rounded row text-white bg-[#07261c]">
-              <div className="flex justify-between py-3">
-                <h3 className="text-2xl">Mobile Weather App</h3>
-                <div className="flex flex-row hover:text-darkBlueGreen">
-                  <h5 className="flex items-center">View Code</h5>
+            <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:mr-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full rounded row text-white bg-[#07261c]">
+              <div className="flex justify-between py-3 lgMax:flex-col">
+                <h3 className="text-2xl mdMax:self-center">Mobile Weather App</h3>
+                <div className="flex flex-row hover:text-darkBlueGreen lgMax:pt-5 mdMax:self-center">
+                  <h5 className="flex items-center ">View Code</h5>
                   <a
                     className="flex items-center mx-2"
                     href="https://github.com/agrimes23/ReactNativeWeatherBack"

@@ -21,7 +21,7 @@ const WebProjects = () => {
           className="flex w-full h-60 bg-cover"
           style={{ backgroundImage: `url(${purpleGold})` }}
         >
-          <h1 className="my-auto ml-20 text-5xl font-bold text-white bg-[#000000] bg-opacity-40 p-8 rounded mdMax:mx-auto">
+          <h1 className="my-auto ml-20 smMin:text-5xl smMax:text-4xl font-bold text-white bg-[#000000] bg-opacity-40 p-8 rounded mdMax:mx-auto">
             Web Projects
           </h1>
         </div>
