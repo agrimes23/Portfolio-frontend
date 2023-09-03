@@ -14,6 +14,7 @@ const WebProjects = () => {
   return (
     <>
       <div className="min-w-screen min-h-screen w-90 xlMax:m-0 pb-4 flex flex-col">
+        {/* header */}
         <div
           className="flex w-full h-60 bg-cover"
           style={{ backgroundImage: `url(${purpleGold})` }}
@@ -23,8 +24,14 @@ const WebProjects = () => {
           </h1>
         </div>
 
+        <motion.a href="https://github.com/agrimes23" className="flex flex-row text-white bg-gradient-to-r from-codingDiv bg-[#414141] w-60 h-12 rounded mx-auto justify-center mt-12" whileHover={{ scale: 1.04 }}>
+          <h3 className="self-center">See Alex's GitHub</h3>
+          <i className="fa-brands fa-github fa-2xl ml-2 self-center"></i>
+        </motion.a>
+
         {/* div for projects container */}
-        <div className="my-28 py-5 mx-auto flex-col w-screen max-w-[1600px]">
+        <div className="mt-16 mb-28 py-5 mx-auto flex-col w-screen max-w-[1600px]">
+          
           {/* first card */}
 
           <motion.div
@@ -149,12 +156,6 @@ const WebProjects = () => {
               </div>
             </motion.div>
           </motion.div>
-        </div>
-
-        <div className="text-center">
-          <h3 className="text-xl ">
-            See my github: <a href="https://github.com/agrimes23">agrimes23</a>
-          </h3>
         </div>
       </div>
 

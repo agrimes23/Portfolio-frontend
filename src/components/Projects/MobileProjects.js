@@ -24,6 +24,11 @@ const MobileProjects = () => {
           </h1>
         </div>
 
+        <motion.a href="https://github.com/agrimes23" className="flex flex-row text-white bg-gradient-to-r from-codingDiv bg-[#414141] w-60 h-12 rounded mx-auto justify-center mt-12" whileHover={{ scale: 1.04 }}>
+          <h3 className="self-center">See Alex's GitHub</h3>
+          <i className="fa-brands fa-github fa-2xl ml-2 self-center"></i>
+        </motion.a>
+
         {/* Mobile Projects Card Container */}
         <div className="my-20 mx-auto ">
           {/* first card */}
