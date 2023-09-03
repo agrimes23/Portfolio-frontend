@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import Footer from './Footer.js'
@@ -9,8 +9,6 @@ import divWaterColor2 from '../assets/blue_purple_pink.jpg'
 import flippedVid from '../assets/Flipped_coding_vid.mp4'
 
 const HomePage = () => {
-
-    const [hovered, setHovered] = useState(false);
 
     // useEffect (() => {
     //     window.scroll(0,0)
@@ -52,8 +50,7 @@ const HomePage = () => {
                 transition={{ duration: 1.5 }}
               >
                 <h1 className="text-lemonChiffon text-xl">
-                  A software engineer and full stack developer who writes
-                  dynamic, well organized code.
+                A software engineer and full stack developer that values well organized code and has high attention to detail. I bring adaptability and a passion for problem-solving to every coding challenge.
                 </h1>
                 <h1 className="text-lemonChiffon text-xl mt-5">
                   Delve deeper by exploring this site's{" "}

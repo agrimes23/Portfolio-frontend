@@ -1,6 +1,8 @@
-import { useState, useEffect } from "react";
+import React from "react";
 import RNWeather from "../../assets/ReactNativeWeatherVid.mp4";
 import RNCamera from "../../assets/InsuranceCardVid.mp4";
+import RNCredit from '../../assets/RiseCreditApp.mp4'
+import RNTestLab from '../../assets/CommunityTestLab.mp4'
 import { motion } from "framer-motion";
 import greenGold from "../../assets/green_gold.jpg"
 
@@ -42,7 +44,96 @@ const MobileProjects = () => {
           >
             <motion.div
               whileHover={{ scale: 1.04 }}
+              className="flex mdMin:flex-row-reverse -z-10 mdMin:w-11/12 lgMin:max-h-80 mdMax:flex-col lgMax:h-3/4 lgMax:p-7  mdMax:self-center mdMax:w-full  mx-auto bg-gradient-to-t to-[#07261c] from-[#29463d] rounded items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
+            >
+              <div className="lgMin:px-5">
+                <video className="max-w-[250px] " controls>
+                  <source src={RNTestLab} type="video/mp4" />
+                </video>
+              </div>
+
+              <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:ml-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full row text-white ">
+                <div className="flex justify-between py-3 lgMax:flex-col">
+                  <h3 className="text-2xl mdMax:self-center">
+                    Community Test Lab App
+                  </h3>
+                  <div className="flex flex-row lgMax:pt-5 mdMax:self-center">
+                    <h5 className="flex items-center ">View Code</h5>
+                    <a
+                      className="flex items-center mx-2"
+                      href="https://github.com/Personal-Finance-Credit-Score/creditapp"
+                    >
+                      <i className="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                  </div>
+                </div>
+                <h5 className="text-base py-2">
+                  As a 12-week sprint through The Opportunity Project, my team and I created this at-home covid testing app. I created an Api Service Class to have api calls organized in one place, and React Context so user information will be passed through screens without having to resort to props. Users can create an account or report anonymously. The data users submit to our backend is encrypted, and we explain how their data is used before the create an account. 
+                </h5>
+                <h5 className="text-base py-1">
+                  React Native, TypeScript, Nativewind CSS, Node.js, Express, SQL, Sequelize, Crypto
+                </h5>
+              </div>
+            </motion.div>
+          </motion.div>
+
+          {/* second card */}
+
+          <motion.div
+            className="w-full max-w-[1300px] mt-44 mb-28 "
+            initial={{ y: -200, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+          >
+            <motion.div
+              whileHover={{ scale: 1.04 }}
               className="flex mdMin:flex-row -z-10 mdMin:w-11/12 lgMin:max-h-80 mdMax:flex-col lgMax:h-3/4 lgMax:p-7  mdMax:self-center mdMax:w-full  mx-auto bg-gradient-to-t to-[#07261c] from-[#29463d] rounded items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
+            >
+              <div className="lgMin:px-5">
+                <video className="max-w-[250px] " controls>
+                  <source src={RNCredit} type="video/mp4" />
+                </video>
+              </div>
+
+              <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:ml-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full row text-white ">
+                <div className="flex justify-between py-3 lgMax:flex-col">
+                  <h3 className="text-2xl mdMax:self-center">
+                    Rise Credit Score App
+                  </h3>
+                  <div className="flex flex-row lgMax:pt-5 mdMax:self-center">
+                    <h5 className="flex items-center ">View Code</h5>
+                    <a
+                      className="flex items-center mx-2"
+                      href="https://github.com/Personal-Finance-Credit-Score/creditapp"
+                    >
+                      <i className="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                  </div>
+                </div>
+                <h5 className="text-base py-3">
+                  Produced this credit score app from a 3-day hackathon. Users can see what their credit score is and how it's calculated. There is an offers tab that shows loan offers based on their credit score. 
+                </h5>
+                <h5 className="text-base py-3">
+                  React Native, Nativewind CSS, Supabase, React Native bottom tabs
+                </h5>
+              </div>
+            </motion.div>
+          </motion.div>
+
+
+          {/* third card */}
+
+          <motion.div
+            className="w-full max-w-[1300px] mt-44 mb-28 "
+            initial={{ y: -200, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+          >
+            <motion.div
+              whileHover={{ scale: 1.04 }}
+              className="flex mdMin:flex-row-reverse -z-10 mdMin:w-11/12 lgMin:max-h-80 mdMax:flex-col lgMax:h-3/4 lgMax:p-7  mdMax:self-center mdMax:w-full  mx-auto bg-gradient-to-t to-[#07261c] from-[#29463d] rounded items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
             >
               <div className="lgMin:px-5">
                 <video className="max-w-[250px] " controls>
@@ -78,7 +169,8 @@ const MobileProjects = () => {
             </motion.div>
           </motion.div>
 
-          {/* second card */}
+
+          {/* fourth card */}
 
           <motion.div
             className="w-full max-w-[1300px] mt-44"
@@ -89,7 +181,7 @@ const MobileProjects = () => {
           >
             <motion.div
               whileHover={{ scale: 1.04 }}
-              className="flex mdMin:flex-row-reverse mdMax:flex-col mdMin:w-11/12 -z-10 lgMin:max-h-80 lgMax:h-3/4 lgMax:p-5 mx-auto rounded bg-gradient-to-t to-[#07261c] from-[#29463d] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
+              className="flex mdMin:flex-row mdMax:flex-col mdMin:w-11/12 -z-10 lgMin:max-h-80 lgMax:h-3/4 lgMax:p-5 mx-auto rounded bg-gradient-to-t to-[#07261c] from-[#29463d] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
             >
               <div className="lgMin:px-5 ">
                 <video className="max-w-[250px] " controls>
