@@ -30,7 +30,7 @@ const MobileProjects = () => {
         </motion.a>
 
         {/* Mobile Projects Card Container */}
-        <div className="my-20 mx-auto ">
+        <div className="mt-12 mb-52 mx-auto ">
           {/* first card */}
 
           <motion.div
@@ -124,13 +124,6 @@ const MobileProjects = () => {
               </div>
             </motion.div>
           </motion.div>
-        </div>
-
-        {/* Github link */}
-        <div className="text-center my-5">
-          <h3 className="text-xl ">
-            See my github: <a href="https://github.com/agrimes23">agrimes23</a>
-          </h3>
         </div>
       </div>
 
