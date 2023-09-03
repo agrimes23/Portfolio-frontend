@@ -50,8 +50,7 @@ const HomePage = () => {
                 transition={{ duration: 1.5 }}
               >
                 <h1 className="text-lemonChiffon text-xl">
-                A software engineer and full stack developer who values
-                  dynamic, well organized code.
+                A software engineer and full stack developer who values dynamic, well organized code.
                 </h1>
                 <h1 className="text-lemonChiffon text-xl mt-5">
                   Delve deeper by exploring this site's{" "}

@@ -9,30 +9,30 @@ import pyGrad from '../../assets/purp_yellow_gradient.jpg'
 
 const Experience = () => {
 
-    const tabHeaders = ["Experience", "School", "Skills"]
-    const [active, setActive] = useState(tabHeaders[0])
+    // const tabHeaders = ["Experience", "School", "Skills"]
+    // const [active, setActive] = useState(tabHeaders[0])
     const Button = styled.button`
     /* Same as above */
   `;
   
-  const ButtonToggle = styled(Button)`
-    opacity: 0.6;
+  // const ButtonToggle = styled(Button)`
+  //   opacity: 0.6;
 
-    ${({ active }) =>
-      active &&
-      `
-      opacity: 1;
-      border-top: 1px black solid;
-      border-left: 1px black solid;
-      border-right: 1px black solid;
-      border-bottom: 0px;
-      color: white;
-      background-color: rgb(4, 69, 70);
-    `}
-  `;
-    const ButtonGroup = styled.div`
-    display: flex;
-    `;
+  //   ${({ active }) =>
+  //     active &&
+  //     `
+  //     opacity: 1;
+  //     border-top: 1px black solid;
+  //     border-left: 1px black solid;
+  //     border-right: 1px black solid;
+  //     border-bottom: 0px;
+  //     color: white;
+  //     background-color: rgb(4, 69, 70);
+  //   `}
+  // `;
+  //   const ButtonGroup = styled.div`
+  //   display: flex;
+  //   `;
 
     useEffect (() => {
       window.scroll(0,0)
@@ -71,7 +71,7 @@ const Experience = () => {
                 <div className="fadeInTop">
                 <h4 className="flex my-5 justify-center text-lg">Scroll to see full resume:</h4>
                 <div className="overflow-auto flex mdMin:justify-center mdMax:justify-start w-11/12 mdMin:mx-auto">
-                  <img class="min-w-[700px] mt-5 border-2 overflow-hidden" src={myResume} />
+                  <img className="min-w-[700px] mt-5 border-2 overflow-hidden" src={myResume} />
                 </div>
               </div>
               <div className="m-5 resume-div d-flex row align-items-center justify-content-center">
@@ -79,11 +79,6 @@ const Experience = () => {
               </div>
               </div>
               <Footer/>
-              {/* <footer className="footer footer-exp p-5 text-center">
-                  <a className="py-5" href="https://github.com/agrimes23"><i className="footer-text fa-brands fa-github text-white px-5" title="Github"></i></a>
-                  <a className="py-5" href="https://www.linkedin.com/in/alex-grimes-dev/"><i className="footer-text fa-brands fa-linkedin text-white px-5" title="LinkedIn"></i></a>
-                  <a className="py-5" href="mailto: alexgrimes23@gmail.com"><i className="footer-text fa-regular fa-envelope text-white px-5" title="Email"></i></a>
-            </footer> */}
             </div>
             
 
