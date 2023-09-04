@@ -1,8 +1,8 @@
 import React from "react";
-import RNWeather from "../../assets/ReactNativeWeatherVid.mp4";
-import RNCamera from "../../assets/InsuranceCardVid.mp4";
-import RNCredit from '../../assets/RiseCreditAppMed.mp4'
-import RNTestLab from '../../assets/CommunityTestLabMedQual.mp4'
+// import RNWeather from "../../assets/ReactNativeWeatherVid.mp4";
+// import RNCamera from "../../assets/InsuranceCardVid.mp4";
+// import RNCredit from '../../assets/RiseCreditAppMed.mp4'
+// import RNTestLab from '../../assets/CommunityTestLabMedQual.mp4'
 import TestThumbnail from '../../assets/TestLabThumbnail.PNG'
 import RiseThumbnail from '../../assets/RiseThumbnail.PNG'
 import CamThumbnail from '../../assets/CameraThumbnail.PNG'
@@ -51,9 +51,12 @@ const MobileProjects = () => {
               className="flex mdMin:flex-row-reverse -z-10 mdMin:w-11/12 lgMin:max-h-80 mdMax:flex-col lgMax:h-3/4 lgMax:p-7  mdMax:self-center mdMax:w-full  mx-auto bg-gradient-to-t to-[#07261c] from-[#29463d] rounded items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
             >
               <div className="lgMin:px-5">
-                <video className="max-w-[250px] h-[444px]" poster={TestThumbnail} preload="none" controls>
+                {/* <video className="max-w-[250px] h-[444px]" poster={TestThumbnail} preload="none" controls>
                   <source src={RNTestLab} type="video/mp4" />
-                </video>
+                </video> */}
+                <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
+                  <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">Video Coming Soon</h4>
+                </div>
               </div>
 
               <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:ml-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full row text-white ">
@@ -95,9 +98,12 @@ const MobileProjects = () => {
               className="flex mdMin:flex-row -z-10 mdMin:w-11/12 lgMin:max-h-80 mdMax:flex-col lgMax:h-3/4 lgMax:p-7  mdMax:self-center mdMax:w-full  mx-auto bg-gradient-to-t to-[#07261c] from-[#29463d] rounded items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
             >
               <div className="lgMin:px-5">
-                <video className="max-w-[250px] " poster={RiseThumbnail} preload="none" controls>
+                {/* <video className="max-w-[250px] " poster={RiseThumbnail} preload="none" controls>
                   <source src={RNCredit} type="video/mp4" />
-                </video>
+                </video> */}
+                <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
+                  <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">Video Coming Soon</h4>
+                </div>
               </div>
 
               <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:ml-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full row text-white ">
@@ -140,9 +146,12 @@ const MobileProjects = () => {
               className="flex mdMin:flex-row-reverse -z-10 mdMin:w-11/12 lgMin:max-h-80 mdMax:flex-col lgMax:h-3/4 lgMax:p-7  mdMax:self-center mdMax:w-full  mx-auto bg-gradient-to-t to-[#07261c] from-[#29463d] rounded items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
             >
               <div className="lgMin:px-5">
-                <video className="max-w-[250px] h-[444px]" poster={CamThumbnail} preload="none" controls>
+                {/* <video className="max-w-[250px] h-[444px]" poster={CamThumbnail} preload="none" controls>
                   <source src={RNCamera} type="video/mp4" />
-                </video>
+                </video> */}
+                <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
+                  <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">Video Coming Soon</h4>
+                </div>
               </div>
 
               <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:ml-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full row text-white ">
@@ -188,9 +197,12 @@ const MobileProjects = () => {
               className="flex mdMin:flex-row mdMax:flex-col mdMin:w-11/12 -z-10 lgMin:max-h-80 lgMax:h-3/4 lgMax:p-5 mx-auto rounded bg-gradient-to-t to-[#07261c] from-[#29463d] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
             >
               <div className="lgMin:px-5 ">
-                <video className="max-w-[250px] h-[444px]" poster={WeatherThumbnail} preload="none" controls>
+                {/* <video className="max-w-[250px] h-[444px]" poster={WeatherThumbnail} preload="none" controls>
                   <source src={RNWeather} type="video/mp4" />
-                </video>
+                </video> */}
+                <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
+                  <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">Video Coming Soon</h4>
+                </div>
               </div>
 
               <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:mr-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full row text-white ">
