@@ -1,8 +1,4 @@
 import React from "react";
-// import RNWeather from "../../assets/ReactNativeWeatherVid.mp4";
-// import RNCamera from "../../assets/InsuranceCardVid.mp4";
-// import RNCredit from '../../assets/RiseCreditAppMed.mp4'
-// import RNTestLab from '../../assets/CommunityTestLabMedQual.mp4'
 import TestThumbnail from '../../assets/TestLabThumbnail.PNG'
 import RiseThumbnail from '../../assets/RiseThumbnail.PNG'
 import CamThumbnail from '../../assets/CameraThumbnail.PNG'
