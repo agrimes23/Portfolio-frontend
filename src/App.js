@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience/Experience';
 import Footer from './components/Footer';
@@ -8,9 +9,11 @@ import Navbar from './components/Navbar';
 import WebProjects from './components/Projects/WebProjects'
 import MobileProjects from './components/Projects/MobileProjects';
 
+
 const App = () => {
   return (
     <>
+    <AnimatePresence>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
@@ -19,6 +22,7 @@ const App = () => {
         <Route path="/mobileprojects" element={<MobileProjects />}></Route>
         <Route path="/experience" element={<Experience/>}></Route>
       </Routes>
+      </AnimatePresence>
       
     </>
   )
