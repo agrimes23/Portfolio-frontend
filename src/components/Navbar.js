@@ -47,7 +47,7 @@ const Navbar = () => {
             </div>
             <div className="lg-screen-nav flex 2xlMax:hidden justify-end">
                 <ul className="flex flex-row navbar-nav navbar-right text-white mx-3">
-                    <div className="mt-4"><label htmlFor="download resume"><a className="text-decoration-none button py-3 px-3 mx-4" href={Resume} download="Alexandra_Grimes_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a></label>
+                    <div className="mt-4"><label htmlFor="download resume"><a className="text-decoration-none button py-3 px-3 mx-4" href={Resume} download="Alexandra_Grimes_Resume.pdf" target="_blank" rel="noreferrer noopener">Download Resume</a></label>
                     </div>
                     <label htmlFor="about me"/>
               <button className="nav-item nav-item-area rounded p-4 focus:bg-navyBlue focus:text-white" onClick={() => {
@@ -83,7 +83,7 @@ const Navbar = () => {
                     <button className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectWP}>Web Projects</button>
                     <button className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectMP}>Mobile Projects</button>
                     <button className="sm-nav-item text-decoration-none m-auto text-white p-4" onClick={redirectE}>Experience</button>
-                    <button className="sm-nav-item text-decoration-none m-auto text-white p-4" href={Resume} download="Alexandra_Grimes_Resume" target='_blank'>Download Resume</button>
+                    <button className="sm-nav-item text-decoration-none m-auto text-white p-4" href={Resume} download="Alexandra_Grimes_Resume" target='_blank' rel="noreferrer noopener">Download Resume</button>
 
                     
                 </div>
