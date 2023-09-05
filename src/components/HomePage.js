@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import Footer from './Footer.js'
-import codingVidBG from '../assets/CodingClearShort.mp4'
+import codingVidBG from '../assets/CodingVid.mp4'
 import darkWaterColor from '../assets/darkWaterColor.jpg'
 import divWaterColor from '../assets/blue_purple.jpg'
 import divWaterColor2 from '../assets/blue_purple_pink.jpg'
-import flippedVid from '../assets/Flipped_coding_vid.mp4'
+// import flippedVid from '../assets/Flipped_coding_vid.mp4'
 
 const HomePage = () => {
 
@@ -97,7 +97,7 @@ const HomePage = () => {
                 </div>
               </div>
               {/* video container */}
-              <div className="bg-codingDiv h-[120px] mt-5 mx-auto">
+              <div className="h-[120px] mt-24 mx-auto">
                 <video
                   className="xlMin:w-[500px] xlMax:w-[300px] shadow-2xl shadow-[#000000] object-fill"
                   autoPlay
@@ -106,7 +106,7 @@ const HomePage = () => {
                 >
                   <source src={codingVidBG} type="video/mp4" />
                 </video>
-                <div className="xlMin:w-[500px] xlMin:h-[120px] xlMax:w-[300px] flex z-10 absolute bg-gradient-to-t from-[#231d2c] translate-x-[-60px] skew-x-[135deg] mdMax:hidden shadow shadow-[#000000]"></div>
+                {/* <div className="xlMin:w-[500px] xlMin:h-[120px] xlMax:w-[300px] flex z-10 absolute bg-gradient-to-t from-[#231d2c] translate-x-[-60px] skew-x-[135deg] mdMax:hidden shadow shadow-[#000000]"></div>
                 <video
                   className="xlMin:w-[500px] xlMin:h-[120px] xlMax:w-[300px] xlMax:h-[70px] absolute opacity-80 xlMin:translate-x-[-60px] xlMin:skew-x-[135deg] xlMax:skew-x-[135deg] xlMax:translate-x-[-35px] mdMax:hidden transform object-fill"
                   autoPlay
@@ -114,7 +114,7 @@ const HomePage = () => {
                   muted
                 >
                   <source src={flippedVid} type="video/mp4" />
-                </video>
+                </video> */}
               </div>
             </motion.div>
           </div>

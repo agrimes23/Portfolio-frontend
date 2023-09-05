@@ -160,9 +160,13 @@ i:hover {
   object-fit: fill;
 } */
 
-.reflect-div {
-  transform: translatex(-60px) skew(135deg);
+.backEffect {
+  clip-path: polygon(100% 100%, 0% 90%, 0% 10%, 100% 0%);
 }
+
+/* .reflect-div {
+  transform: translatex(-60px) skew(135deg);
+} */
 
 h2.experience-title-hp, h2.about-me-title-hp {
   text-align: center;
