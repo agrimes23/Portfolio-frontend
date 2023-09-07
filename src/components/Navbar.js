@@ -47,22 +47,18 @@ const Navbar = () => {
             </div>
             <div className="lg-screen-nav flex 2xlMax:hidden justify-end">
                 <ul className="flex flex-row navbar-nav navbar-right text-white mx-3">
-                    <div className="mt-4"><label htmlFor="download resume"><a className="text-decoration-none button py-3 px-3 mx-4" href={Resume} download="Alexandra_Grimes_Resume.pdf" target="_blank" rel="noreferrer noopener">Download Resume</a></label>
+                    <div className="mt-4"><a className="text-decoration-none button py-3 px-3 mx-4" href={Resume} download="Alexandra_Grimes_Resume.pdf" target="_blank" rel="noreferrer noopener">Download Resume</a>
                     </div>
-                    <label htmlFor="about me"/>
               <button className="nav-item nav-item-area rounded p-4 focus:bg-navyBlue focus:text-white" onClick={() => {
                 navigate("/aboutme")}}>
                 About Me
               </button>
-            <label htmlFor="web projects"/>
               <button className="nav-item nav-item-area rounded p-4 focus:bg-navyBlue focus:text-white" onClick={() => navigate("/webprojects")}>
                 Web Projects
               </button>
-            <label htmlFor="web projects"/>
               <button className="nav-item nav-item-area rounded p-4 focus:bg-navyBlue focus:text-white" onClick={() => navigate("/mobileprojects")}>
                 Mobile Projects
               </button>
-            <label htmlFor="experience"/>
               <button 
               className="nav-item nav-item-area rounded p-4 focus:bg-navyBlue focus:text-white"
               onClick={() => navigate("/experience")}

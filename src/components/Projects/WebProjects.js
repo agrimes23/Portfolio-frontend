@@ -24,25 +24,32 @@ const WebProjects = () => {
           </h1>
         </div>
 
-        <motion.a href="https://github.com/agrimes23" className="flex flex-row text-white bg-gradient-to-r from-codingDiv bg-[#414141] w-60 h-12 rounded mx-auto justify-center mt-12" whileHover={{ scale: 1.04 }}>
+        {/* motion a */}
+        <a
+          href="https://github.com/agrimes23"
+          className="flex flex-row text-white bg-gradient-to-r from-codingDiv bg-[#414141] w-60 h-12 rounded mx-auto justify-center mt-12"
+          // whileHover={{ scale: 1.04 }}
+        >
           <h3 className="self-center">See Alex's GitHub</h3>
           <i className="fa-brands fa-github fa-2xl ml-2 self-center"></i>
-        </motion.a>
+        </a>
 
         {/* div for projects container */}
         <div className="mt-16 mb-28 py-5 mx-auto flex-col w-screen max-w-[1600px]">
-          
           {/* first card */}
-
-          <motion.div
+          
+          {/* motion div */}
+          <div
             className="w-full  mt-18 "
-            initial={{ y: -200, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2 }}
+            // initial={{ y: -200, opacity: 0 }}
+            // whileInView={{ y: 0, opacity: 1 }}
+            // viewport={{ once: true }}
+            // transition={{ duration: 2 }}
           >
-            <motion.div
-              whileHover={{ scale: 1.04 }}
+
+            {/* motion div */}
+            <div
+              // whileHover={{ scale: 1.04 }}
               className="flex 2xlMin:flex-row 2xlMin:w-3/4 2xlMin:max-h-80 mx-auto -z-10  h-full rounded bg-gradient-to-t to-[#2d1640] from-[#684f7d] items-center justify-center 2xlMax:w-2/4 lgMax:w-full 2xlMax:flex-col 2xlMax:py-5 my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
             >
               <div className="px-3">
@@ -92,19 +99,23 @@ const WebProjects = () => {
                   React, Bootstrap CSS, Java, Spring Boot, JWT Auth
                 </h5>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
           {/* second card */}
-          <motion.div
+
+          {/* motion div */}
+          <div
             className="w-full mt-44"
-            initial={{ y: -200, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2 }}
+            // initial={{ y: -200, opacity: 0 }}
+            // whileInView={{ y: 0, opacity: 1 }}
+            // viewport={{ once: true }}
+            // transition={{ duration: 2 }}
           >
-            <motion.div
-              whileHover={{ scale: 1.04 }}
+
+            {/* motion div */}
+            <div
+              // whileHover={{ scale: 1.04 }}
               className="flex 2xlMin:flex-row-reverse 2xlMin:w-3/4 2xlMin:max-h-80 -z-10 mx-auto rounded bg-gradient-to-t to-[#2d1640] from-[#684f7d] items-center justify-center my-auto 2xlMax:w-2/4 lgMax:w-full 2xlMax:flex-col 2xlMax:py-5 xlMin:justify-around xlMax:items-center"
             >
               <div className="px-3">
@@ -154,8 +165,8 @@ const WebProjects = () => {
                   React, Bootstrap CSS, Python, Django
                 </h5>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </div>
 

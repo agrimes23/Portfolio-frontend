@@ -26,24 +26,31 @@ const MobileProjects = () => {
           </h1>
         </div>
 
-        <motion.a href="https://github.com/agrimes23" className="flex flex-row text-white bg-gradient-to-r from-codingDiv bg-[#414141] w-60 h-12 rounded mx-auto justify-center mt-12" whileHover={{ scale: 1.04 }}>
+        {/* motion a */}
+        <a
+          href="https://github.com/agrimes23"
+          className="flex flex-row text-white bg-gradient-to-r from-codingDiv bg-[#414141] w-60 h-12 rounded mx-auto justify-center mt-12"
+          // whileHover={{ scale: 1.04 }}
+        >
           <h3 className="self-center">See Alex's GitHub</h3>
           <i className="fa-brands fa-github fa-2xl ml-2 self-center"></i>
-        </motion.a>
+        </a>
 
         {/* Mobile Projects Card Container */}
         <div className="mt-12 mb-52 mx-auto ">
           {/* first card */}
 
-          <motion.div
+          {/* motion div */}
+          <div
             className="w-full max-w-[1300px] my-28 "
-            initial={{ y: -200, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2 }}
+            // initial={{ y: -200, opacity: 0 }}
+            // whileInView={{ y: 0, opacity: 1 }}
+            // viewport={{ once: true }}
+            // transition={{ duration: 2 }}
           >
-            <motion.div
-              whileHover={{ scale: 1.04 }}
+            {/* motion div */}
+            <div
+              // whileHover={{ scale: 1.04 }}
               className="flex mdMin:flex-row-reverse -z-10 mdMin:w-11/12 lgMin:max-h-80 mdMax:flex-col lgMax:h-3/4 lgMax:p-7  mdMax:self-center mdMax:w-full  mx-auto bg-gradient-to-t to-[#07261c] from-[#29463d] rounded items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
             >
               <div className="lgMin:px-5">
@@ -51,7 +58,9 @@ const MobileProjects = () => {
                   <source src={RNTestLab} type="video/mp4" />
                 </video> */}
                 <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
-                  <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">Video Coming Soon</h4>
+                  <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
+                    Video Coming Soon
+                  </h4>
                 </div>
               </div>
 
@@ -71,26 +80,35 @@ const MobileProjects = () => {
                   </div>
                 </div>
                 <h5 className="text-base py-2">
-                  As a 12-week sprint through The Opportunity Project, my team and I created this at-home covid testing app. I created an Api Service Class to have api calls organized in one place, and React Context so user information will be passed through screens without having to resort to props. Users can create an account or report anonymously. The data users submit to our backend is encrypted, and we explain how their data is used before the create an account. 
+                  As a 12-week sprint through The Opportunity Project, my team
+                  and I created this at-home covid testing app. I created an Api
+                  Service Class to have api calls organized in one place, and
+                  React Context so user information will be passed through
+                  screens without having to resort to props. Users can create an
+                  account or report anonymously. The data users submit to our
+                  backend is encrypted, and we explain how their data is used
+                  before the create an account.
                 </h5>
                 <h5 className="text-base py-1">
-                  React Native, TypeScript, Nativewind CSS, Node.js, Express, SQL, Sequelize, Crypto
+                  React Native, TypeScript, Nativewind CSS, Node.js, Express,
+                  SQL, Sequelize, Crypto
                 </h5>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
           {/* second card */}
-
-          <motion.div
+          {/* motion div */}
+          <div
             className="w-full max-w-[1300px] mt-44 mb-28 "
-            initial={{ y: -200, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2 }}
+            // initial={{ y: -200, opacity: 0 }}
+            // whileInView={{ y: 0, opacity: 1 }}
+            // viewport={{ once: true }}
+            // transition={{ duration: 2 }}
           >
-            <motion.div
-              whileHover={{ scale: 1.04 }}
+            {/* motion div */}
+            <div
+              // whileHover={{ scale: 1.04 }}
               className="flex mdMin:flex-row -z-10 mdMin:w-11/12 lgMin:max-h-80 mdMax:flex-col lgMax:h-3/4 lgMax:p-7  mdMax:self-center mdMax:w-full  mx-auto bg-gradient-to-t to-[#07261c] from-[#29463d] rounded items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
             >
               <div className="lgMin:px-5">
@@ -98,7 +116,9 @@ const MobileProjects = () => {
                   <source src={RNCredit} type="video/mp4" />
                 </video> */}
                 <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
-                  <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">Video Coming Soon</h4>
+                  <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
+                    Video Coming Soon
+                  </h4>
                 </div>
               </div>
 
@@ -118,27 +138,32 @@ const MobileProjects = () => {
                   </div>
                 </div>
                 <h5 className="text-base py-3">
-                  Produced this credit score app from a 3-day hackathon. Users can see what their credit score is and how it's calculated. There is an offers tab that shows loan offers based on their credit score. 
+                  Produced this credit score app from a 3-day hackathon. Users
+                  can see what their credit score is and how it's calculated.
+                  There is an offers tab that shows loan offers based on their
+                  credit score.
                 </h5>
                 <h5 className="text-base py-3">
-                  React Native, Nativewind CSS, Supabase, React Native bottom tabs
+                  React Native, Nativewind CSS, Supabase, React Native bottom
+                  tabs
                 </h5>
               </div>
-            </motion.div>
-          </motion.div>
-
+            </div>
+          </div>
 
           {/* third card */}
-
-          <motion.div
+          {/* motion div */}
+          <div
             className="w-full max-w-[1300px] mt-44 mb-28 "
-            initial={{ y: -200, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2 }}
+            // initial={{ y: -200, opacity: 0 }}
+            // whileInView={{ y: 0, opacity: 1 }}
+            // viewport={{ once: true }}
+            // transition={{ duration: 2 }}
           >
-            <motion.div
-              whileHover={{ scale: 1.04 }}
+
+            {/* motion div */}
+            <div
+              // whileHover={{ scale: 1.04 }}
               className="flex mdMin:flex-row-reverse -z-10 mdMin:w-11/12 lgMin:max-h-80 mdMax:flex-col lgMax:h-3/4 lgMax:p-7  mdMax:self-center mdMax:w-full  mx-auto bg-gradient-to-t to-[#07261c] from-[#29463d] rounded items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
             >
               <div className="lgMin:px-5">
@@ -146,7 +171,9 @@ const MobileProjects = () => {
                   <source src={RNCamera} type="video/mp4" />
                 </video> */}
                 <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
-                  <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">Video Coming Soon</h4>
+                  <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
+                    Video Coming Soon
+                  </h4>
                 </div>
               </div>
 
@@ -175,21 +202,21 @@ const MobileProjects = () => {
                   Picker
                 </h5>
               </div>
-            </motion.div>
-          </motion.div>
-
+            </div>
+          </div>
 
           {/* fourth card */}
-
-          <motion.div
+          {/* motion div */}
+          <div
             className="w-full max-w-[1300px] mt-44"
-            initial={{ y: -200, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2 }}
+            // initial={{ y: -200, opacity: 0 }}
+            // whileInView={{ y: 0, opacity: 1 }}
+            // viewport={{ once: true }}
+            // transition={{ duration: 2 }}
           >
-            <motion.div
-              whileHover={{ scale: 1.04 }}
+            {/* motion div */}
+            <div
+              // whileHover={{ scale: 1.04 }}
               className="flex mdMin:flex-row mdMax:flex-col mdMin:w-11/12 -z-10 lgMin:max-h-80 lgMax:h-3/4 lgMax:p-5 mx-auto rounded bg-gradient-to-t to-[#07261c] from-[#29463d] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
             >
               <div className="lgMin:px-5 ">
@@ -197,7 +224,9 @@ const MobileProjects = () => {
                   <source src={RNWeather} type="video/mp4" />
                 </video> */}
                 <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
-                  <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">Video Coming Soon</h4>
+                  <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
+                    Video Coming Soon
+                  </h4>
                 </div>
               </div>
 
@@ -226,8 +255,8 @@ const MobileProjects = () => {
                   Node.js, Express, PostreSQL
                 </h5>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </div>
 

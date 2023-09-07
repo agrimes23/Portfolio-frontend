@@ -1,6 +1,6 @@
-import React, { useState, useEffect }from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import { motion, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Footer from './Footer.js'
 import codingPhoto from '../assets/CodingPhoto.PNG'
 import darkWaterColor from '../assets/darkWaterColor.jpg'
@@ -12,36 +12,6 @@ const HomePage = () => {
     // useEffect (() => {
     //     window.scroll(0,0)
     // })
-
-    const [isAnimating, setIsAnimating] = useState(false);
-
-    const animation = useAnimation(
-      {
-        initial: {
-          y: 200,
-          opacity: 0,
-        },
-        animate: {
-          y: 0,
-          opacity: 1,
-          duration: 2000,
-        },
-      },
-      {
-        controls: {
-          play: () => setIsAnimating(true),
-          stop: () => setIsAnimating(false),
-        },
-      },
-    );
-    
-    useEffect(() => {
-      if (isAnimating) {
-        animation.play();
-      } else {
-        animation.stop();
-      }
-    }, [isAnimating]);
 
 
     return (
@@ -58,11 +28,13 @@ const HomePage = () => {
             >
 
             {/* Name & Title */}
-              <motion.div
+
+            {/* motion div */}
+              <div
                 className="-mt-44 rounded max-w-4xl w-4/12 py-14 "
-                initial={{ x: -300, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 2 }}
+                // initial={{ x: -300, opacity: 0 }}
+                // animate={{ x: 0, opacity: 1 }}
+                // transition={{ duration: 2 }}
               >
                 <h1 className="font-titleName text-lemonChiffon text-center text-7xl row justify-center mdMax:text-5xl">
                   Alex Grimes
@@ -70,14 +42,16 @@ const HomePage = () => {
                 <h2 className="font-newsCycle text-[#77d8ff] text-center text-6xl mdMax:text-4xl">
                   Full Stack Developer
                 </h2>
-              </motion.div>
+              </div>
 
               {/* Quick Intro */}
-              <motion.div
+
+              {/* motion div */}
+              <div
                 className="bg-[#2f2081] smMin:mx-10 smMin:p-10 xlMin:mt-44 max-w-xl bg-opacity-50 rounded xlMin:self-end smMax:mx-0 smMax:p-6"
-                initial={{ x: 300, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.5 }}
+                // initial={{ x: 300, opacity: 0 }}
+                // animate={{ x: 0, opacity: 1 }}
+                // transition={{ duration: 1.5 }}
               >
                 <h1 className="text-lemonChiffon text-xl">
                 A software engineer and full stack developer who values dynamic, well organized code.
@@ -91,40 +65,44 @@ const HomePage = () => {
                     code on GitHub
                   </a>
                 </h1>
-              </motion.div>
+              </div>
             </div>
           </div>
           {/* -------------------- Video Section --------------------- */}
 
           <div className="w-screen max-h-screen mt-44 px-10 flex justify-center">
             {/* container for card */}
-            <motion.div
-            ref={animation}
+
+            {/* motion div */}
+            <div
               className="flex 2xlMin:min-h-[500px] 2xlMax:min-h-[700px] max-w-6xl rounded bg-gradient-to-t from-[#231d2c] to-[#4a356a] w-full bg-cover pr-3 2xlMax:flex-col 2xlMin:flex-row "
-              initial={{ y: 200, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2 }}
+              // initial={{ y: 200, opacity: 0 }}
+              // whileInView={{ y: 0, opacity: 1 }}
+              // viewport={{ once: true }}
+              // transition={{ duration: 2 }}
             >
               <div className="flex flex-col justify-around 2xlMin:p-20 2xlMax:pt-20 2xlMax:w-3/4 2xlMax:text-center 2xlMin:w-2/4 2xlMax:mx-auto">
                 <h2 className="text-white text-3xl">
                   View Some of Alex's Latest Projects
                 </h2>
                 <div className="flex 2xlMin:flex-col 2xlMax:self-center xlMax:flex-col">
-                  <motion.button
+
+                  {/* motion button */}
+                  <button
                     className="bg-lemonChiffon rounded my-3 w-60 py-3 font-bold 2xlMax:mx-3"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.99 }}
+                    // whileHover={{ scale: 1.1 }}
+                    // whileTap={{ scale: 0.99 }}
                   >
                     See Web Projects
-                  </motion.button>
-                  <motion.button
+                  </button>
+                  {/* motion button */}
+                  <button
                     className="bg-lemonChiffon rounded my-3 w-60 py-3 font-bold 2xlMax:mx-3"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.99 }}
+                    // whileHover={{ scale: 1.1 }}
+                    // whileTap={{ scale: 0.99 }}
                   >
                     See Mobile Projects
-                  </motion.button>
+                  </button>
                 </div>
               </div>
               {/* video container */}
@@ -132,7 +110,7 @@ const HomePage = () => {
                 <img className="xlMin:w-[500px] xlMax:w-[300px] shadow-2xl shadow-[#000000] object-fill" src={codingPhoto}/>
                
               </div>
-            </motion.div>
+            </div>
           </div>
           {/* ----------------------------------------------- */}
 
@@ -146,16 +124,18 @@ const HomePage = () => {
                 to="/experience"
               >
                 {/* experience-hp */}
-                <motion.div
+
+                {/* motion div */}
+                <div
                   className="h-80 w-96 rounded smMax:w-80 flex items-center p-3"
                   style={{ backgroundImage: `url(${divWaterColor2})` }}
-                  whileHover={{ scale: 1.1 }}
+                  // whileHover={{ scale: 1.1 }}
                 >
                   <h2 className="experience-title-hp text-lemonChiffon text-3xl">
                     Read about how Alex became a Programmer and Other
                     Experiences
                   </h2>
-                </motion.div>
+                </div>
               </Link>
             </div>
 
@@ -166,15 +146,17 @@ const HomePage = () => {
                 className="no-underline text-black"
                 to="/aboutme"
               >
-                <motion.div
+
+                {/* motion div */}
+                <div
                   className="flex h-80 w-96 rounded smMax:w-80 justify-center items-center p-3"
                   style={{ backgroundImage: `url(${divWaterColor})` }}
-                  whileHover={{ scale: 1.1 }}
+                  // whileHover={{ scale: 1.1 }}
                 >
                   <h2 className=" text-lemonChiffon text-3xl px-10">
                     Still Curious? Read the About Me Page!
                   </h2>
-                </motion.div>
+                </div>
               </Link>
             </div>
           </div>
