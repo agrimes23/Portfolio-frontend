@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect }from 'react'
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
+import { motion, useAnimation } from 'framer-motion'
 import Footer from './Footer.js'
 import codingPhoto from '../assets/CodingPhoto.PNG'
 import darkWaterColor from '../assets/darkWaterColor.jpg'
@@ -12,6 +12,37 @@ const HomePage = () => {
     // useEffect (() => {
     //     window.scroll(0,0)
     // })
+
+    const [isAnimating, setIsAnimating] = useState(false);
+
+    const animation = useAnimation(
+      {
+        initial: {
+          y: 200,
+          opacity: 0,
+        },
+        animate: {
+          y: 0,
+          opacity: 1,
+          duration: 2000,
+        },
+      },
+      {
+        controls: {
+          play: () => setIsAnimating(true),
+          stop: () => setIsAnimating(false),
+        },
+      },
+    );
+    
+    useEffect(() => {
+      if (isAnimating) {
+        animation.play();
+      } else {
+        animation.stop();
+      }
+    }, [isAnimating]);
+
 
     return (
       <>
@@ -68,6 +99,7 @@ const HomePage = () => {
           <div className="w-screen max-h-screen mt-44 px-10 flex justify-center">
             {/* container for card */}
             <motion.div
+            ref={animation}
               className="flex 2xlMin:min-h-[500px] 2xlMax:min-h-[700px] max-w-6xl rounded bg-gradient-to-t from-[#231d2c] to-[#4a356a] w-full bg-cover pr-3 2xlMax:flex-col 2xlMin:flex-row "
               initial={{ y: 200, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}

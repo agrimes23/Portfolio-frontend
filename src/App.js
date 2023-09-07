@@ -13,7 +13,6 @@ import MobileProjects from './components/Projects/MobileProjects';
 const App = () => {
   return (
     <>
-    <AnimatePresence>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
@@ -21,9 +20,7 @@ const App = () => {
         <Route path="/webprojects" element={<WebProjects />}></Route>
         <Route path="/mobileprojects" element={<MobileProjects />}></Route>
         <Route path="/experience" element={<Experience/>}></Route>
-      </Routes>
-      </AnimatePresence>
-      
+      </Routes>      
     </>
   )
 }

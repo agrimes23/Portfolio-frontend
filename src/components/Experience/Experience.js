@@ -11,9 +11,9 @@ const Experience = () => {
 
     // const tabHeaders = ["Experience", "School", "Skills"]
     // const [active, setActive] = useState(tabHeaders[0])
-    const Button = styled.button`
-    /* Same as above */
-  `;
+  //   const Button = styled.button`
+  //   /* Same as above */
+  // `;
   
   // const ButtonToggle = styled(Button)`
   //   opacity: 0.6;
