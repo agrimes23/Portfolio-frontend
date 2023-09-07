@@ -29,12 +29,11 @@ const HomePage = () => {
 
             {/* Name & Title */}
 
-            {/* motion div */}
-              <div
+              <motion.div
                 className="-mt-44 rounded max-w-4xl w-4/12 py-14 "
-                // initial={{ x: -300, opacity: 0 }}
-                // animate={{ x: 0, opacity: 1 }}
-                // transition={{ duration: 2 }}
+                initial={{ x: -300, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 2 }}
               >
                 <h1 className="font-titleName text-lemonChiffon text-center text-7xl row justify-center mdMax:text-5xl">
                   Alex Grimes
@@ -42,16 +41,15 @@ const HomePage = () => {
                 <h2 className="font-newsCycle text-[#77d8ff] text-center text-6xl mdMax:text-4xl">
                   Full Stack Developer
                 </h2>
-              </div>
+              </motion.div>
 
               {/* Quick Intro */}
-
-              {/* motion div */}
-              <div
+              
+              <motion.div
                 className="bg-[#2f2081] smMin:mx-10 smMin:p-10 xlMin:mt-44 max-w-xl bg-opacity-50 rounded xlMin:self-end smMax:mx-0 smMax:p-6"
-                // initial={{ x: 300, opacity: 0 }}
-                // animate={{ x: 0, opacity: 1 }}
-                // transition={{ duration: 1.5 }}
+                initial={{ x: 300, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.5 }}
               >
                 <h1 className="text-lemonChiffon text-xl">
                 A software engineer and full stack developer who values dynamic, well organized code.
@@ -65,7 +63,7 @@ const HomePage = () => {
                     code on GitHub
                   </a>
                 </h1>
-              </div>
+              </motion.div>
             </div>
           </div>
           {/* -------------------- Video Section --------------------- */}
