@@ -5,6 +5,7 @@ import CamThumbnail from '../../assets/CameraThumbnail.PNG'
 import WeatherThumbnail from '../../assets/WeatherThumbnail.PNG'
 import { motion } from "framer-motion";
 import greenGold from "../../assets/green_gold.jpg"
+import VideoPlayer from "../VideoPlayer";
 
 const MobileProjects = () => {
   // TODO:
@@ -57,11 +58,12 @@ const MobileProjects = () => {
                 {/* <video className="max-w-[250px] h-[444px]" poster={TestThumbnail} preload="none" controls>
                   <source src={RNTestLab} type="video/mp4" />
                 </video> */}
-                <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
+                <VideoPlayer videoUrl={"https://res.cloudinary.com/dncfltjvn/video/upload/v1696782699/CommunityTestLabMedQual_4b.mp4"} />
+                {/* <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
                   <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
                     Video Coming Soon
                   </h4>
-                </div>
+                </div> */}
               </div>
 
               <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:ml-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full row text-white ">
@@ -115,11 +117,12 @@ const MobileProjects = () => {
                 {/* <video className="max-w-[250px] " poster={RiseThumbnail} preload="none" controls>
                   <source src={RNCredit} type="video/mp4" />
                 </video> */}
-                <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
+                <VideoPlayer videoUrl={"https://res.cloudinary.com/dncfltjvn/video/upload/v1696800043/RiseCreditAppMed_rynpnd.mp4"}/>
+                {/* <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
                   <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
                     Video Coming Soon
                   </h4>
-                </div>
+                </div> */}
               </div>
 
               <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:ml-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full row text-white ">
@@ -170,11 +173,12 @@ const MobileProjects = () => {
                 {/* <video className="max-w-[250px] h-[444px]" poster={CamThumbnail} preload="none" controls>
                   <source src={RNCamera} type="video/mp4" />
                 </video> */}
-                <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
+                <VideoPlayer videoUrl={"https://res.cloudinary.com/dncfltjvn/video/upload/v1696800049/InsuranceCardVid_emjubw.mp4"}/>
+                {/* <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
                   <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
                     Video Coming Soon
                   </h4>
-                </div>
+                </div> */}
               </div>
 
               <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:ml-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full row text-white ">
@@ -223,11 +227,12 @@ const MobileProjects = () => {
                 {/* <video className="max-w-[250px] h-[444px]" poster={WeatherThumbnail} preload="none" controls>
                   <source src={RNWeather} type="video/mp4" />
                 </video> */}
-                <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
+                <VideoPlayer videoUrl={"https://res.cloudinary.com/dncfltjvn/video/upload/v1696800063/ReactNativeWeatherVid_b8dsrx.mp4"} />
+                {/* <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
                   <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
                     Video Coming Soon
                   </h4>
-                </div>
+                </div> */}
               </div>
 
               <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:mr-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full row text-white ">
