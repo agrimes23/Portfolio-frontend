@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TestThumbnail from '../../assets/TestLabThumbnail.PNG'
 import RiseThumbnail from '../../assets/RiseThumbnail.PNG'
 import CamThumbnail from '../../assets/CameraThumbnail.PNG'
@@ -6,12 +6,27 @@ import WeatherThumbnail from '../../assets/WeatherThumbnail.PNG'
 import { motion } from "framer-motion";
 import greenGold from "../../assets/green_gold.jpg"
 import VideoPlayer from "../VideoPlayer";
+import { getVideos } from "../../api/videoApi.js"
 
 const MobileProjects = () => {
   // TODO:
   // // Eventually reformat to
   // // // tailwind css
   // // // typescript
+  const [videos, setVideos] = useState([])
+
+  useEffect(() => {
+    getVideos()
+      .then((response) => {
+        console.log("video Info: " + JSON.stringify(response[0].url))
+        setVideos(response)
+      })
+      .catch((error) => {
+        console.error("Error in fetching videos: ", error)
+      })
+      
+  }, [])
+
 
   return (
     <>
@@ -58,7 +73,9 @@ const MobileProjects = () => {
                 {/* <video className="max-w-[250px] h-[444px]" poster={TestThumbnail} preload="none" controls>
                   <source src={RNTestLab} type="video/mp4" />
                 </video> */}
-                <VideoPlayer videoUrl={"https://res.cloudinary.com/dncfltjvn/video/upload/v1696782699/CommunityTestLabMedQual_4b.mp4"} />
+                {videos.length > 0 && (
+                  <VideoPlayer videoUrl={videos[3].secure_url} />
+                )}
                 {/* <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
                   <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
                     Video Coming Soon
@@ -117,7 +134,9 @@ const MobileProjects = () => {
                 {/* <video className="max-w-[250px] " poster={RiseThumbnail} preload="none" controls>
                   <source src={RNCredit} type="video/mp4" />
                 </video> */}
-                <VideoPlayer videoUrl={"https://res.cloudinary.com/dncfltjvn/video/upload/v1696800043/RiseCreditAppMed_rynpnd.mp4"}/>
+                {videos.length > 0 && (
+                  <VideoPlayer videoUrl={videos[2].secure_url} />
+                )}
                 {/* <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
                   <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
                     Video Coming Soon
@@ -173,7 +192,9 @@ const MobileProjects = () => {
                 {/* <video className="max-w-[250px] h-[444px]" poster={CamThumbnail} preload="none" controls>
                   <source src={RNCamera} type="video/mp4" />
                 </video> */}
-                <VideoPlayer videoUrl={"https://res.cloudinary.com/dncfltjvn/video/upload/v1696800049/InsuranceCardVid_emjubw.mp4"}/>
+                {videos.length > 0 && (
+                  <VideoPlayer videoUrl={videos[1].secure_url} />
+                )}
                 {/* <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
                   <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
                     Video Coming Soon
@@ -227,7 +248,9 @@ const MobileProjects = () => {
                 {/* <video className="max-w-[250px] h-[444px]" poster={WeatherThumbnail} preload="none" controls>
                   <source src={RNWeather} type="video/mp4" />
                 </video> */}
-                <VideoPlayer videoUrl={"https://res.cloudinary.com/dncfltjvn/video/upload/v1696800063/ReactNativeWeatherVid_b8dsrx.mp4"} />
+                {videos.length > 0 && (
+                  <VideoPlayer videoUrl={videos[0].secure_url} />
+                )}
                 {/* <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
                   <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
                     Video Coming Soon
