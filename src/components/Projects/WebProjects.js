@@ -62,7 +62,7 @@ const WebProjects = () => {
                     <img
                       className="flex-1 xlMax:h-[200px] xlMin:h-[350px] bg-cover border-1 border-[#2d1640]"
                       src={FeelingFriends}
-                      alt="card project img"
+                      alt="Mindful Jouranl EdTech Home Page"
                     />
                   </div>
                 </a>
@@ -127,7 +127,7 @@ const WebProjects = () => {
                     <img
                       className="flex-1 xlMax:h-[200px] xlMin:h-[350px] bg-cover"
                       src={travelPlanImg}
-                      alt="card project img"
+                      alt="Travel Planner Home Page"
                     />
                   </div>
                 </a>
@@ -193,7 +193,7 @@ const WebProjects = () => {
                     <img
                       className="flex-1 xlMax:h-[200px] xlMin:h-[350px] bg-cover"
                       src={WeatherApp}
-                      alt="card project img"
+                      alt="Weather App Home Page"
                     />
                   </div>
                 </a>

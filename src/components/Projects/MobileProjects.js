@@ -5,8 +5,8 @@ import CamThumbnail from '../../assets/CameraThumbnail.PNG'
 import WeatherThumbnail from '../../assets/WeatherThumbnail.PNG'
 import { motion } from "framer-motion";
 import greenGold from "../../assets/green_gold.jpg"
-import VideoPlayer from "../VideoPlayer";
-import { getVideos } from "../../api/videoApi.js"
+// import VideoPlayer from "../VideoPlayer";
+// import { getVideos } from "../../api/videoApi.js"
 
 const MobileProjects = () => {
   // TODO:
@@ -15,17 +15,17 @@ const MobileProjects = () => {
   // // // typescript
   const [videos, setVideos] = useState([])
 
-  useEffect(() => {
-    getVideos()
-      .then((response) => {
-        console.log("video Info: " + JSON.stringify(response[0].url))
-        setVideos(response)
-      })
-      .catch((error) => {
-        console.error("Error in fetching videos: ", error)
-      })
+  // useEffect(() => {
+  //   getVideos()
+  //     .then((response) => {
+  //       console.log("video Info: " + JSON.stringify(response[0].url))
+  //       setVideos(response)
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error in fetching videos: ", error)
+  //     })
       
-  }, [])
+  // }, [])
 
 
   return (
@@ -73,14 +73,14 @@ const MobileProjects = () => {
                 {/* <video className="max-w-[250px] h-[444px]" poster={TestThumbnail} preload="none" controls>
                   <source src={RNTestLab} type="video/mp4" />
                 </video> */}
-                {videos.length > 0 && (
+                {/* {videos.length > 0 && (
                   <VideoPlayer videoUrl={videos[3].secure_url} />
-                )}
-                {/* <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
+                )} */}
+                <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
                   <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
                     Video Coming Soon
                   </h4>
-                </div> */}
+                </div>
               </div>
 
               <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:ml-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full row text-white ">
@@ -134,14 +134,14 @@ const MobileProjects = () => {
                 {/* <video className="max-w-[250px] " poster={RiseThumbnail} preload="none" controls>
                   <source src={RNCredit} type="video/mp4" />
                 </video> */}
-                {videos.length > 0 && (
+                {/* {videos.length > 0 && (
                   <VideoPlayer videoUrl={videos[2].secure_url} />
-                )}
-                {/* <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
+                )} */}
+                <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
                   <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
                     Video Coming Soon
                   </h4>
-                </div> */}
+                </div>
               </div>
 
               <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:ml-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full row text-white ">
@@ -192,14 +192,14 @@ const MobileProjects = () => {
                 {/* <video className="max-w-[250px] h-[444px]" poster={CamThumbnail} preload="none" controls>
                   <source src={RNCamera} type="video/mp4" />
                 </video> */}
-                {videos.length > 0 && (
+                {/* {videos.length > 0 && (
                   <VideoPlayer videoUrl={videos[1].secure_url} />
-                )}
-                {/* <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
+                )} */}
+                <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
                   <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
                     Video Coming Soon
                   </h4>
-                </div> */}
+                </div>
               </div>
 
               <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:ml-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full row text-white ">
@@ -230,7 +230,7 @@ const MobileProjects = () => {
             </div>
           </div>
 
-          fourth card
+          {/* fourth card */}
           {/* motion div */}
           <div
             className="w-full max-w-[1300px] mt-44"
@@ -245,14 +245,14 @@ const MobileProjects = () => {
               className="flex mdMin:flex-row mdMax:flex-col mdMin:w-11/12 -z-10 lgMin:max-h-80 lgMax:h-3/4 lgMax:p-5 mx-auto rounded bg-gradient-to-t to-[#07261c] from-[#29463d] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
             >
               <div className="lgMin:px-5 ">
-                {videos.length > 0 && (
+                {/* {videos.length > 0 && (
                   <VideoPlayer videoUrl={videos[0].secure_url} />
-                )}
-                {/* <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
+                )} */}
+                <div className="bg-codingDiv w-[250px] h-[444px] rounded ">
                   <h4 className="flex justify-center items-center h-full text-white font-bold text-2xl">
                     Video Coming Soon
                   </h4>
-                </div> */}
+                </div>
               </div>
 
               <div className="w-2/4 mdMin:max-h-80 px-3 lgMin:mr-3 my-3 flex lgMin:self-center lgMax:self-start mdMax:self-center mdMax:w-full row text-white ">

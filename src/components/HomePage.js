@@ -105,7 +105,7 @@ const HomePage = () => {
               </div>
               {/* video container */}
               <div className="h-[120px] mt-24 mx-auto">
-                <img className="xlMin:w-[500px] xlMax:w-[300px] shadow-2xl shadow-[#000000] object-fill" src={codingPhoto}/>
+                <img className="xlMin:w-[500px] xlMax:w-[300px] shadow-2xl shadow-[#000000] object-fill" alt="Coding Example" src={codingPhoto}/>
                
               </div>
             </div>

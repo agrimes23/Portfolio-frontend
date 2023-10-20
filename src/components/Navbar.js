@@ -43,7 +43,7 @@ const Navbar = () => {
     <>
         <nav className="navbar sticky-top p-4 d-flex columnnavbar shadow-2xl">
             <div className="flex flex-row">
-                <Link className="text-decoration-none" to='/'><h1 className="nav-home" title="Home Page" alt="logo-map-planner-img">AG</h1></Link>
+                <Link className="text-decoration-none" to='/'><h1 className="nav-home" title="Home Page" alt="logo map planner">AG</h1></Link>
             </div>
             <div className="lg-screen-nav flex 2xlMax:hidden justify-end">
                 <ul className="flex flex-row navbar-nav navbar-right text-white mx-3">
