@@ -230,7 +230,7 @@ const MobileProjects = () => {
             </div>
           </div>
 
-          {/* fourth card */}
+          fourth card
           {/* motion div */}
           <div
             className="w-full max-w-[1300px] mt-44"
@@ -245,9 +245,6 @@ const MobileProjects = () => {
               className="flex mdMin:flex-row mdMax:flex-col mdMin:w-11/12 -z-10 lgMin:max-h-80 lgMax:h-3/4 lgMax:p-5 mx-auto rounded bg-gradient-to-t to-[#07261c] from-[#29463d] items-center justify-center my-auto xlMax:flex-col xlMin:justify-around xlMax:items-center"
             >
               <div className="lgMin:px-5 ">
-                {/* <video className="max-w-[250px] h-[444px]" poster={WeatherThumbnail} preload="none" controls>
-                  <source src={RNWeather} type="video/mp4" />
-                </video> */}
                 {videos.length > 0 && (
                   <VideoPlayer videoUrl={videos[0].secure_url} />
                 )}
