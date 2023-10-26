@@ -33,6 +33,15 @@ Below shows the improvements through different versions over when I first starte
   <img src="src\assets\Version3Portfolio_Experience.PNG" alt="current portfolio hp" width="300" />
 </div>
 
+### v1.2 Improvements:
+- Navbar item changes background color when selected
+- Fixed hover issue on mobile projects page
+- Added a backend for my Cloudify Api to store and fetch Mobile Page videos (caching issue, will be up again soon!)
+- moved Github Repo at the top of a few pages (Home, Web Projects, and Mobile Projects Pages)
+- Changing class styling from Bootstrap CSS to Tailwind CSS
+
+<br/>
+<br/>
 
 ## Version 1.1
 <div style="display: flex">
@@ -46,9 +55,16 @@ Below shows the improvements through different versions over when I first starte
 <div style="display: flex">
   <img src="src\assets\Version2Portfolio_Experience.PNG" alt="current portfolio hp" width="300" />
 </div>
-<br/>
-<br/>
 
+### v1.1 Improvements:
+- Download Resume button
+- Added page titles with image background banners
+- Clearly defined cards on the web page
+- Added a Mobile Projects page to show case my React Native projects
+- Added videos for Mobile Projects page
+
+<br/>
+<br/>
 
 ## Version 1.0
 <div style="display: flex">
@@ -62,8 +78,10 @@ Below shows the improvements through different versions over when I first starte
 <br/>
 <br/>
 
-
-
+### v1.0 Improvements:
+- Basic react structure
+- Bootstrap for inline class CSS styling
+- Added an interactive tab chart to show case experience on the Experience Page
 
 
 
