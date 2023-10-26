@@ -1,12 +1,28 @@
-<h1>A Frontend Portfolio App Showcasing my Projects and Experience</h1>
+# Alex Grimes' Coding Portfolio
 
-<hr/>
+My portfolio that showcases both web projects and mobile (React Native) projects. 
 
-<h3>Features that I focused on:</h3>
-<ul>
-  <li>Hover effects over nav bar items</li>
-  <li>Toggle buttons on Experience Page</li>
-  <li>Fade In Effect on each page load</li>
-</ul>
-<hr/>
-<h5>Will be updating it with more features soon!</h5>
+## Features
+Some of this site's features include:
+- Downloadable Resume (PDF)
+- Dynamic styling on a majority of screen sizes
+- turns in to hamburger menu on smaller screens
+- Coming soon: mobile projects display videos from Cloudify
+
+## Tech Stack
+- React
+- Tailwind CSS
+- React Router
+- Cloudify
+- Express & Node
+
+### Versions
+Below shows the improvements through different versions over when I first started the portfolio:
+
+#### Version 1
+
+#### Version 1.1
+
+#### Version 1.2
+
+
