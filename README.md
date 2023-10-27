@@ -6,7 +6,7 @@ My portfolio that showcases both web projects and mobile (React Native) projects
 Some of this site's features include:
 - Downloadable Resume (PDF)
 - Dynamic styling on a majority of screen sizes
-- turns in to hamburger menu on smaller screens
+- Nav turns in to hamburger menu on smaller screens
 - Coming soon: mobile projects display videos from Cloudify
 
 ## Tech Stack
@@ -19,7 +19,7 @@ Some of this site's features include:
 # Versions
 Below shows the improvements through different versions over when I first started the portfolio:
 
-## ✨ Current ✨ Version 1.3
+## ✨ Current ✨ Version 1.2
 
 <div style="display: flex">
   <img src="src\assets\Version3Portfolio.PNG" alt="current portfolio hp" width="300" />
