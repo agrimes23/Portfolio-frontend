@@ -23,7 +23,7 @@ Below shows the improvements through different versions over when I first starte
 
 <div style="display: flex">
   <img src="https://agrimes23.github.io/portfolio-image-host/portfoliov3/Version3Portfolio.PNG" alt="current portfolio hp" width="300" />
-  <img src="src\assets\Version3Portfolio_AboutMe.PNG" alt="current portfolio hp" width="300" />
+  <img src="https://agrimes23.github.io/portfolio-image-host/portfoliov3/Version3Portfolio_AboutMe.PNG" alt="current portfolio hp" width="300" />
 </div>
 <div style="display: flex">
   <img src="https://agrimes23.github.io/portfolio-image-host/portfoliov3/Version3Portfolio_WebProjects.PNG" alt="current portfolio hp" width="300" />
@@ -68,12 +68,12 @@ Below shows the improvements through different versions over when I first starte
 
 ## Version 1.0
 <div style="display: flex">
-  <img src="src\assets\Version1Portfolio.PNG" alt="current portfolio hp" width="300" />
-  <img src="src\assets\Version1Portfolio_AboutMe.PNG" alt="current portfolio hp" width="300" />
+  <img src="https://agrimes23.github.io/portfolio-image-host/portfoliov3/Version1Portfolio.PNG" alt="current portfolio hp" width="300" />
+  <img src="https://agrimes23.github.io/portfolio-image-host/portfoliov3/Version1Portfolio_AboutMe.PNG" alt="current portfolio hp" width="300" />
 </div>
 <div style="display: flex">
-  <img src="src\assets\Version1Portfolio_Projects.PNG" alt="current portfolio hp" width="300" />
-  <img src="src\assets\Version1Portfolio_Experience.PNG" alt="current portfolio hp" width="300" />
+  <img src="https://agrimes23.github.io/portfolio-image-host/portfoliov3/Version1Portfolio_Projects.PNG" alt="current portfolio hp" width="300" />
+  <img src="https://agrimes23.github.io/portfolio-image-host/portfoliov3/Version1Portfolio_Experience.PNG" alt="current portfolio hp" width="300" />
 </div>
 <br/>
 <br/>
