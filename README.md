@@ -22,7 +22,7 @@ Below shows the improvements through different versions over when I first starte
 ## ✨ Current ✨ Version 1.2
 
 <div style="display: flex">
-  <img src="src\assets\Version3Portfolio.PNG" alt="current portfolio hp" width="300" />
+  <img src="https://github.com/agrimes23/portfolio-image-host\Version3Portfolio.PNG" alt="current portfolio hp" width="300" />
   <img src="src\assets\Version3Portfolio_AboutMe.PNG" alt="current portfolio hp" width="300" />
 </div>
 <div style="display: flex">
