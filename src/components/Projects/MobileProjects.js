@@ -18,7 +18,6 @@ const MobileProjects = () => {
   useEffect(() => {
     getVideos()
       .then((response) => {
-        console.log("video Info: " + JSON.stringify(response[0].url))
         setVideos(response)
       })
       .catch((error) => {

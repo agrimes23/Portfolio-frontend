@@ -6,17 +6,14 @@ const VideoPlayer = ({ videoUrl }) => {
 
   useEffect(() => {
     const videoElement = videoRef.current;
-    console.log("ooo hey")
     return () => {
       videoElement.pause();
       videoElement.src=''
-      console.log("Oh looks like it works???")
     }
   }, [])
 
   useEffect(() => {
     videoRef.current.src = videoUrl;
-    console.log("Maybe hey?")
   }, [videoUrl])
 
   return (
